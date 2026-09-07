@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>섹터 스윙 리포트</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.7; }
+  code { background: rgba(128,128,128,.18); padding: 2px 6px; border-radius: 4px; }
+  .box { border: 1px solid rgba(128,128,128,.35); border-radius: 10px; padding: 16px; margin: 16px 0; }
+</style>
+</head>
+<body>
+  <h1>섹터 스윙 리포트</h1>
+  <p><strong>P4(웹 UI) 구현 예정 자리표시자입니다.</strong> 데이터 파이프라인은 동작 중입니다.</p>
+  <div class="box">
+    <h2>생성된 데이터</h2>
+    <ul>
+      <li><a href="data/latest.json">data/latest.json</a> — 최신 리포트</li>
+      <li><a href="data/archive.json">data/archive.json</a> — 과거 리포트 날짜 목록</li>
+    </ul>
+    <p id="status">불러오는 중…</p>
+  </div>
+  <p style="font-size:.9em;opacity:.75">
+    본 페이지는 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다.
+  </p>
+<script>
+fetch('data/latest.json?t=' + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('status').innerHTML =
+      `기준일 <code>${d.report_date}</code> · 미국 <code>${d.us_asof}</code> · 한국 <code>${d.kr_asof}</code><br>` +
+      `추천 <strong>${d.counts.picks}</strong>종목 / 관망 <strong>${d.counts.watch}</strong>종목 · 신선도 <code>${d.freshness.status}</code>`;
+  })
+  .catch(e => { document.getElementById('status').textContent = '데이터를 불러오지 못했습니다: ' + e; });
+</script>
+</body>
+</html>

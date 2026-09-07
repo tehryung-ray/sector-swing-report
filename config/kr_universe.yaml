@@ -1,0 +1,48 @@
+# 한국 섹터 ETF 유니버스 + 미국 섹터 매핑 (기획서 2단계 "지도")
+#
+# code 는 시드값이다. pipeline/resolve_codes.py 가 매 실행마다
+# FDR 상장 목록에서 code -> name 을 대조하고, 불일치 시 파이프라인을 실패시킨다.
+# ETF 가 상장폐지되거나 명칭이 바뀌면 조용히 틀린 가격을 내는 대신 크게 실패하게 한다.
+#
+# us: 해당 종목의 흐름을 선행한다고 보는 미국 섹터 ETF 티커 (us_sectors.yaml 에 존재해야 함)
+
+etfs:
+  # --- 반도체 ---
+  - {code: "396500", name: "TIGER 반도체TOP10",        us: SOXX}
+  - {code: "091160", name: "KODEX 반도체",             us: SOXX}
+  - {code: "395160", name: "KODEX AI반도체TOP2플러스",   us: SMH}
+  - {code: "487240", name: "KODEX AI전력핵심설비",       us: XLU}
+
+  # --- 2차전지 ---
+  - {code: "305720", name: "KODEX 2차전지산업",         us: LIT}
+  - {code: "305540", name: "TIGER 2차전지테마",         us: LIT}
+
+  # --- 바이오 / 헬스케어 ---
+  - {code: "244580", name: "KODEX 바이오",             us: XBI}
+  - {code: "364970", name: "TIGER 바이오TOP10",        us: XBI}
+  - {code: "143860", name: "TIGER 헬스케어",           us: XLV}
+
+  # --- 금융 ---
+  - {code: "091170", name: "KODEX 은행",               us: XLF}
+  - {code: "102970", name: "KODEX 증권",               us: XLF}
+
+  # --- 산업재 (조선 / 건설) ---
+  - {code: "466920", name: "SOL 조선TOP3플러스",         us: XLI}
+  - {code: "494670", name: "TIGER 조선TOP10",          us: XLI}
+  - {code: "117700", name: "KODEX 건설",               us: XLI}
+
+  # --- 방산 / 우주 ---
+  - {code: "449450", name: "PLUS K방산",               us: ITA}
+  - {code: "463250", name: "TIGER K방산&우주",          us: ITA}
+  - {code: "421320", name: "PLUS 우주항공",             us: ITA}
+
+  # --- 에너지 / 원자력 ---
+  - {code: "434730", name: "HANARO 원자력iSelect",      us: URA}
+  - {code: "385510", name: "KODEX 신재생에너지액티브",     us: ICLN}
+
+  # --- IT / 인터넷 ---
+  - {code: "139260", name: "TIGER 200 IT",            us: XLK}
+  - {code: "365000", name: "TIGER 인터넷TOP10",         us: XLC}
+
+  # --- 경기소비재 ---
+  - {code: "091180", name: "KODEX 자동차",             us: XLY}

@@ -1,0 +1,24 @@
+# 미국 섹터 ETF 유니버스 (기획서 1단계)
+# benchmark: 상대강도(RS) 및 시장 국면 판정 기준
+benchmark: SPY
+regime_ma: 200
+
+sectors:
+  - {ticker: SOXX, name: 반도체}
+  - {ticker: SMH,  name: 반도체(대형)}
+  - {ticker: XLK,  name: 기술}
+  - {ticker: IGV,  name: 소프트웨어}
+  - {ticker: XLV,  name: 헬스케어}
+  - {ticker: XBI,  name: 바이오}
+  - {ticker: XLF,  name: 금융}
+  - {ticker: XLE,  name: 에너지}
+  - {ticker: XLI,  name: 산업재}
+  - {ticker: XLB,  name: 소재}
+  - {ticker: XLY,  name: 경기소비재}
+  - {ticker: XLP,  name: 필수소비재}
+  - {ticker: XLU,  name: 유틸리티}
+  - {ticker: XLC,  name: 커뮤니케이션}
+  - {ticker: LIT,  name: 2차전지}
+  - {ticker: ITA,  name: 방산·우주}
+  - {ticker: URA,  name: 원자력}
+  - {ticker: ICLN, name: 신재생에너지}
