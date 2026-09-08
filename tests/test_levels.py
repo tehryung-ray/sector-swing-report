@@ -266,3 +266,54 @@ def test_tp2_stays_reachable(seed):
     if evaluate(lv, "strong"):
         return
     assert lv["tp2_pct"] < 40
+
+
+# ---------- 섹터 중복 제한 ----------
+
+def _pick(name, us, rr, signal="strong"):
+    return {"name": name, "us_ticker": us, "rr": rr, "signal": signal}
+
+
+def test_sector_cap_keeps_only_first_per_sector():
+    """같은 섹터 ETF는 상관 0.94~0.99라 여러 개 담아도 분산이 되지 않는다."""
+    from pipeline.gates import apply_sector_cap
+    picks = [_pick("TIGER 반도체TOP10", "SOXX", 2.8),
+             _pick("KODEX 반도체", "SOXX", 2.6),
+             _pick("KODEX 은행", "XLF", 1.7)]
+    kept, dropped = apply_sector_cap(picks)
+    assert [p["name"] for p in kept] == ["TIGER 반도체TOP10", "KODEX 은행"]
+    assert [p["name"] for p in dropped] == ["KODEX 반도체"]
+
+
+def test_sector_cap_names_the_winner_in_reason():
+    """왜 빠졌는지 알아야 사용자가 납득한다."""
+    from pipeline.gates import apply_sector_cap
+    _, dropped = apply_sector_cap([_pick("A", "SOXX", 3.0), _pick("B", "SOXX", 2.0)])
+    assert "A" in dropped[0]["reasons"][0]
+
+
+def test_sector_cap_respects_input_order():
+    """정렬된 순서의 첫 종목이 남는다. 호출부가 손익비 순으로 정렬해 넘긴다."""
+    from pipeline.gates import apply_sector_cap
+    kept, _ = apply_sector_cap([_pick("낮은손익비", "SOXX", 1.6),
+                                _pick("높은손익비", "SOXX", 3.0)])
+    assert kept[0]["name"] == "낮은손익비"
+
+
+def test_sector_cap_preserves_other_fields():
+    from pipeline.gates import apply_sector_cap
+    p = _pick("A", "SOXX", 3.0) | {"entry": 1000, "stop": 970}
+    _, dropped = apply_sector_cap([p, _pick("B", "SOXX", 2.0) | {"entry": 500}])
+    assert dropped[0]["entry"] == 500 and "reasons" in dropped[0]
+
+
+def test_sector_cap_limit_two():
+    from pipeline.gates import apply_sector_cap
+    kept, dropped = apply_sector_cap(
+        [_pick(n, "ITA", 2.0) for n in ("A", "B", "C")], limit=2)
+    assert len(kept) == 2 and len(dropped) == 1
+
+
+def test_sector_cap_empty():
+    from pipeline.gates import apply_sector_cap
+    assert apply_sector_cap([]) == ([], [])

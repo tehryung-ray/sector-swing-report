@@ -12,7 +12,7 @@ import sys
 
 import yaml
 
-from .gates import evaluate
+from .gates import apply_sector_cap, evaluate
 from .levels import compute_levels
 from .market_calendar import is_kr_session, next_kr_session
 from .links import build_links
@@ -188,6 +188,12 @@ def main() -> int:
             picks.append(row)
 
     picks.sort(key=lambda r: (SIGNAL_ORDER.get(r["signal"], 9), -r["rr"]))
+    # 같은 미국 섹터의 국내 ETF는 상관이 0.94~0.99라 여러 개 담아도 분산이 안 된다.
+    picks, dup = apply_sector_cap(picks)
+    if dup:
+        log(f"      같은 섹터 중복 {len(dup)}종목을 관망으로 내림: "
+            + ", ".join(d["name"] for d in dup))
+    watch.extend(dup)
     watch.sort(key=lambda r: SIGNAL_ORDER.get(r.get("signal", "weak"), 9))
     log(f"      추천 {len(picks)}종목 / 관망 {len(watch)}종목")
 

@@ -281,6 +281,7 @@ def backfill(kr: dict[str, pd.DataFrame], sig: pd.DataFrame, universe: list[dict
 # 사유마다 표본이 1~2건으로 흩어진다. 안정적인 범주로 정규화한다.
 # 순서 주의: '60일선' 을 먼저 봐야 '20일선 아래' 와 섞이지 않는다.
 WATCH_CATEGORIES = [
+    ("같은 섹터", "같은 섹터 중복"),
     ("미국", "미국 섹터가 하락세"),
     ("60일선", "중기 추세 미회복"),
     ("20일선 아래", "국내 20일선 아래"),

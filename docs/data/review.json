@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at_kst": "2026-09-09T07:34:23+09:00",
+ "generated_at_kst": "2026-09-09T08:11:49+09:00",
  "live": {
   "trades": [
    {
@@ -94,31 +94,6 @@
      "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
      "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
      "toss": "https://tossinvest.com/stocks/A139260"
-    },
-    "fill": "waiting",
-    "fill_label": "대기 중 (아직 장이 열리지 않음)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "pending": true,
-    "source": "live"
-   },
-   {
-    "code": "091160",
-    "name": "KODEX 반도체",
-    "report_date": "2026-09-09",
-    "setup_label": "얕은눌림형",
-    "signal_label": "상승 전환",
-    "us_ticker": "SOXX",
-    "us_name": "반도체",
-    "entry": 128595,
-    "stop": 124100,
-    "tp1": 140350,
-    "tp2": 146225,
-    "links": {
-     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
-     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
-     "toss": "https://tossinvest.com/stocks/A091160"
     },
     "fill": "waiting",
     "fill_label": "대기 중 (아직 장이 열리지 않음)",
@@ -230,8 +205,8 @@
    }
   ],
   "stats": {
-   "n": 9,
-   "waiting": 9,
+   "n": 8,
+   "waiting": 8,
    "tested": 0,
    "filled": 0,
    "fill_rate": null,
@@ -339,31 +314,6 @@
      "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
      "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
      "toss": "https://tossinvest.com/stocks/A139260"
-    },
-    "fill": "waiting",
-    "fill_label": "대기 중 (아직 장이 열리지 않음)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "pending": true,
-    "source": "live"
-   },
-   {
-    "code": "091160",
-    "name": "KODEX 반도체",
-    "report_date": "2026-09-09",
-    "setup_label": "얕은눌림형",
-    "signal_label": "상승 전환",
-    "us_ticker": "SOXX",
-    "us_name": "반도체",
-    "entry": 128595,
-    "stop": 124100,
-    "tp1": 140350,
-    "tp2": 146225,
-    "links": {
-     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
-     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
-     "toss": "https://tossinvest.com/stocks/A091160"
     },
     "fill": "waiting",
     "fill_label": "대기 중 (아직 장이 열리지 않음)",

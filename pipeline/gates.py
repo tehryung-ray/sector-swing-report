@@ -59,3 +59,34 @@ def evaluate(lv: dict, us_signal: str) -> list[str]:
         reasons.append(f"거래대금 {lv['turnover_eok']}억 (최소 {MIN_TURNOVER_EOK}억 미달)")
 
     return reasons
+
+
+# 같은 미국 섹터에 묶인 국내 ETF는 서로 상관이 0.94~0.99 로 사실상 같은 종목이다
+# (TIGER 반도체TOP10 x KODEX 반도체 = 0.976, 다른 섹터끼리는 중앙값 0.472).
+# 여러 개를 담으면 분산이 아니라 한 종목을 여러 배로 산 것이 된다.
+#
+# 검증(2021~2026, 3,000만원·슬롯 5·위험 0.5%):
+#   제한없음  연 +6.7% / MDD 23.1%  (수익/MDD 0.29)
+#   1종목     연 +6.0% / MDD 16.2%  (수익/MDD 0.37)
+# 수익은 0.7%p 줄지만 낙폭이 7%p 가까이 개선된다. 6개 연도 중 5개에서 MDD 개선.
+# 2종목 제한은 탈락이 9건뿐이라 사실상 무제한과 같아 의미가 없다.
+MAX_PER_SECTOR = 1
+
+
+def apply_sector_cap(picks: list[dict], limit: int = MAX_PER_SECTOR):
+    """미국 섹터당 상위 종목만 남기고 나머지는 관망으로 내린다.
+
+    picks 는 신호 강도·손익비 순으로 이미 정렬돼 있다고 가정한다.
+    반환: (남길 추천, 관망으로 내릴 종목)
+    """
+    kept, dropped, taken = [], [], {}
+    for p in picks:
+        t = p.get("us_ticker")
+        if len(taken.get(t, [])) >= limit:
+            first = taken[t][0]
+            reason = f"같은 섹터에서 {first} 선택됨 (상관 0.9 이상, 분산 효과 없음)"
+            dropped.append({**p, "reasons": [reason]})
+        else:
+            taken.setdefault(t, []).append(p["name"])
+            kept.append(p)
+    return kept, dropped
