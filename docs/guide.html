@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="섹터 스윙 리포트 사용설명서 - 하루 일정, 용어 해설, 원칙">
+<title>사용설명서 · 섹터 스윙 리포트</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>사용설명서</h1>
+    <div class="meta">리포트를 어떻게 읽고, 몇 시에 무엇을 하는지</div>
+    <nav class="nav">
+      <a href="index.html">오늘의 리포트</a>
+      <a href="guide.html" class="on">사용설명서</a>
+    </nav>
+  </header>
+
+  <div class="banner note">
+    본 페이지는 정보 제공 목적이며 투자 권유가 아닙니다. 모든 수치는 과거 시세로 계산한 기술적
+    참고값이고, 투자 판단과 그 결과의 책임은 이용자 본인에게 있습니다.
+  </div>
+
+  <h2>1. 하루 일정</h2>
+  <p class="lead">
+    미국 장이 끝난 뒤부터 한국 장이 열리기 전까지가 이 시스템의 작업 시간입니다.
+    아래 순서대로만 하시면 됩니다. <b>모든 주문은 지정가 예약</b>이라 장중에 화면을 볼 필요가 없습니다.
+  </p>
+
+  <div class="g-card">
+  <div class="tl">
+
+    <div class="tl-item">
+      <div class="tl-time">05:00<br>~06:00</div>
+      <div class="tl-h">미국 장 마감</div>
+      <div class="tl-b">서머타임이면 05:00, 겨울이면 06:00(한국시간)입니다. 사람이 할 일은 없습니다.</div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">06:50</div>
+      <div class="tl-h">리포트 자동 생성 시작</div>
+      <div class="tl-b">
+        미국 섹터 순위를 매기고, 연결된 한국 ETF의 가격대를 계산합니다.
+        실패하면 <b>07:50에 자동 재시도</b>합니다.
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-time">07:00<br>~07:10</div>
+      <div class="tl-h">페이지 갱신 완료</div>
+      <div class="tl-b">
+        자동화 시스템 특성상 10분 안팎 늦을 수 있습니다. 정상입니다.
+        페이지 상단의 <b>생성 시각</b>이 오늘 날짜인지 먼저 확인하세요.
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-time">07:10<br>~08:00</div>
+      <div class="tl-h">리포트 확인 → 예약 주문</div>
+      <div class="tl-b">
+        오늘 할 일의 전부입니다. 확인 순서는 아래 <a href="#check">2. 무엇을 확인하나</a>에 있습니다.
+        <ul>
+          <li>추천 카드마다 <b>진입가에 지정가 매수 예약</b></li>
+          <li>추천이 0종목이면 <b>아무것도 하지 않습니다</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">08:30<br>~09:00</div>
+      <div class="tl-h">장 시작 동시호가 — 취소 판단</div>
+      <div class="tl-b">
+        예상 체결가(시가)를 봅니다. 카드에 적힌 <b>취소선(= 손절가) 아래에서 열리면 주문을 취소</b>하세요.
+        그 가격에 열렸다는 건 셋업이 이미 깨졌다는 뜻입니다.
+      </div>
+    </div>
+
+    <div class="tl-item key">
+      <div class="tl-time">09:00</div>
+      <div class="tl-h">개장 — 체결 여부만 확인</div>
+      <div class="tl-b">
+        <b>체결됐다면</b> 곧바로 익절·손절 주문을 겁니다(<a href="#order">3. 주문 실무</a>).<br>
+        <b>안 됐다면</b> 그대로 둡니다. 값이 안 내려온 것뿐이고, 쫓아가서 사지 않습니다.
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">장중</div>
+      <div class="tl-h">개입하지 않습니다</div>
+      <div class="tl-b">
+        익절·손절 주문을 이미 걸어뒀으므로 볼 필요가 없습니다.
+        가격이 흔들린다고 손으로 청산하는 것이 이 전략에서 가장 흔한 실패 원인입니다.
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-time">5거래일<br>경과</div>
+      <div class="tl-h">시간 청산</div>
+      <div class="tl-b">
+        익절도 손절도 닿지 않은 채 5거래일이 지나면 <b>종가에 정리</b>합니다.
+        움직이지 않는 자리에 자금을 묶어두지 않는다는 뜻입니다.
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <h2 id="check">2. 리포트에서 무엇을 확인하나</h2>
+  <p class="lead">위에서 아래로 읽으면 판단 순서가 됩니다. 아래로 갈수록 세부 사항입니다.</p>
+
+  <div class="g-card">
+    <ul class="plist">
+      <li><span class="num">1</span><div>
+        <b>데이터 신선도 배너</b> — 상단에 노란/빨간 경고가 있으면 시세 수집에 문제가 있었다는 뜻입니다.
+        이 경우 <b>주문 전에 실제 시세를 반드시 직접 확인</b>하세요. 경고가 없으면 정상입니다.
+      </div></li>
+      <li><span class="num">2</span><div>
+        <b>시장 국면</b> — <b>위험선호</b>면 평소대로, <b>위험회피</b>면 비중을 줄이고 손절을 더 엄격히 지킵니다.
+        S&amp;P500이 200일선 위/아래인지로 판정합니다.
+      </div></li>
+      <li><span class="num">3</span><div>
+        <b>국면 칩</b>(깊은눌림형 / 얕은눌림형) — <b>주문을 어떻게 걸지</b>가 여기서 정해집니다.
+        바로 아래 회색 상자의 안내 문구가 그 종목의 실행 방법입니다.
+      </div></li>
+      <li><span class="num">4</span><div>
+        <b>가격 4줄</b> — 진입가 · 1차 익절 · 2차 익절 · 손절. 이 네 숫자가 주문의 전부입니다.
+      </div></li>
+      <li><span class="num">5</span><div>
+        <b>손익비</b> — 1.5 이상만 추천에 오릅니다. 숫자가 클수록 얻을 것 대비 잃을 것이 적은 자리입니다.
+      </div></li>
+      <li><span class="num">6</span><div>
+        <b>거래대금</b> — 너무 작으면 원하는 가격에 사고팔기 어렵습니다.
+        <b>50억 미만이면 수량을 줄이는 것</b>을 권합니다.
+      </div></li>
+      <li><span class="num">7</span><div>
+        <b>섹터 이슈</b> — 참고용입니다. <b>매매 근거로 쓰지 마세요.</b>
+        가격 판단은 시세로 계산한 것이고, 뉴스 태그는 읽을거리 우선순위일 뿐입니다.
+      </div></li>
+    </ul>
+  </div>
+
+  <div class="callout info">
+    <b>관망 목록도 보세요.</b> 접힌 &ldquo;관망&rdquo; 항목을 열면 탈락한 종목과 그 이유가 나옵니다.
+    &ldquo;미국 섹터 하락세&rdquo;가 많은 날은 시장 전체가 좋지 않다는 신호입니다.
+  </div>
+
+  <h2 id="order">3. 주문 실무</h2>
+  <p class="lead">
+    이 시스템은 <b>아침에 예약을 걸고 장중엔 보지 않는 것</b>을 전제로 설계했습니다.
+    그래서 진입가는 언제나 전일 종가보다 낮습니다.
+  </p>
+
+  <h3>매수 — 지정가 예약</h3>
+  <div class="g-card">
+    <p class="lead" style="margin:0 0 10px">
+      카드의 <b>진입가</b> 그대로 지정가 매수를 예약합니다. 시장가를 쓰지 않습니다.
+    </p>
+    <div class="wrapx"><table class="tbl">
+      <tr><th>항목</th><th>입력</th></tr>
+      <tr><td>주문 유형</td><td><b>지정가</b> 매수 (예약주문)</td></tr>
+      <tr><td>가격</td><td>카드의 <b>진입가</b></td></tr>
+      <tr><td>수량</td><td>아래 계산식 참고</td></tr>
+    </table></div>
+  </div>
+
+  <div class="callout danger">
+    <b>&ldquo;돌파하면 매수&rdquo;는 예약주문으로 안 됩니다.</b>
+    예약주문은 조건부가 아닙니다. 현재가보다 <b>위</b>에 지정가 매수를 걸면 조건 충족이 아니라
+    <b>개장 즉시 시가에 체결</b>됩니다. 그래서 이 리포트의 진입가는 항상 전일 종가 이하로만 산출합니다.
+    카드의 <b>돌파참고선</b>은 추세 강도를 보는 참고 정보일 뿐, 주문 가격이 아닙니다.
+  </div>
+
+  <h3>수량 — 손실 금액으로 역산</h3>
+  <div class="g-card">
+    <p class="lead" style="margin:0 0 10px">
+      &ldquo;얼마어치 살까&rdquo;가 아니라 <b>&ldquo;틀렸을 때 얼마까지 잃어도 되나&rdquo;</b>에서 출발합니다.
+      손절폭이 좁은 종목은 더 많이, 넓은 종목은 더 적게 사게 되어 종목마다 위험이 같아집니다.
+    </p>
+    <div class="callout info" style="margin:0">
+      수량 = <b>1회 감당할 손실 금액</b> ÷ (진입가 − 손절가)
+    </div>
+    <p class="lead" style="margin:10px 0 0">
+      예: 1회 손실 한도 20만원, 진입가 32,500원, 손절가 31,700원 →
+      20만원 ÷ 800원 = <b>250주</b> (약 813만원어치).
+      1회 손실 한도는 보통 <b>전체 자금의 0.5~1%</b>로 잡습니다.
+    </p>
+  </div>
+
+  <h3>체결된 뒤 — 익절과 손절은 주문 방식이 다릅니다</h3>
+  <div class="callout danger">
+    <b>손절을 지정가 매도로 걸면 안 됩니다.</b>
+    지정가 매도는 &ldquo;그 가격 <b>이상</b>&rdquo;에서 체결됩니다. 현재가보다 낮은 손절가에 지정가 매도를 걸면
+    <b>즉시 현재가에 팔려버립니다.</b> 손절은 반드시 <b>스탑로스(자동감시주문)</b>를 써야 합니다.
+  </div>
+  <div class="g-card">
+    <div class="wrapx"><table class="tbl">
+      <tr><th>무엇을</th><th>가격</th><th>수량</th><th>주문 방식</th></tr>
+      <tr><td><b>1차 익절</b></td><td class="n">1차 익절가</td><td class="n">절반</td>
+          <td>지정가 매도 (현재가보다 위 → 정상 작동)</td></tr>
+      <tr><td><b>2차 익절</b></td><td class="n">2차 익절가</td><td class="n">나머지 절반</td>
+          <td>지정가 매도</td></tr>
+      <tr><td><b>손절</b></td><td class="n">손절가</td><td class="n">전량</td>
+          <td><b>스탑로스 / 자동감시주문</b></td></tr>
+    </table></div>
+    <p class="lead" style="margin:12px 0 0">
+      1차 익절이 체결되면 남은 절반의 손절 주문 수량을 줄이거나,
+      손절선을 <b>본전(진입가)</b>으로 올려 두면 그 거래는 최소한 손해로 끝나지 않습니다.
+    </p>
+    <p class="lead" style="margin:8px 0 0">
+      증권사마다 메뉴 이름이 다릅니다(스탑로스 · 자동감시주문 · 조건부주문 등).
+      쓰시는 증권사에서 <b>매수 포지션의 자동 손절</b>을 어떤 이름으로 제공하는지 한 번 확인해 두세요.
+    </p>
+  </div>
+
+  <h2>4. 용어 해설</h2>
+
+  <h3>미국 섹터 신호 &mdash; &ldquo;바람이 부는가&rdquo;</h3>
+  <p class="lead">
+    미국 섹터의 상태입니다. 이 전략은 <b>미국에서 강한 섹터가 다음날 한국의 같은 섹터로 이어진다</b>는
+    전제 위에 있습니다. 그래서 미국 쪽이 <b>하락세</b>면 한국 종목이 아무리 좋아 보여도 진입하지 않습니다.
+  </p>
+  <div class="legend">
+    <span><i class="swatch" style="border-color:var(--up)"></i>주가</span>
+    <span><i class="swatch" style="border-color:currentColor;opacity:.45;border-top-style:dashed"></i>20일선</span>
+    <span><i class="swatch" style="border-color:currentColor;opacity:.28;border-top-style:dotted"></i>60일선</span>
+  </div>
+  <div class="dgrid">
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,100.6 44.3,98.8 74.6,97.0 104.9,94.2 135.1,91.4 165.4,87.8 195.7,84.1 226.0,80.4" fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="1 3"/><polyline points="14.0,95.1 44.3,91.4 74.6,87.8 104.9,82.2 135.1,75.8 165.4,69.4 195.7,62.0 226.0,55.6" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,87.8 44.3,80.4 74.6,76.7 104.9,66.6 135.1,58.3 165.4,51.0 195.7,41.8 226.0,34.4" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">20·60일선 위, 상승</text></svg>
+      <div class="dg-t">강한 상승</div>
+      <div class="dg-d">모멘텀 <b>상위 30%</b>이면서 S&amp;P500보다 잘 가고, 주가가 20일선 위·20일선이 60일선 위인 정배열 상태입니다. 가장 강한 신호입니다.</div>
+      <div class="dg-rule">상위 30% + 상대강도 &gt; 0 + 정배열</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,97.0 44.3,97.0 74.6,96.0 104.9,95.1 135.1,94.2 165.4,93.3 195.7,92.4 226.0,91.4" fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="1 3"/><polyline points="14.0,89.6 44.3,88.7 74.6,87.8 104.9,85.9 135.1,84.1 165.4,82.2 195.7,80.4 226.0,78.6" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,97.0 44.3,93.3 74.6,98.8 104.9,95.1 135.1,84.1 165.4,74.9 195.7,69.4 226.0,63.8" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">20일선 상향 돌파</text></svg>
+      <div class="dg-t">상승 전환</div>
+      <div class="dg-d">최근 5거래일 안에 <b>20일선을 아래에서 위로 뚫은</b> 상태입니다. 추세가 막 바뀌는 초입이라 강한 상승보다 이르지만, 그만큼 값이 쌉니다.</div>
+      <div class="dg-rule">최근 5일 내 20일선 상향 돌파</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,87.8 44.3,87.8 74.6,86.8 104.9,86.8 135.1,85.9 165.4,85.9 195.7,85.0 226.0,85.0" fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="1 3"/><polyline points="14.0,80.4 44.3,79.5 74.6,78.6 104.9,77.6 135.1,76.7 165.4,76.7 195.7,75.8 226.0,74.9" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,73.0 44.3,67.5 74.6,74.9 104.9,69.4 135.1,76.7 165.4,71.2 195.7,74.9 226.0,69.4" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">위에 있으나 방향 없음</text></svg>
+      <div class="dg-t">중립</div>
+      <div class="dg-d">20일선 위에 있지만 상위권도 아니고 방금 돌파한 것도 아닙니다. 진입을 막지는 않지만 우선순위는 낮습니다.</div>
+      <div class="dg-rule">20일선 위, 그 외 조건 미충족</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,69.4 44.3,70.3 74.6,71.2 104.9,73.0 135.1,74.9 165.4,76.7 195.7,78.6 226.0,80.4" fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="1 3"/><polyline points="14.0,62.0 44.3,63.8 74.6,66.6 104.9,69.4 135.1,73.0 165.4,76.7 195.7,80.4 226.0,84.1" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,52.8 44.3,60.2 74.6,65.7 104.9,73.0 135.1,69.4 165.4,80.4 195.7,87.8 226.0,95.1" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">20일선 아래</text></svg>
+      <div class="dg-t">하락세</div>
+      <div class="dg-d">주가가 <b>20일선 아래</b>입니다. 이 섹터에 연결된 한국 종목은 <b>전부 관망</b> 처리됩니다. 예외 없습니다.</div>
+      <div class="dg-rule">종가 &lt; 20일선</div>
+    </div>
+
+  </div>
+
+  <h3>국내 종목 국면 &mdash; &ldquo;어떻게 살 것인가&rdquo;</h3>
+  <p class="lead">
+    한국 ETF가 <b>20일선에서 얼마나 떨어져 있는지</b>(이격도)로 나눕니다.
+    <b>추세가 강할수록 지지선에서 멀어지므로</b>, &ldquo;강한 추세&rdquo;와 &ldquo;지지선 근처&rdquo;를 동시에 요구하면
+    오히려 추세가 식은 종목만 남습니다. 그래서 거리에 따라 <b>사는 방법 자체를 바꿉니다.</b>
+  </p>
+  <div class="legend">
+    <span><i class="swatch" style="border-color:var(--up)"></i>주가</span>
+    <span><i class="swatch" style="border-color:currentColor;opacity:.45;border-top-style:dashed"></i>20일선</span>
+    <span><i class="swatch" style="border-color:currentColor;opacity:.28;border-top-style:dotted"></i>60일선</span>
+    <span><i class="swatch" style="border-color:var(--ok);border-top-style:dashed"></i>진입가</span>
+    <span><i class="swatch" style="border-color:var(--down);border-top-style:dotted"></i>손절가</span>
+  </div>
+  <div class="dgrid">
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="14" y="67.5" width="212" height="5.5" fill="currentColor" opacity=".08"/><polyline points="14.0,80.4 44.3,76.7 74.6,73.0 104.9,69.4 135.1,67.5 165.4,68.4 195.7,70.3 226.0,72.1" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><line x1="14" y1="73.0" x2="226" y2="73.0" stroke="var(--ok)" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="220" cy="73.0" r="3.4" fill="var(--ok)"/><text x="16" y="69.0" font-size="9.5" fill="var(--ok)" font-weight="600">진입</text><line x1="14" y1="85.0" x2="226" y2="85.0" stroke="var(--down)" stroke-width="1.5" stroke-dasharray="2 3"/><text x="16" y="96.0" font-size="9.5" fill="var(--down)" font-weight="600">손절</text><polyline points="14.0,58.3 44.3,49.1 74.6,41.8 104.9,39.9 135.1,47.3 165.4,58.3 195.7,67.5 226.0,71.2" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">이격 0~4%</text></svg>
+      <div class="dg-t">깊은눌림형</div>
+      <div class="dg-d">20일선 <b>바로 근처</b>입니다. 지지선까지 내려오면 사겠다는 뜻으로, <b>20일선(또는 최근 5일 저가)에 지정가</b>를 걸고 기다립니다. 목표가는 차트에 실제로 보이는 <b>저항선</b>에서 가져옵니다.</div>
+      <div class="dg-rule">이격 0~4% · 목표근거: 저항선</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><rect x="14" y="36.2" width="212" height="9.2" fill="currentColor" opacity=".08"/><polyline points="14.0,97.0 44.3,93.3 74.6,89.6 104.9,84.1 135.1,78.6 165.4,73.0 195.7,69.4 226.0,65.7" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><line x1="14" y1="45.4" x2="226" y2="45.4" stroke="var(--ok)" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="220" cy="45.4" r="3.4" fill="var(--ok)"/><text x="16" y="41.4" font-size="9.5" fill="var(--ok)" font-weight="600">진입</text><line x1="14" y1="55.6" x2="226" y2="55.6" stroke="var(--down)" stroke-width="1.5" stroke-dasharray="2 3"/><text x="16" y="66.6" font-size="9.5" fill="var(--down)" font-weight="600">손절</text><polyline points="14.0,84.1 44.3,74.9 74.6,63.8 104.9,54.6 135.1,43.6 165.4,36.2 195.7,39.9 226.0,36.2" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">이격 4~12%</text></svg>
+      <div class="dg-t">얕은눌림형</div>
+      <div class="dg-d">추세가 진행 중이라 <b>20일선이 멉니다.</b> 거기까지 기다리면 못 삽니다. 대신 <b>변동성의 절반(0.5×ATR)</b>만큼 얕게 눌릴 때 담습니다. 머리 위에 저항이 없어 목표가는 <b>변동성으로 투영</b>합니다.</div>
+      <div class="dg-rule">이격 4~12% · 목표근거: ATR 투영</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,100.6 44.3,97.0 74.6,93.3 104.9,87.8 135.1,82.2 165.4,76.7 195.7,71.2 226.0,65.7" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,85.9 44.3,76.7 74.6,65.7 104.9,52.8 135.1,41.8 165.4,32.6 195.7,25.2 226.0,23.4" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">이격 12% 초과</text></svg>
+      <div class="dg-t">과열</div>
+      <div class="dg-d">20일선에서 <b>12% 넘게</b> 벌어졌습니다. 지금 사면 조정 한 번에 손절을 맞습니다. <b>관망</b>합니다.</div>
+      <div class="dg-rule">이격 12% 초과 → 진입 없음</div>
+    </div>
+
+    <div class="dg">
+      <svg viewBox="0 0 240 132" xmlns="http://www.w3.org/2000/svg" role="img"><polyline points="14.0,65.7 44.3,67.5 74.6,69.4 104.9,73.0 135.1,76.7 165.4,80.4 195.7,84.1 226.0,87.8" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="5 3"/><polyline points="14.0,56.5 44.3,63.8 74.6,69.4 104.9,76.7 135.1,73.0 165.4,84.1 195.7,91.4 226.0,97.0" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><text x="224" y="124" text-anchor="end" font-size="10.5" fill="currentColor" opacity=".55">20일선 아래</text></svg>
+      <div class="dg-t">하락추세</div>
+      <div class="dg-d">주가가 <b>20일선 아래</b>입니다. 떨어지는 것을 싸다고 받지 않습니다. <b>관망</b>합니다.</div>
+      <div class="dg-rule">종가 &lt; 20일선 → 진입 없음</div>
+    </div>
+
+  </div>
+
+  <h3>가격과 지표</h3>
+  <div class="g-card">
+    <div class="wrapx"><table class="tbl">
+      <tr><th style="width:7.5em">용어</th><th>뜻</th></tr>
+      <tr><td><b>진입가</b></td><td>지정가 매수를 걸어둘 가격. <b>항상 전일 종가 이하</b>라 예약주문이 가능합니다.</td></tr>
+      <tr><td><b>1차 익절가</b></td><td>보유 수량의 <b>절반</b>을 파는 가격. 여기서 수익을 확정합니다.</td></tr>
+      <tr><td><b>2차 익절가</b></td><td>남은 절반의 목표. 추세가 이어지면 여기까지 따라갑니다.</td></tr>
+      <tr><td><b>손절가</b></td><td>판단이 틀렸음을 인정하는 가격. 진입가 대비 <b>-2%~-3.5%</b>로 강제됩니다.</td></tr>
+      <tr><td><b>손익비</b></td><td>(1차 익절 − 진입) ÷ (진입 − 손절). <b>1.5 이상</b>만 추천에 오릅니다.</td></tr>
+      <tr><td><b>이격도</b></td><td>주가가 20일선에서 몇 % 떨어져 있는지. 국면을 가르는 기준입니다.</td></tr>
+      <tr><td><b>ATR</b></td><td>하루에 보통 얼마나 움직이는지(평균 변동폭). 종목마다 다른 &lsquo;정상적인 흔들림&rsquo;의 크기입니다.</td></tr>
+      <tr><td><b>목표근거</b></td><td><b>저항선</b>=차트에 실제로 보이는 고점에서 가져옴. <b>ATR 투영</b>=신고가 부근이라 저항이 없어 변동성으로 추정함(추정치라는 뜻).</td></tr>
+      <tr><td><b>돌파참고선</b></td><td>최근 10일 고가. 이 위로 뚫으면 추세가 강해진다는 <b>참고 정보</b>이며 주문 가격이 아닙니다.</td></tr>
+      <tr><td><b>취소선</b></td><td>시가가 이 아래로 열리면 예약주문을 취소합니다. 손절가와 같은 값입니다.</td></tr>
+      <tr><td><b>거래대금</b></td><td>20일 평균. 작을수록 원하는 가격에 사고팔기 어렵습니다.</td></tr>
+    </table></div>
+  </div>
+
+  <h2>5. 원칙</h2>
+  <p class="lead">
+    규칙은 지켰을 때만 규칙입니다. 아래 다섯 가지는 검증으로 뒷받침되거나,
+    지키지 않았을 때 무엇이 무너지는지가 분명한 것들입니다.
+  </p>
+
+  <div class="g-card">
+    <ul class="plist">
+      <li><span class="num">1</span><div>
+        <b>손절가는 목숨처럼 지킵니다.</b><br>
+        며칠만 보유하는 전략이라 한 번의 큰 손실이 수십 번의 이익을 지웁니다.
+        손절가에 닿으면 미련 없이 정리하세요. 검증 기준으로 <b>거래의 절반 가까이가 손절로 끝납니다.</b>
+        정상입니다. 이기는 거래의 이익이 지는 거래의 손실보다 크기 때문에 전체가 남습니다.
+      </div></li>
+
+      <li><span class="num">2</span><div>
+        <b>갭상승은 쫓지 않습니다.</b><br>
+        지정가 예약은 갭상승하면 그냥 체결되지 않습니다. <b>그것이 의도된 동작입니다.</b>
+        아까워서 시장가로 사는 순간, 손절폭은 그대로인데 진입가만 높아져 손익비가 무너집니다.
+        오늘 못 산 종목은 내일 다시 후보에 오릅니다.
+      </div></li>
+
+      <li><span class="num">3</span><div>
+        <b>분할 매도합니다.</b><br>
+        1차 익절가에서 <b>절반을 팔아 수익을 확정</b>하고, 나머지로 2차를 노립니다.
+        전량을 2차까지 들고 가면 기대수익은 커지지만, 되돌림에 전부 반납하는 일이 잦습니다.
+        절반을 챙겨두면 남은 절반을 편하게 들고 있을 수 있습니다.
+      </div></li>
+
+      <li><span class="num">4</span><div>
+        <b>관망도 매매입니다.</b><br>
+        추천 0종목인 날이 드물지 않습니다. 미국 섹터가 대부분 하락세인 날에는 그것이 정답입니다.
+        이 전략은 <b>전체 시간의 약 11%만 시장에 들어가 있습니다.</b>
+        나머지 89%는 아무것도 하지 않는 것이 설계의 일부입니다.
+      </div></li>
+
+      <li><span class="num">5</span><div>
+        <b>레버리지는 쓰지 않습니다.</b><br>
+        실제로 검증했고, 위험을 같게 맞추면 어떤 방식으로도 기초 ETF를 넘지 못했습니다.
+        2배 상품에서는 손절 -3%가 <b>기초 기준 -1.5%</b>가 되어 승률이 크게 떨어지고,
+        이격도 기준도 절반이 되어 국면 분류 자체가 무너집니다.
+        레버리지는 수익을 늘리는 도구가 아니라 <b>포지션 크기를 조절하는 도구</b>일 뿐입니다.
+      </div></li>
+    </ul>
+  </div>
+
+  <h2>6. 이 시스템이 하지 않는 것</h2>
+  <p class="lead">기대를 정확히 맞추는 것이 오래 쓰는 데 더 중요합니다.</p>
+  <div class="g-card">
+    <ul class="plist">
+      <li><span class="num">·</span><div>
+        <b>단순 보유보다 더 벌지 않습니다.</b> 검증상 같은 기간을 그냥 들고 있는 것과
+        수익률이 비슷했습니다. 이 전략의 가치는 더 버는 것이 아니라,
+        <b>시장에 있는 시간을 1/9로 줄이면서 비슷한 수익</b>을 낸다는 데 있습니다.
+      </div></li>
+      <li><span class="num">·</span><div>
+        <b>미래를 맞히지 않습니다.</b> 모든 가격은 과거 시세로 계산한 기술적 참고값입니다.
+        추천이 곧 상승 예측은 아닙니다.
+      </div></li>
+      <li><span class="num">·</span><div>
+        <b>당일 시세를 쓰지 않습니다.</b> 오전 7시에는 한국 시장의 오늘 가격이 존재하지 않습니다.
+        모든 계산은 <b>전 거래일 종가 기준</b>입니다. 카드 상단의 기준일을 확인하세요.
+      </div></li>
+      <li><span class="num">·</span><div>
+        <b>뉴스로 판단하지 않습니다.</b> 섹터 이슈의 긍정/부정은 자동 분류라 문맥을 놓칠 수 있습니다.
+        읽을거리를 고르는 용도이지 매매 근거가 아닙니다.
+      </div></li>
+    </ul>
+  </div>
+
+  <div class="disc">
+    <p><b>정보 제공 목적이며 투자 권유가 아닙니다.</b> 이 페이지의 모든 가격은 과거 시세로 계산한
+    기술적 참고값이며, 미래 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은
+    전적으로 이용자 본인에게 있습니다.</p>
+    <p>데이터: FinanceDataReader · Yahoo Finance · 구글뉴스. 한국 ETF 가격은 전 거래일 종가 기준입니다.</p>
+    <p><a href="index.html">← 오늘의 리포트로 돌아가기</a></p>
+  </div>
+
+</div>
+</body>
+</html>
