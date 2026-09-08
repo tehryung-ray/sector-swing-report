@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "report_date": "2026-09-09",
- "generated_at_kst": "2026-09-09T07:33:19+09:00",
+ "generated_at_kst": "2026-09-09T07:34:23+09:00",
  "us_asof": "2026-09-08",
  "kr_asof": "2026-09-08",
  "freshness": {
@@ -926,6 +926,18 @@
      ]
     },
     {
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51Z29JamFyV21fWkZTN2xlQU53T2FLUTlaR0NocFdkSWRsZk9OSDNjQVhLNVRuV183d0RJOW5wLUllOHlOUEhhZ3RkcG9wSmRQMGRncmtkODFnOFFQMjduTDhBbllrUGxVcHVoTFkzOU5Gb2FQdmNn0gF3QVVfeXFMTnVnb0lqYXJXbV9aRlM3bGVBTndPYUtROVpHQ2hwV2RJZGxmT05IM2NBWEs1VG5XXzd3REk5bnAtSWU4eU5QSGFndGRwb3BKZFAwZGdya2Q4MWc4UVAyN25MOEFuWWtQbFVwdWhMWTM5TkZvYVB2Y2c?oc=5",
+     "published_kst": "09-08 13:49",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세",
+      "수혜"
+     ]
+    },
+    {
      "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
      "source": "CBC뉴스",
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
@@ -935,18 +947,6 @@
      "keywords": [
       "상승",
       "강세"
-     ]
-    },
-    {
-     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
-     "source": "핀포인트뉴스",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rVXR2U2JIeG8zV2VPX0piQmc1V3ZZZDVlRVNTZEFqYmp3SHYyd3ppa0U5MzNZU3ZLSnEwYnhiX09YaHpKY1c4dndWblJoVE5KNmtUR1ZHSXk3RkZyWkRFbUVGMGZkZW5tN2xHazM2eHNWNVHSAXdBVV95cUxOdWdvSWphcldtX1pGUzdsZUFOd09hS1E5WkdDaHBXZElkbGZPTkgzY0FYSzVUbldfN3dESTlucC1JZTh5TlBIYWd0ZHBvcEpkUDBkZ3JrZDgxZzhRUDI3bkw4QW5Za1BsVXB1aExZMzlORm9hUHZjZw?oc=5",
-     "published_kst": "09-08 13:48",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "강세",
-      "수혜"
      ]
     },
     {
@@ -2524,15 +2524,15 @@
      ]
     },
     {
-     "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
-     "source": "CBC뉴스",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
-     "published_kst": "09-08 09:56",
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51Z29JamFyV21fWkZTN2xlQU53T2FLUTlaR0NocFdkSWRsZk9OSDNjQVhLNVRuV183d0RJOW5wLUllOHlOUEhhZ3RkcG9wSmRQMGRncmtkODFnOFFQMjduTDhBbllrUGxVcHVoTFkzOU5Gb2FQdmNn0gF3QVVfeXFMTnVnb0lqYXJXbV9aRlM3bGVBTndPYUtROVpHQ2hwV2RJZGxmT05IM2NBWEs1VG5XXzd3REk5bnAtSWU4eU5QSGFndGRwb3BKZFAwZGdya2Q4MWc4UVAyN25MOEFuWWtQbFVwdWhMWTM5TkZvYVB2Y2c?oc=5",
+     "published_kst": "09-08 13:49",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승",
-      "강세"
+      "강세",
+      "수혜"
      ]
     }
    ],
