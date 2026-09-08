@@ -26,9 +26,9 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip
@@ -36,7 +36,7 @@ jobs:
       # OHLCV parquet 캐시. 세 데이터 소스가 모두 죽은 날의 안전망이다.
       # git 에 커밋하면 봇 커밋과 로컬 커밋이 만날 때마다 바이너리 충돌이 나서
       # 리포 밖(Actions 캐시)에 둔다. restore-keys 로 직전 실행분을 복원한다.
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: cache
           key: krcache-${{ github.run_id }}
