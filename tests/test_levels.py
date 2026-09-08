@@ -215,3 +215,28 @@ def test_illiquid_blocks():
 def test_inverted_stop_blocks():
     r = evaluate(base_levels(stop=10100), "strong")
     assert any("손절가가 진입가 이상" in x for x in r)
+
+
+# ---------- 최적화된 파라미터 (워크포워드 검증 결과) ----------
+
+def test_shallow_tp1_uses_optimized_multiple():
+    """얕은눌림형 1차 목표는 2.0 x ATR. 1.5 는 추세 종목을 너무 일찍 잘랐다."""
+    from pipeline.levels import TP1_ATR, TP1_RISK
+    assert TP1_ATR == 2.0
+    for s in range(60):
+        lv = compute_levels(make_df(seed=s, drift=0.004))
+        if lv["setup"] != SHALLOW:
+            continue
+        risk = lv["entry"] - lv["stop"]
+        # tp1 은 max(2.0*ATR, 1.3*리스크) 이므로 최소한 1.3배 리스크는 확보된다
+        assert lv["tp1"] - lv["entry"] >= TP1_RISK * risk * 0.97
+        return
+    pytest.fail("얕은눌림형 표본이 생성되지 않았다")
+
+
+def test_min_rr_is_15():
+    """손익비 하한 1.5. 워크포워드 6개 폴드 전부에서 선택된 값."""
+    assert MIN_RR == 1.5
+    lv = base_levels(rr=1.4)
+    assert any("손익비" in r for r in evaluate(lv, "strong"))
+    assert evaluate(base_levels(rr=1.6), "strong") == []

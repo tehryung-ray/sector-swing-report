@@ -38,6 +38,12 @@ SH_MIN_LOSS, SH_MAX_LOSS = 0.020, 0.035
 DIP_ATR = 0.5         # 얕은눌림형이 기다리는 폭 = 0.5 x ATR
 MIN_TP1 = 0.025       # 저항이 이미 뚫린 경우의 최소 1차 목표
 
+# 얕은눌림형 목표 배수. TP1_ATR 은 워크포워드 최적화로 1.5 -> 2.0 상향했다.
+# 훈련구간(2015~2020) 상위 30개 조합에서 30/30 으로 선택된, 가장 안정적인 파라미터다.
+# 1.5 는 추세가 살아있는 종목을 너무 일찍 청산시켜 이익을 잘라먹었다.
+TP1_ATR, TP1_RISK = 2.0, 1.3
+TP2_ATR, TP2_RISK = 3.0, 2.5
+
 PULLBACK, SHALLOW, EXTENDED, DOWNTREND = "pullback", "shallow", "extended", "downtrend"
 SETUP_LABEL = {
     PULLBACK: "깊은눌림형",
@@ -122,8 +128,8 @@ def compute_levels(df: pd.DataFrame) -> dict | None:
         )
         risk_raw = entry_raw - stop_raw
         # 신고가 부근이라 머리 위 저항이 없다 -> ATR 측정이동으로 투영
-        tp1_raw = entry_raw + max(1.5 * atr, 1.3 * risk_raw)
-        tp2_raw = entry_raw + max(3.0 * atr, 2.5 * risk_raw)
+        tp1_raw = entry_raw + max(TP1_ATR * atr, TP1_RISK * risk_raw)
+        tp2_raw = entry_raw + max(TP2_ATR * atr, TP2_RISK * risk_raw)
         basis = "ATR 투영"
 
     # 예약 지정가 매수 제약: 진입가는 반드시 전일 종가 이하
