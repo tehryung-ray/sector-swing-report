@@ -24,6 +24,7 @@ config/     미국 섹터 유니버스, 한국 ETF 매핑 (기획서 2단계 "�
 pipeline/   수집 → 랭킹 → 가격산출 → JSON
 docs/       GitHub Pages 루트. JSON을 읽어 렌더하는 정적 페이지
 cache/      OHLCV parquet. 데이터 소스가 죽어도 리포트가 나오게 하는 안전망
+            (git 미추적 - CI 에서는 actions/cache 가 보관)
 ```
 
 ## 알아둘 것

@@ -58,7 +58,7 @@ sector_invest/
 │  ├─ levels.py                     # 지지/저항/진입/익절/손절 (기획서 3단계)
 │  ├─ gates.py                      # 관망 판정 필터
 │  └─ render.py                     # JSON 출력
-├─ cache/                           # OHLCV parquet, 리포에 커밋
+├─ cache/                           # OHLCV parquet (git 미추적, Actions 캐시로 보관)
 ├─ docs/                            # ← GitHub Pages 루트
 │  ├─ index.html
 │  ├─ assets/{app.js, style.css}
@@ -286,6 +286,7 @@ permissions:
 | 휴장일 스킵 | `exchange_calendars` XKRX 캘린더. 판정 불가 시엔 생성하는 쪽으로 |
 | 재시도 중복 방지 | 07:50 실행은 `SKIP_IF_DONE=1`. 06:50 이 정상 생성했으면 스스로 종료 |
 | 변경 없으면 커밋 안 함 | `git diff --cached --quiet` |
+| 캐시 | `actions/cache` 로 `cache/` 보관. 리포에 커밋하지 않아 바이너리 충돌이 없다 |
 | 동시 실행 방지 | `concurrency: daily-report` |
 | 실패 알림 | GitHub가 리포 소유자에게 자동 메일 (별도 설정 불필요) |
 
