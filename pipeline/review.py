@@ -331,6 +331,40 @@ def watch_stats(reports: list[dict], kr: dict[str, pd.DataFrame], days: int = 3,
     return {"days": days, "by_reason": out}
 
 
+# 실제 기록만으로 게이트를 재검증하려면 표본이 이만큼은 쌓여야 한다.
+# 백테스트로 답이 갈린 질문(예: 과열 기준 12% vs 16%)은 실전 기록으로만 결론이 난다.
+MILESTONE_CLOSED = 100     # 종료된 거래
+MILESTONE_WATCH = 100      # 과열로 걸러진 관망 기록
+
+
+def milestone(live: list[dict], reports: list[dict]) -> dict:
+    """재검증에 필요한 표본이 얼마나 쌓였는지. 진행률을 눈에 보이게 남긴다."""
+    closed = sum(1 for t in live if t["fill"] == FILLED and not t["pending"])
+    overheat = sum(1 for rep in reports for w in rep.get("watch", [])
+                   if any("과열" in r for r in (w.get("reasons") or [])))
+    days = len(reports)
+    # 하루 평균 생산량으로 남은 거래일을 추정한다
+    per_day_closed = closed / days if days else 0
+    per_day_heat = overheat / days if days else 0
+    def eta(cur, target, rate):
+        if cur >= target:
+            return 0
+        return None if rate <= 0 else int(round((target - cur) / rate))
+    return {
+        "report_days": days,
+        "closed": {"current": closed, "target": MILESTONE_CLOSED,
+                   "pct": round(min(closed / MILESTONE_CLOSED, 1) * 100, 1),
+                   "eta_trading_days": eta(closed, MILESTONE_CLOSED, per_day_closed)},
+        "overheat_watch": {"current": overheat, "target": MILESTONE_WATCH,
+                           "pct": round(min(overheat / MILESTONE_WATCH, 1) * 100, 1),
+                           "eta_trading_days": eta(overheat, MILESTONE_WATCH, per_day_heat)},
+        "reached": closed >= MILESTONE_CLOSED,
+        "note": ("실제 기록만으로 게이트를 재검증할 수 있는 표본이 모였습니다."
+                 if closed >= MILESTONE_CLOSED else
+                 "표본이 모이기 전에는 백테스트 결과를 근거로 파라미터를 바꾸지 않습니다."),
+    }
+
+
 def build_review(reports: list[dict], kr: dict[str, pd.DataFrame], sig: pd.DataFrame,
                  universe: list[dict], generated_at, backfill_start: str) -> dict:
     """복기 데이터 조립. 실제 기록과 백테스트를 분리해 담는다."""
@@ -360,5 +394,6 @@ def build_review(reports: list[dict], kr: dict[str, pd.DataFrame], sig: pd.DataF
                      "note": "실제 추천 기록이 아니라 같은 로직으로 과거를 재현한 결과입니다."},
         "premise": premise_stats(kr, sig, universe),
         "watch": watch_stats(reports, kr, extra=bt_watch),
+        "milestone": milestone(live, reports),
         "rules": {"max_hold": MAX_HOLD, "half_at_tp1": HALF_AT_TP1},
     }

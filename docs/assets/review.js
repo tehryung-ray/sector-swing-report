@@ -91,8 +91,33 @@
     return t;
   }
 
+  function milestone(m) {
+    const box = el("div", "ms" + (m.reached ? " done" : ""));
+    box.appendChild(el("div", "ms-h",
+      m.reached ? "재검증 표본 확보" : "재검증까지 남은 표본"));
+    box.appendChild(el("div", "ms-s", m.note));
+    [["종료된 거래", m.closed], ["과열로 거른 관망", m.overheat_watch]].forEach(([k, v]) => {
+      const row = el("div", "ms-row");
+      const lab = el("div", "ms-lab");
+      lab.appendChild(el("span", null, k));
+      const eta = v.eta_trading_days ? " · 약 " + v.eta_trading_days + "거래일 남음" : "";
+      lab.appendChild(el("span", "r", v.current + " / " + v.target + "건" + eta));
+      row.appendChild(lab);
+      const bar = el("div", "ms-bar");
+      const fill = el("i");
+      fill.style.width = v.pct + "%";
+      bar.appendChild(fill);
+      row.appendChild(bar);
+      box.appendChild(row);
+    });
+    box.appendChild(el("div", "ms-s",
+      "리포트 " + m.report_days + "일치가 쌓였습니다."));
+    return box;
+  }
+
   function render(d) {
     $("#meta").textContent = "생성 " + d.generated_at_kst.replace("T", " ").slice(0, 16) + " KST";
+    if (d.milestone) $("#milestone").replaceChildren(milestone(d.milestone));
 
     // --- 실제 추천 기록 ---
     const L = d.live.stats;

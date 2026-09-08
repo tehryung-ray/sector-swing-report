@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "report_date": "2026-09-08",
- "generated_at_kst": "2026-09-08T18:08:42+09:00",
+ "generated_at_kst": "2026-09-08T18:24:53+09:00",
  "us_asof": "2026-09-04",
  "kr_asof": "2026-09-08",
  "freshness": {
@@ -48,7 +48,7 @@
     },
     {
      "title": "“오일쇼크 다시 오나”…美·이란 ‘중대 국면’, 국제유가 어디까지 [이슈+]",
-     "source": "ekn.kr",
+     "source": "에너지경제신문",
      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtREVKS3VPTXl3cEp2WG1Xa3N6VVhNWlVIOUlOelZQdlJNS0g5czExWHpYeUpGcDJROThBaktpOEpmUDZibHUxV3ZMMWMzT3l5UTdFUVRsbmRYZ3M?oc=5",
      "published_kst": "09-08 11:23",
      "tone": "negative",
@@ -188,15 +188,6 @@
    "signal_label": "강한 상승",
    "issues": [
     {
-     "title": "텍사스 LNG 발전+원자력 등 대미 투자, '에너지' 집중 이유는?",
-     "source": "MTN 머니투데이방송",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0QzRKZTE3N2pTNHNMRndHSUE4RmFGOTNycmUzRHN1WGpLT25tWldNQ3V1ckxOMmpZUmEzby1jNWdtS2l2WGl5SlF4U2dKMHY4cGZha1l3OGZualhlUWxkblMwOVc?oc=5",
-     "published_kst": "09-08 17:40",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
-    },
-    {
      "title": "\"러, 2040년 세계 우라늄 36% 장악…석유·가스 의존 재현 우려\"",
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xUmJoMHJaZWF0bGtuWXRQTEZ6c2xvRG5fWXV0ZUpKS3RkWFFZMWh0WVJIZ2d4T0VuR0ZJLTEwWFBDVG1lN09td1I0ZWROak0?oc=5",
@@ -206,6 +197,15 @@
      "keywords": [
       "우려"
      ]
+    },
+    {
+     "title": "텍사스 LNG 발전+원자력 등 대미 투자, '에너지' 집중 이유는?",
+     "source": "MTN 머니투데이방송",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0QzRKZTE3N2pTNHNMRndHSUE4RmFGOTNycmUzRHN1WGpLT25tWldNQ3V1ckxOMmpZUmEzby1jNWdtS2l2WGl5SlF4U2dKMHY4cGZha1l3OGZualhlUWxkblMwOVc?oc=5",
+     "published_kst": "09-08 17:40",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "특징주, 현대건설-원자력발전 테마 상승세에 5.75% ↑",
@@ -922,7 +922,7 @@
     },
     {
      "title": "울산 배터리 스타트업 리볼틱스, 재사용전지 안전성검사기관 지정",
-     "source": "ksilbo.co.kr",
+     "source": "경상일보",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1wQUwzb2tjeXlqNDFOb0ZoUXVGLWpSenBsYmZyMUY5RnZ2bTJYci1zTmdwd0J2RlFjM1NkamdyMUpKYVB3aVJ3Y0wzNkZxeTl3aHJLbkJ6TzRhY1RXa1NKOVpHaVc2R3I0Qjl0aA?oc=5",
      "published_kst": "09-08 14:23",
      "tone": "neutral",
@@ -942,7 +942,7 @@
     },
     {
      "title": "[서울데이터랩] 코스닥, 장 초반 826.46 상승 출발…반도체 장비·2차전지 강세",
-     "source": "seoul.co.kr",
+     "source": "서울신문",
      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8zTW9DMDFwUjYzVnh0Y0dUem4xaUhiMm93b21CdlRxYTQxYjJ2dnJRNVp0eEF0ejduMlItU0NkZG1hV1ZMUkh1MkpnQWdNREtwTlEwajlUb0c2OG5NRUUwM3JkZFYwMWZESnprR2ZwaEEzVWZ0MTZ3cERPejlrZw?oc=5",
      "published_kst": "09-08 09:43",
      "tone": "positive",
@@ -987,14 +987,61 @@
    "rank": 15,
    "signal": "weak",
    "signal_label": "하락세",
-   "issues": [],
+   "issues": [
+    {
+     "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
+     "source": "CBC뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
+     "published_kst": "09-08 09:56",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "상승",
+      "강세"
+     ]
+    },
+    {
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rVXR2U2JIeG8zV2VPX0piQmc1V3ZZZDVlRVNTZEFqYmp3SHYyd3ppa0U5MzNZU3ZLSnEwYnhiX09YaHpKY1c4dndWblJoVE5KNmtUR1ZHSXk3RkZyWkRFbUVGMGZkZW5tN2xHazM2eHNWNVHSAXdBVV95cUxOdWdvSWphcldtX1pGUzdsZUFOd09hS1E5WkdDaHBXZElkbGZPTkgzY0FYSzVUbldfN3dESTlucC1JZTh5TlBIYWd0ZHBvcEpkUDBkZ3JrZDgxZzhRUDI3bkw4QW5Za1BsVXB1aExZMzlORm9hUHZjZw?oc=5",
+     "published_kst": "09-08 13:48",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세",
+      "수혜"
+     ]
+    },
+    {
+     "title": "환율 하락에 항공·철강주 웃고 자동차·조선주 울고",
+     "source": "경향신문",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MekRZLWM3MTViVHFWOEo4M2gyZE5JSnVfUkZpYmg3UEo1ZDBwdWdMbmVGNlpHQjhPbEdfMG4yWjNJa1dfNkdZT205WWVBd3VubUJuNHYxbFNSQdIBX0FVX3lxTE9YbWlpVmpsQmQ5YkJZRmRxTVprYlR1ck5xSmFRRWVRUnlzM2s4QjhxejZUcXQzS25qaTFrZnU1cWVUU1RRT000T0UtNGRSakdJUW1YTy1sREdmbWxUS3FJ?oc=5",
+     "published_kst": "09-06 16:07",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "하락"
+     ]
+    },
+    {
+     "title": "[EBN 데이터센터] 조선주 온기 이어간 7일...HD현대중공업 강세, 친환경 선박 기대와 중국 추격은 부담",
+     "source": "ebn.co.kr",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VaWxuRGhEbHhuNTlUVTB0QTJBclpIczlrY2VRQllSMUEzaGtVVjM5RmRsV2JqbHJESjktNzc1WElaaWVFMnNJcjNsSHdFeVpzUllBY1hMU3VhY2d0WUwxaXhod0g3cnc0?oc=5",
+     "published_kst": "09-07 15:47",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세"
+     ]
+    }
+   ],
    "issue_summary": {
-    "count": 0,
-    "positive": 0,
-    "negative": 0,
+    "count": 4,
+    "positive": 3,
+    "negative": 1,
     "neutral": 0,
-    "tilt": "neutral",
-    "tilt_label": "중립",
+    "tilt": "positive",
+    "tilt_label": "긍정",
     "classifier": "keyword"
    }
   },
@@ -1045,6 +1092,15 @@
      ]
     },
     {
+     "title": "AWS는 학생들을 위한 클라우드 컴퓨팅 및 AI 교육에 5억 달러 이상을 투자합니다.",
+     "source": "Vietnam.vn",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa2NkSnNfQ2RvTnp0bThXcnZkZ2tETnlNeUxWdkJfWTlYc3BRamhxM3J1TVIyTndpT1h1MnhpVVF5RHdCZ25iVzFWbUg1d1V5TVFqVmZidDJxejVaNXFQV2RtWjFsTkJjRTZESFFxNUdOajFSaHRPQlRQbXJ1T3pUSWtmMGVuWVczdDZTWFk4SWJFZWFDbTAzalJtRXRzNW85Q25j?oc=5",
+     "published_kst": "09-08 15:59",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
+    },
+    {
      "title": "모건스탠리 리포트 분석: 추론 시대 개막, 자금이 하드웨어에서 소프트웨어 계층으로 이동할 전망이다",
      "source": "深潮TechFlow",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zYnVGTk40QlhCSGZqOTNKS2RMVXlJN0ZjRUpjV1hCTzB2T01CT05oc0lhMXVIdFFhZi1TanBac2ZpVDQxTVA5cVUweDZYR3E4Mi1wVVpuaWVRbFpX?oc=5",
@@ -1052,24 +1108,13 @@
      "tone": "neutral",
      "tone_label": "중립",
      "keywords": []
-    },
-    {
-     "title": "클라우드 비용 누수 막는 'AI 클라우드 비용 최적화'...시장 연평균 20.4% 성장",
-     "source": "지티티코리아",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1reXRfQzIxcF9KaWk5dkFtaXc1dlFxc0JPTVBQWEwzTEFvZDdueFlpdUdtbGQzbjhZOVd3ZmNiMVVEMjZURVNUZnMyOUhEbi0zX1BsSVZSV2gyWm9saGdhc3Zod1V6bU45TlE?oc=5",
-     "published_kst": "09-08 00:00",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "성장"
-     ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 3,
     "negative": 0,
-    "neutral": 1,
+    "neutral": 2,
     "tilt": "positive",
     "tilt_label": "긍정",
     "classifier": "keyword"
@@ -1242,15 +1287,6 @@
    },
    "issues": [
     {
-     "title": "텍사스 LNG 발전+원자력 등 대미 투자, '에너지' 집중 이유는?",
-     "source": "MTN 머니투데이방송",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0QzRKZTE3N2pTNHNMRndHSUE4RmFGOTNycmUzRHN1WGpLT25tWldNQ3V1ckxOMmpZUmEzby1jNWdtS2l2WGl5SlF4U2dKMHY4cGZha1l3OGZualhlUWxkblMwOVc?oc=5",
-     "published_kst": "09-08 17:40",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
-    },
-    {
      "title": "\"러, 2040년 세계 우라늄 36% 장악…석유·가스 의존 재현 우려\"",
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xUmJoMHJaZWF0bGtuWXRQTEZ6c2xvRG5fWXV0ZUpKS3RkWFFZMWh0WVJIZ2d4T0VuR0ZJLTEwWFBDVG1lN09td1I0ZWROak0?oc=5",
@@ -1260,6 +1296,15 @@
      "keywords": [
       "우려"
      ]
+    },
+    {
+     "title": "텍사스 LNG 발전+원자력 등 대미 투자, '에너지' 집중 이유는?",
+     "source": "MTN 머니투데이방송",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0QzRKZTE3N2pTNHNMRndHSUE4RmFGOTNycmUzRHN1WGpLT25tWldNQ3V1ckxOMmpZUmEzby1jNWdtS2l2WGl5SlF4U2dKMHY4cGZha1l3OGZualhlUWxkblMwOVc?oc=5",
+     "published_kst": "09-08 17:40",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "특징주, 현대건설-원자력발전 테마 상승세에 5.75% ↑",
@@ -2253,7 +2298,7 @@
     },
     {
      "title": "울산 배터리 스타트업 리볼틱스, 재사용전지 안전성검사기관 지정",
-     "source": "ksilbo.co.kr",
+     "source": "경상일보",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1wQUwzb2tjeXlqNDFOb0ZoUXVGLWpSenBsYmZyMUY5RnZ2bTJYci1zTmdwd0J2RlFjM1NkamdyMUpKYVB3aVJ3Y0wzNkZxeTl3aHJLbkJ6TzRhY1RXa1NKOVpHaVc2R3I0Qjl0aA?oc=5",
      "published_kst": "09-08 14:23",
      "tone": "neutral",
@@ -2340,7 +2385,7 @@
     },
     {
      "title": "울산 배터리 스타트업 리볼틱스, 재사용전지 안전성검사기관 지정",
-     "source": "ksilbo.co.kr",
+     "source": "경상일보",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1wQUwzb2tjeXlqNDFOb0ZoUXVGLWpSenBsYmZyMUY5RnZ2bTJYci1zTmdwd0J2RlFjM1NkamdyMUpKYVB3aVJ3Y0wzNkZxeTl3aHJLbkJ6TzRhY1RXa1NKOVpHaVc2R3I0Qjl0aA?oc=5",
      "published_kst": "09-08 14:23",
      "tone": "neutral",
@@ -2405,15 +2450,51 @@
    "signal": "weak",
    "signal_label": "하락세",
    "issue_summary": {
-    "count": 0,
-    "positive": 0,
-    "negative": 0,
+    "count": 4,
+    "positive": 3,
+    "negative": 1,
     "neutral": 0,
-    "tilt": "neutral",
-    "tilt_label": "중립",
+    "tilt": "positive",
+    "tilt_label": "긍정",
     "classifier": "keyword"
    },
-   "issues": [],
+   "issues": [
+    {
+     "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
+     "source": "CBC뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
+     "published_kst": "09-08 09:56",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "상승",
+      "강세"
+     ]
+    },
+    {
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rVXR2U2JIeG8zV2VPX0piQmc1V3ZZZDVlRVNTZEFqYmp3SHYyd3ppa0U5MzNZU3ZLSnEwYnhiX09YaHpKY1c4dndWblJoVE5KNmtUR1ZHSXk3RkZyWkRFbUVGMGZkZW5tN2xHazM2eHNWNVHSAXdBVV95cUxOdWdvSWphcldtX1pGUzdsZUFOd09hS1E5WkdDaHBXZElkbGZPTkgzY0FYSzVUbldfN3dESTlucC1JZTh5TlBIYWd0ZHBvcEpkUDBkZ3JrZDgxZzhRUDI3bkw4QW5Za1BsVXB1aExZMzlORm9hUHZjZw?oc=5",
+     "published_kst": "09-08 13:48",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세",
+      "수혜"
+     ]
+    },
+    {
+     "title": "환율 하락에 항공·철강주 웃고 자동차·조선주 울고",
+     "source": "경향신문",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MekRZLWM3MTViVHFWOEo4M2gyZE5JSnVfUkZpYmg3UEo1ZDBwdWdMbmVGNlpHQjhPbEdfMG4yWjNJa1dfNkdZT205WWVBd3VubUJuNHYxbFNSQdIBX0FVX3lxTE9YbWlpVmpsQmQ5YkJZRmRxTVprYlR1ck5xSmFRRWVRUnlzM2s4QjhxejZUcXQzS25qaTFrZnU1cWVUU1RRT000T0UtNGRSakdJUW1YTy1sREdmbWxUS3FJ?oc=5",
+     "published_kst": "09-06 16:07",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "하락"
+     ]
+    }
+   ],
    "source": "fdr",
    "setup": "downtrend",
    "setup_label": "하락추세",
@@ -2460,15 +2541,51 @@
    "signal": "weak",
    "signal_label": "하락세",
    "issue_summary": {
-    "count": 0,
-    "positive": 0,
-    "negative": 0,
+    "count": 4,
+    "positive": 3,
+    "negative": 1,
     "neutral": 0,
-    "tilt": "neutral",
-    "tilt_label": "중립",
+    "tilt": "positive",
+    "tilt_label": "긍정",
     "classifier": "keyword"
    },
-   "issues": [],
+   "issues": [
+    {
+     "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
+     "source": "CBC뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
+     "published_kst": "09-08 09:56",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "상승",
+      "강세"
+     ]
+    },
+    {
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rVXR2U2JIeG8zV2VPX0piQmc1V3ZZZDVlRVNTZEFqYmp3SHYyd3ppa0U5MzNZU3ZLSnEwYnhiX09YaHpKY1c4dndWblJoVE5KNmtUR1ZHSXk3RkZyWkRFbUVGMGZkZW5tN2xHazM2eHNWNVHSAXdBVV95cUxOdWdvSWphcldtX1pGUzdsZUFOd09hS1E5WkdDaHBXZElkbGZPTkgzY0FYSzVUbldfN3dESTlucC1JZTh5TlBIYWd0ZHBvcEpkUDBkZ3JrZDgxZzhRUDI3bkw4QW5Za1BsVXB1aExZMzlORm9hUHZjZw?oc=5",
+     "published_kst": "09-08 13:48",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세",
+      "수혜"
+     ]
+    },
+    {
+     "title": "환율 하락에 항공·철강주 웃고 자동차·조선주 울고",
+     "source": "경향신문",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MekRZLWM3MTViVHFWOEo4M2gyZE5JSnVfUkZpYmg3UEo1ZDBwdWdMbmVGNlpHQjhPbEdfMG4yWjNJa1dfNkdZT205WWVBd3VubUJuNHYxbFNSQdIBX0FVX3lxTE9YbWlpVmpsQmQ5YkJZRmRxTVprYlR1ck5xSmFRRWVRUnlzM2s4QjhxejZUcXQzS25qaTFrZnU1cWVUU1RRT000T0UtNGRSakdJUW1YTy1sREdmbWxUS3FJ?oc=5",
+     "published_kst": "09-06 16:07",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "하락"
+     ]
+    }
+   ],
    "source": "fdr",
    "setup": "downtrend",
    "setup_label": "하락추세",
@@ -2515,15 +2632,51 @@
    "signal": "weak",
    "signal_label": "하락세",
    "issue_summary": {
-    "count": 0,
-    "positive": 0,
-    "negative": 0,
+    "count": 4,
+    "positive": 3,
+    "negative": 1,
     "neutral": 0,
-    "tilt": "neutral",
-    "tilt_label": "중립",
+    "tilt": "positive",
+    "tilt_label": "긍정",
     "classifier": "keyword"
    },
-   "issues": [],
+   "issues": [
+    {
+     "title": "삼성중공업 대한조선 한화오션 장중 동반 상승…조선주 강세",
+     "source": "CBC뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNdmIwblJnbWQtNXZfaHRJT3N0ZFhnV3BiaS1sbWpDTDZTMEJDYk52SEVZX0s2OF93c2U0WFZnZHRJeVI1UF9oN0FKSklfSlQxSkFReGU5NXhUYVYzb2RHQU1GVlU0MFNM?oc=5",
+     "published_kst": "09-08 09:56",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "상승",
+      "강세"
+     ]
+    },
+    {
+     "title": "HJ중공업·한화오션 강세… 조선주, 글로벌 전력·해양 인프라 수혜 지속",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rVXR2U2JIeG8zV2VPX0piQmc1V3ZZZDVlRVNTZEFqYmp3SHYyd3ppa0U5MzNZU3ZLSnEwYnhiX09YaHpKY1c4dndWblJoVE5KNmtUR1ZHSXk3RkZyWkRFbUVGMGZkZW5tN2xHazM2eHNWNVHSAXdBVV95cUxOdWdvSWphcldtX1pGUzdsZUFOd09hS1E5WkdDaHBXZElkbGZPTkgzY0FYSzVUbldfN3dESTlucC1JZTh5TlBIYWd0ZHBvcEpkUDBkZ3JrZDgxZzhRUDI3bkw4QW5Za1BsVXB1aExZMzlORm9hUHZjZw?oc=5",
+     "published_kst": "09-08 13:48",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "강세",
+      "수혜"
+     ]
+    },
+    {
+     "title": "환율 하락에 항공·철강주 웃고 자동차·조선주 울고",
+     "source": "경향신문",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MekRZLWM3MTViVHFWOEo4M2gyZE5JSnVfUkZpYmg3UEo1ZDBwdWdMbmVGNlpHQjhPbEdfMG4yWjNJa1dfNkdZT205WWVBd3VubUJuNHYxbFNSQdIBX0FVX3lxTE9YbWlpVmpsQmQ5YkJZRmRxTVprYlR1ck5xSmFRRWVRUnlzM2s4QjhxejZUcXQzS25qaTFrZnU1cWVUU1RRT000T0UtNGRSakdJUW1YTy1sREdmbWxUS3FJ?oc=5",
+     "published_kst": "09-06 16:07",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "하락"
+     ]
+    }
+   ],
    "source": "fdr",
    "setup": "shallow",
    "setup_label": "얕은눌림형",

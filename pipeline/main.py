@@ -218,6 +218,13 @@ def main() -> int:
         ls, bs = rev["live"]["stats"], rev["backtest"]["stats"]
         log(f"      실제 {ls.get('n',0)}건(체결 {ls.get('filled',0)}, 보유중 {ls.get('open',0)})"
             f" / 백테스트 {bs.get('n',0)}건")
+        m = rev["milestone"]
+        c, o = m["closed"], m["overheat_watch"]
+        eta = f", 남은 거래일 약 {c['eta_trading_days']}일" if c["eta_trading_days"] else ""
+        log(f"      표본: 종료 거래 {c['current']}/{c['target']}건 ({c['pct']}%{eta})"
+            f" · 과열 관망 {o['current']}/{o['target']}건")
+        if m["reached"]:
+            log("      *** 재검증 표본 확보. 실제 기록으로 게이트를 다시 검증할 수 있습니다. ***")
         log(f"      대전제: 강한상승-하락세 {rev['premise']['strong_minus_weak']:+.3f}%p"
             f" ({'성립' if rev['premise']['holds'] else '불성립'})")
         log("      -> docs/data/review.json")

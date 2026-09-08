@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at_kst": "2026-09-08T18:08:42+09:00",
+ "generated_at_kst": "2026-09-08T18:24:53+09:00",
  "live": {
   "trades": [
    {
@@ -11081,6 +11081,23 @@
     "up_rate": 54.9
    }
   ]
+ },
+ "milestone": {
+  "report_days": 1,
+  "closed": {
+   "current": 0,
+   "target": 100,
+   "pct": 0.0,
+   "eta_trading_days": null
+  },
+  "overheat_watch": {
+   "current": 0,
+   "target": 100,
+   "pct": 0.0,
+   "eta_trading_days": null
+  },
+  "reached": false,
+  "note": "표본이 모이기 전에는 백테스트 결과를 근거로 파라미터를 바꾸지 않습니다."
  },
  "rules": {
   "max_hold": 5,
