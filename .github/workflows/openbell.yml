@@ -1,0 +1,44 @@
+name: 개장 점검
+
+# UTC 00:10 = KST 09:10. 한국장은 09:00 개장이므로 시가가 확정된 직후다.
+# KST 월~금에 돌아야 하므로 UTC 요일도 그대로 1-5 이다
+# (00:10 UTC 는 같은 날 09:10 KST 라 날짜가 넘어가지 않는다).
+on:
+  schedule:
+    - cron: '10 0 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '전송하지 않고 결과만 확인'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: openbell
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 개장 점검 및 알림
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python -m pipeline.check_open
