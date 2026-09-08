@@ -21,11 +21,35 @@ def log(m: str) -> None:
     print(m, flush=True)
 
 
+TEST_MESSAGE = "\n".join([
+    "[테스트] 개장 점검 알림 연결 확인",
+    "",
+    "이 메시지가 보이면 텔레그램 설정이 정상입니다.",
+    "실제 알림은 KST 09:10에, 손 쓸 일이 있을 때만 옵니다.",
+    "",
+    "· 시가가 취소선 아래로 열림 → 예약주문 취소",
+    "· 진입가에 닿아 체결됨 → 익절·손절 주문 걸기",
+    "",
+    "할 일이 없는 날은 아무것도 오지 않습니다.",
+])
+
+
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
+    import os
+
     now = now_kst()
     today = now.date()
     log(f"== 개장 점검 {now:%Y-%m-%d %H:%M KST} ==")
+
+    # 연결 확인용. 시세·휴장 여부와 무관하게 한 통 보내본다.
+    # 장 시작 전에는 판정할 시세가 없어 실제 경로로는 전송이 일어나지 않으므로,
+    # 텔레그램 설정이 맞는지 확인하려면 이 모드가 필요하다.
+    if os.environ.get("TEST_SEND"):
+        log("[테스트] 연결 확인 메시지 전송")
+        ok, err = send_telegram(TEST_MESSAGE)
+        log("      전송 성공" if ok else f"      전송 실패: {err}")
+        return 0 if ok else 1
 
     if is_kr_session(today) is False:
         log("   한국 증시 휴장일입니다. 종료합니다.")
@@ -74,7 +98,6 @@ def main() -> int:
     for line in msg.split("\n"):
         log(f"      {line}")
 
-    import os
     if os.environ.get("DRY_RUN"):
         log("      DRY_RUN 이라 전송하지 않았습니다.")
         return 0

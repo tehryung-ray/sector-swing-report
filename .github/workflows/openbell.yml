@@ -12,6 +12,10 @@ on:
         description: '전송하지 않고 결과만 확인'
         type: boolean
         default: false
+      test_send:
+        description: '텔레그램 연결 확인용 테스트 메시지 발송'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -41,4 +45,5 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          TEST_SEND: ${{ inputs.test_send && '1' || '' }}
         run: python -m pipeline.check_open
