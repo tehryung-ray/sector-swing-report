@@ -201,7 +201,8 @@ h3 { font-size: 14.5px; margin: 20px 0 8px; letter-spacing: -.01em; }
 .tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .tbl th, .tbl td { padding: 9px 8px; border-bottom: 1px solid var(--line2); text-align: left; }
 .tbl th { color: var(--dim); font-weight: 600; font-size: 12.5px; }
-.tbl td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.tbl td.n, .tbl th.n { text-align: right; font-variant-numeric: tabular-nums;
+                       white-space: nowrap; }
 .tbl tr:last-child td { border-bottom: 0; }
 .wrapx { overflow-x: auto; }
 
