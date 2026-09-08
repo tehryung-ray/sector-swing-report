@@ -105,12 +105,16 @@ def main() -> int:
     else:
         log("      섹터 이슈 수집")
         try:
-            issues = news_mod.collect(us_cfg["sectors"], limit=5, days=3)
+            issues, warns = news_mod.collect(us_cfg["sectors"], limit=5, days=3)
         except Exception as exc:
             log(f"      경고: 뉴스 수집 실패 ({type(exc).__name__}) - 이슈 없이 진행")
-            issues = {}
+            issues, warns = {}, []
         got = sum(1 for v in issues.values() if v["summary"]["count"])
-        log(f"      {got}/{len(us_cfg['sectors'])}개 섹터에서 이슈 확보")
+        ai = sum(1 for v in issues.values() if v["summary"]["classifier"].startswith("gemini"))
+        log(f"      {got}/{len(us_cfg['sectors'])}개 섹터에서 이슈 확보 (AI 분류 {ai}개)")
+        # 조용한 성능 저하를 막는다. 왜 사전 분류로 떨어졌는지 로그에 남긴다.
+        for w in warns:
+            log(f"      경고: Gemini 분류 실패 -> 키워드 폴백: {w}")
     for row in sectors:
         blk = issues.get(row["ticker"], {})
         row["issues"] = blk.get("items", [])

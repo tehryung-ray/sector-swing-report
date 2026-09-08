@@ -139,27 +139,42 @@ def summarize(items: list[dict]) -> dict:
     }
 
 
-def apply_llm(items: list[dict], sector_name: str) -> str:
-    """가능하면 LLM 분류로 덮어쓴다. 실제로 쓴 분류기 이름을 반환."""
-    if not items or not llm.is_enabled():
-        return "keyword"
-    res = llm.classify([i["title"] for i in items], sector_name)
-    if res is None:
-        return "keyword"
+def _relabel(items: list[dict], res: list[dict]) -> None:
     for item, r in zip(items, res):
         item["tone"] = r["tone"]
         item["tone_label"] = TONE_LABEL[r["tone"]]
         item["keywords"] = [r["reason"]] if r["reason"] else []
-    return f"gemini:{llm.model_name()}"
 
 
-def collect(sectors: list[dict], limit: int = 5, days: int = 3) -> dict[str, dict]:
-    """섹터 설정 목록 -> {ticker: {items, summary}}"""
-    out = {}
+def collect(sectors: list[dict], limit: int = 5, days: int = 3) -> tuple[dict[str, dict], list[str]]:
+    """섹터 설정 목록 -> ({ticker: {items, summary}}, 경고 메시지 목록)
+
+    뉴스를 모두 모은 뒤 LLM 분류를 한 번에 처리한다. 섹터마다 따로 호출하면
+    무료 티어 분당 제한에 걸려 뒤쪽 섹터가 조용히 사전 분류로 떨어진다.
+    """
+    fetched = []
     for s in sectors:
         kw = s.get("news_kw") or s.get("name")
-        items = fetch_sector_news(kw, limit=limit, days=days)
-        classifier = apply_llm(items, s.get("name", kw))
-        summary = summarize(items) | {"classifier": classifier}
-        out[s["ticker"]] = {"keyword": kw, "items": items, "summary": summary}
-    return out
+        fetched.append((s["ticker"], s.get("name", kw), kw,
+                        fetch_sector_news(kw, limit=limit, days=days)))
+
+    warnings: list[str] = []
+    llm_res: dict[int, list[dict]] = {}
+    if llm.is_enabled():
+        llm_res, errs = llm.classify_all([(name, [i["title"] for i in items])
+                                          for _, name, _, items in fetched])
+        warnings.extend(errs)
+
+    out = {}
+    for gi, (ticker, name, kw, items) in enumerate(fetched):
+        if gi in llm_res:
+            _relabel(items, llm_res[gi])
+            classifier = f"gemini:{llm.model_name()}"
+        else:
+            classifier = "keyword"
+        out[ticker] = {
+            "keyword": kw,
+            "items": items,
+            "summary": summarize(items) | {"classifier": classifier},
+        }
+    return out, warnings

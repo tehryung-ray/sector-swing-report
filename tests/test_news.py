@@ -56,16 +56,25 @@ def test_summarize_counts():
     assert (s["count"], s["positive"], s["negative"], s["neutral"]) == (6, 2, 1, 3)
 
 
+SECTORS = [{"ticker": "XLE", "name": "에너지", "news_kw": "국제유가"}]
+FAKE_ITEM = {"title": "원유 재고 감소", "tone": NEU, "tone_label": "중립", "keywords": []}
+
+
+def _stub_fetch(monkeypatch, items):
+    from pipeline import news
+    monkeypatch.setattr(news, "fetch_sector_news",
+                        lambda kw, limit=5, days=3: [dict(i) for i in items])
+
+
 def test_llm_disabled_without_key(monkeypatch):
     """키가 없으면 LLM 을 호출하지 않고 사전 분류를 유지한다."""
-    from pipeline import llm
-    from pipeline.news import apply_llm
+    from pipeline import llm, news
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    _stub_fetch(monkeypatch, [FAKE_ITEM])
     assert llm.is_enabled() is False
-    assert llm.classify(["아무 제목"], "반도체") is None
-    items = [{"title": "반도체 급등", "tone": NEU, "tone_label": "중립", "keywords": []}]
-    assert apply_llm(items, "반도체") == "keyword"
-    assert items[0]["tone"] == NEU
+    out, warns = news.collect(SECTORS)
+    assert out["XLE"]["summary"]["classifier"] == "keyword"
+    assert warns == []
 
 
 def test_llm_result_overrides_keyword(monkeypatch):
@@ -73,11 +82,31 @@ def test_llm_result_overrides_keyword(monkeypatch):
     from pipeline import llm, news
     monkeypatch.setattr(llm, "is_enabled", lambda: True)
     monkeypatch.setattr(llm, "model_name", lambda: "gemini-test")
-    monkeypatch.setattr(llm, "classify",
-                        lambda titles, sector: [{"tone": POS, "reason": "재고 감소는 호재"}])
-    items = [{"title": "원유 재고 감소", "tone": NEU, "tone_label": "중립", "keywords": []}]
-    assert news.apply_llm(items, "에너지") == "gemini:gemini-test"
-    assert items[0]["tone"] == POS and items[0]["keywords"] == ["재고 감소는 호재"]
+    monkeypatch.setattr(llm, "classify_all",
+                        lambda groups: ({0: [{"tone": POS, "reason": "재고 감소는 호재"}]}, []))
+    _stub_fetch(monkeypatch, [FAKE_ITEM])
+    out, warns = news.collect(SECTORS)
+    assert out["XLE"]["summary"]["classifier"] == "gemini:gemini-test"
+    it = out["XLE"]["items"][0]
+    assert it["tone"] == POS and it["keywords"] == ["재고 감소는 호재"]
+
+
+def test_llm_failure_surfaces_warning(monkeypatch):
+    """분류 실패는 조용히 넘어가지 않고 이유가 경고로 올라와야 한다."""
+    from pipeline import llm, news
+    monkeypatch.setattr(llm, "is_enabled", lambda: True)
+    monkeypatch.setattr(llm, "classify_all", lambda groups: ({}, ["HTTP 429 (에너지)"]))
+    _stub_fetch(monkeypatch, [FAKE_ITEM])
+    out, warns = news.collect(SECTORS)
+    assert out["XLE"]["summary"]["classifier"] == "keyword"
+    assert warns == ["HTTP 429 (에너지)"]
+
+
+def test_chunking_reduces_calls():
+    """18섹터를 섹터당 1회로 쏘면 분당 제한에 걸린다. 묶어서 호출 수를 줄인다."""
+    from pipeline import llm
+    calls = -(-18 // llm.CHUNK)
+    assert calls <= 4, f"18섹터에 {calls}회 호출은 분당 제한 위험"
 
 
 def test_empty_is_neutral():

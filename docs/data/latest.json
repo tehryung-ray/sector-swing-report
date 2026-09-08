@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "report_date": "2026-09-08",
- "generated_at_kst": "2026-09-08T13:59:20+09:00",
+ "generated_at_kst": "2026-09-08T14:02:50+09:00",
  "us_asof": "2026-09-04",
  "kr_asof": "2026-09-08",
  "freshness": {
@@ -18,7 +18,7 @@
   "label": "위험선호",
   "note": "S&P500이 200일선 위입니다. 정상적으로 스윙 진입을 검토할 수 있는 국면입니다."
  },
- "headline": "미국 시장에서 에너지(XLE) 섹터가 20일 +11.4%로 가장 강했습니다. 연결 종목 중에서는 HANARO 원자력iSelect 60,715원 지정가 예약을 우선 검토하세요 (얕은눌림형).",
+ "headline": "미국 시장에서 에너지(XLE) 섹터가 20일 +11.4%로 가장 강했습니다. 연결 종목 중에서는 HANARO 원자력iSelect 60,625원 지정가 예약을 우선 검토하세요 (얕은눌림형).",
  "us_sectors": [
   {
    "ticker": "XLE",
@@ -41,7 +41,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "국제유가 최고, 정유주 강세"
+      "강세"
      ]
     },
     {
@@ -52,7 +52,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "오일쇼크 우려, 유가 상승 가능성"
+      "쇼크"
      ]
     },
     {
@@ -60,10 +60,11 @@
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBSRlh2a181cXA3bjVoM0JNbGY2ZFk3NUQzRHJKcnJHbjZxaWpHYkI3SEktSXdnUlhGclZkVVNMeUt2Wkhfd2w0Z0E2bHdERWM?oc=5",
      "published_kst": "09-08 10:09",
-     "tone": "negative",
-     "tone_label": "부정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "국제유가 상승으로 물가 불안"
+      "상승",
+      "하락"
      ]
     },
     {
@@ -71,10 +72,10 @@
      "source": "글로벌이코노믹",
      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWWE5X25BUlltcUl0VEVUclhxZDhSaGwtNHQ4TUpudlkwSFVsVWZELWVoZXRkdlJrV3pZSU16ZHhQTkVwcHVzMHVQVjN6bGFOb0tXa2xyM0lxaFYxZnJCME5CbTFGMEFtVGQzbXkyLXB4RFo2SzYtXzlFU0JpbEdVRm5GcFJuRVJ2?oc=5",
      "published_kst": "09-08 09:19",
-     "tone": "negative",
-     "tone_label": "부정",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "이란 제한구역 설정, 유가 상승 요인"
+      "상승"
      ]
     },
     {
@@ -85,18 +86,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "통항량 감소, 국제유가 상승"
+      "상승"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 3,
-    "neutral": 0,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "keyword"
    }
   },
   {
@@ -117,22 +118,18 @@
      "source": "MBC 뉴스",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95YWF3djNlRzBnWnZPMFoyYllvZDJJV2FZMTIyREdrblJZTGJJUmJOMk5pZ3QtZEZsSGQ5c2Y2QTlWVmJuZ2ZtYTMzVl83cWRoSFZtU1NibkNrQXRrdXU2dXh0WGtiRmVjRTVDRkdmZHM4TTFTSFNF0gF3QVVfeXFMT0FxZmwzRmw2LU9KeHdFa1ZwZUZBYXVvX19XZUZnbVh6Mi1paTFzSVN1VlN2UVJmRTJKbVZtb3IyMHpCR2RwVG1lbFJXVU1pNTBGVjVzV0RxQ2ZwY1h4ZnI0dWRpbEhFalRXaVdmU2MtVjUxdWo5b28?oc=5",
      "published_kst": "09-08 09:26",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "김승원 법무후보 '신약 청탁 의혹' 피고발사건, 영등포경찰서 배당",
      "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUtIBYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUg?oc=5",
      "published_kst": "09-08 09:14",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "[바이오맥짚기] '반지형 혈압계' 스카이랩스 연속 上…탈모 테마 삼익제약도 급등",
@@ -142,7 +139,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "신규 기술 상장 및 급등"
+      "급등"
      ]
     },
     {
@@ -150,32 +147,28 @@
      "source": "JTBC뉴스",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1KUld1UFM5NzFOdHJjZVpNZWx6bEZ1eGV3dXhLSHViMEtpdkhadGV2Q3NsQnc4MUVwSHlNbVkzYlZMY0RaTTdYUmFBWGNwM1J5REVRMA?oc=5",
      "published_kst": "09-08 09:36",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "경찰, ‘신약 청탁 의혹’ 김승원 사건 영등포경찰서 배당",
      "source": "chosun.com",
      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVW5EU0RQcWpscnJpekNkdUVEMzBhQnNlTVd6THRsTzB0QkU3ZUp0dUdyT2NXTHBjWjhMeVY5aTZRS291c3ZldU1HNEJ3d1hfUVMzaTBGeExLUTgxMkUyYmVjcTA3Zi0yVi03aUtsdXNhd3RqSnJtZkQ2TXAzYWs1akk1Tl9MRjQzam9jbG0tM0M?oc=5",
      "published_kst": "09-08 09:22",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
     "positive": 1,
-    "negative": 4,
-    "neutral": 0,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "negative": 0,
+    "neutral": 4,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -278,7 +271,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "경쟁사 주가 급락"
+      "폭락"
      ]
     },
     {
@@ -289,7 +282,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "엔비디아 성장 기대감"
+      "성장"
      ]
     },
     {
@@ -297,11 +290,9 @@
      "source": "데이터투자",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zQW81dnhNSlZFWUROMnZlTjZwQU5fQTVXRWl0ejRmNXNrMGQwQllrUUcyQ2F6eWdrQUN0cWF2N2MtNVc4ZjVBakE3aVRraDhLTWdMUXlyT25memxnTUI1ZnBxQTZfNlRBSzFwVDI4LWVjYXc?oc=5",
      "published_kst": "09-08 11:52",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "AI 반도체 투자 확대"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "코인마켓캡 \"토큰화된 엔비디아·테슬라 주식, 암호화폐 시장 인기 거래로 부상\"",
@@ -310,9 +301,7 @@
      "published_kst": "09-08 11:23",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "암호화폐 시장 영향"
-     ]
+     "keywords": []
     },
     {
      "title": "정부 '모두의 AI' 프로젝트에 외신 평가 긍정적, 반도체 수요에 중장기 '호재'",
@@ -322,18 +311,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "AI 프로젝트 반도체 수요"
+      "호재"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 2,
     "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 2,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -354,22 +343,18 @@
      "source": "서울파이낸스",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qUkgzREpZV0NoR2pWSTBfUVBvT1RHM1VXWlRmNWJxS3ZxMmtPQjFDdWFkZVN4SXBHT1JLZkI3eXU4dFNWVkpuNVB6MktLbWM3M08yb1U1Q1RLX0p1Y2FRSUJOcGNDbjBpSkE?oc=5",
      "published_kst": "09-08 11:22",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "배당 ETF 주목"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "신한證 \"9월 '미국 배당 ETF' 최선호…에너지·헬스케어 주목\"",
      "source": "뉴스1",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE53YkVubEdKdl9kYndKd21vbGxlTG9iU0YyZ0FnLXI5bXlrQkR2eXNudUVSNmZ6dDBTNjlqTG43bHd1UFduTnp5alVlMldNVHBlYks5bVp5SDdMSG9PS2Nz0gFkQVVfeXFMUEJFMlJkR2toZkhYYWVNaVR4RWNBeE1SU2JaQ1N1NjFYTFEtSDljVjBUUDE2WVFHcjNFQ212RHdwYTdmQzN5OVQ4Yl82V0d6TkYwdmI3bGlySmlKQmtUa0kwRXdWTg?oc=5",
      "published_kst": "09-08 11:47",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "배당 ETF 주목"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "스파이어 헬스케어, 10.3억 파운드 인수 소식에 주가 3% 급등",
@@ -379,7 +364,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "인수 소식 주가 급등"
+      "급등"
      ]
     },
     {
@@ -387,11 +372,9 @@
      "source": "네이트",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9leTZpX01aOElENTRoNndveHYtWU5ZNnkwb0tQLXRyXzN2cnEtanVGMkM2a2lSQ0l6RDdFWVpuT2o0TGZKZ2JwelVjdEFaYjRsUGNFUGNiNF9wRVcxRS0zMTE2SGJvbXpxM3BYeDFlRVBTNG5Zcjh0TQ?oc=5",
      "published_kst": "09-08 13:30",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "배당 ETF 주목"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "[코스닥 루키즈 점검] 레몬헬스케어, 상장 직후 전환점…공공SI 관건",
@@ -400,19 +383,17 @@
      "published_kst": "09-07 13:58",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "단순 사실 전달"
-     ]
+     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 1,
     "negative": 0,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 4,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -436,7 +417,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "차세대 전력반도체 성장 기대"
+      "상승",
+      "성장",
+      "기대감"
      ]
     },
     {
@@ -447,7 +430,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 강세 코스피 상승"
+      "강세",
+      "돌파"
      ]
     },
     {
@@ -458,7 +442,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 수출 증가 호재"
+      "흑자",
+      "돌파",
+      "급증"
      ]
     },
     {
@@ -469,7 +455,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 훈풍 코스피 상승"
+      "강세",
+      "훈풍"
      ]
     },
     {
@@ -480,7 +467,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 훈풍 코스피 상승"
+      "강세",
+      "훈풍"
      ]
     }
    ],
@@ -491,7 +479,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    }
   },
   {
@@ -512,11 +500,9 @@
      "source": "theguru.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oWWVydVVzd3cxYnVLay1mdTc5RnR6eTNQWnhEVWNKeXZRdUhzRWdFc09odXFmU0owX19sbVdmOHFSLVpJeUdfejF1N0x5VWRwdlJTOW9VODZqRjJ0dGxMWUNQMA?oc=5",
      "published_kst": "09-08 12:41",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "AI 기업 상장 기대감"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "EU AI 규제 현실화... 빅테크, AI 데이터부터 모델·감사까지 전면 재정비",
@@ -526,7 +512,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "AI 규제 강화 부담"
+      "규제"
      ]
     },
     {
@@ -536,41 +522,35 @@
      "published_kst": "09-08 13:21",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "거래 시간 확대 단순 정보"
-     ]
+     "keywords": []
     },
     {
      "title": "“나스닥 상장 임박” 꾐에 덜컥…금감원, 비상장주식 투자 주의 촉구",
      "source": "intn.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YLWlEOF9zUmlESlItYTJhaHFISHFtNlhaSGUwX2RtMnJhMjJxVnFEOEJBOXRHOTNPbl9vdXp3OWRZZXMwTFEyTTlHVHA3UWZaS1c4NzYtNjZ2RFNPOElYM0QxVnBJemg1bXc?oc=5",
      "published_kst": "09-07 14:27",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "비상장주식 투자 주의 환기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "금리 부담 완화 기대에 나스닥 ‘꿈틀’…中·日 증시는 차별화 장세 [글로벌 레이더]",
      "source": "에너지경제신문",
      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1nelUxNmFMbzdBQnhNenl6Y2hDSHRHcnMwX0l1aEtub1Z6YVZjSGRFZkRqYTBycHBNSTk1YWVtZHA2anBNR1M4NVNZa1pIcVdmOGVvODhqNVJBdGc?oc=5",
      "published_kst": "09-07 15:43",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "금리 부담 완화 기대감"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 2,
-    "neutral": 1,
+    "positive": 0,
+    "negative": 1,
+    "neutral": 4,
     "tilt": "neutral",
     "tilt_label": "중립",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    }
   },
   {
@@ -668,10 +648,10 @@
      "source": "연합인포맥스",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
      "published_kst": "09-07 08:17",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "금리인상 우려 속 방어주 매력 부각"
+      "우려"
      ]
     },
     {
@@ -679,10 +659,10 @@
      "source": "nspna.com",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9DUkp3UTBqanpjM0lQTTVyaVp6eURUY05JV1V0QzVYU2tTX0RsTU1WZlpTSWZqQzlKcnJtbUxEd2ZtdjVFUU13enJwS2pHMkVzYnl1dEJHeWFpODBLRkhUa1VKUQ?oc=5",
      "published_kst": "09-07 17:01",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "개별 증권사 주가 등락 혼재"
+      "상승"
      ]
     },
     {
@@ -693,7 +673,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "원·달러 하락에 따른 은행주 수혜 기대"
+      "반등",
+      "수혜"
      ]
     },
     {
@@ -701,21 +682,19 @@
      "source": "한국정경신문",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wMDZPc3NfODNQMnlpNUVpQm1sam44OW8zQnc2TzNMS0pmOGk2YS1OdldtTVBxVlQ5MW5GMHBMeXd5TnRYYU53cnFpREdkZ0tNTWc?oc=5",
      "published_kst": "09-07 09:46",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "3분기 실적 시즌 겨냥 은행주 매수 추천"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 4,
-    "positive": 3,
-    "negative": 0,
+    "positive": 2,
+    "negative": 1,
     "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -870,10 +849,10 @@
      "source": "khan.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MekRZLWM3MTViVHFWOEo4M2gyZE5JSnVfUkZpYmg3UEo1ZDBwdWdMbmVGNlpHQjhPbEdfMG4yWjNJa1dfNkdZT205WWVBd3VubUJuNHYxbFNSQdIBX0FVX3lxTE9YbWlpVmpsQmQ5YkJZRmRxTVprYlR1ck5xSmFRRWVRUnlzM2s4QjhxejZUcXQzS25qaTFrZnU1cWVUU1RRT000T0UtNGRSakdJUW1YTy1sREdmbWxUS3FJ?oc=5",
      "published_kst": "09-06 16:07",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "환율 하락 수혜"
+      "하락"
      ]
     },
     {
@@ -884,18 +863,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "원화 강세 수혜"
+      "상승",
+      "강세"
      ]
     }
    ],
    "issue_summary": {
     "count": 2,
-    "positive": 2,
-    "negative": 0,
+    "positive": 1,
+    "negative": 1,
     "neutral": 0,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -998,7 +978,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "글로벌 인프라 수혜 지속"
+      "강세",
+      "수혜"
      ]
     },
     {
@@ -1009,7 +990,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "조선주 강세 지속"
+      "상승",
+      "강세"
      ]
     },
     {
@@ -1020,7 +1002,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "환율 하락으로 인한 악재"
+      "하락"
      ]
     },
     {
@@ -1031,7 +1013,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "친환경 선박 기대감"
+      "강세"
      ]
     }
    ],
@@ -1042,7 +1024,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    }
   },
   {
@@ -1066,7 +1048,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "AI, 클라우드 기술 투자 확대"
+      "개선"
      ]
     },
     {
@@ -1077,7 +1059,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "클라우드 시장 성장 지속"
+      "급증"
      ]
     },
     {
@@ -1088,7 +1070,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "보안 가이드라인 개편 우려"
+      "우려"
      ]
     },
     {
@@ -1099,7 +1081,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "AI 클라우드 비용 최적화 성장"
+      "성장"
      ]
     },
     {
@@ -1110,7 +1092,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "실적 호조에도 전망 하향"
+      "발목"
      ]
     }
    ],
@@ -1121,7 +1103,7 @@
     "neutral": 0,
     "tilt": "neutral",
     "tilt_label": "중립",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    }
   },
   {
@@ -1144,20 +1126,16 @@
      "published_kst": "09-07 16:41",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "타 섹터 기업 실적 언급"
-     ]
+     "keywords": []
     },
     {
      "title": "\"차도 덜 팔리는데 원화까지…\" 자동차주 투자자들 '울상' [종목+]",
      "source": "네이트",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8xd3F6SkpGbXNsMU10S3dlN1VKNzRERTA2MlZrV0d4ZG5wcGowZllBX0ptWm1QX2hLYmZpR0s4OVJKMl9ZT1dYbGFCdERhbDhqMExIQTVGTGYtTnNUcmUzT3VVMDJDdFFMdmxJWHJBTnhrZUI0TTBwMw?oc=5",
      "published_kst": "09-08 08:50",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "자동차 판매 부진 및 원화 약세"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "중국 완성차 수출 2026년 1000만 대 돌파 전망…기술·준법 경쟁 동시 가속",
@@ -1167,7 +1145,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "중국 완성차 수출 증가 전망"
+      "돌파"
      ]
     },
     {
@@ -1175,10 +1153,10 @@
      "source": "신화망",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5aSThiR1NMYVY5TF91Q3kwbmpDMkJkTDUtcnBndnRaSHlONjUyaEZ2eEJac3BDbkMxR0RadUlHNnotVWUwbmh3R3I0QmlTMTRGdDB3aE9BRGh4am9LdDFVSDBsZUR2X0pfb3o0aWJzNG9lZU5h?oc=5",
      "published_kst": "09-07 15:02",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "중국 완성차 수출 및 R&D 강화"
+      "부진"
      ]
     },
     {
@@ -1186,21 +1164,19 @@
      "source": "한국경제",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tai1YV3dOVkUzMmNHVFJ1enllWDMtOS0yNEozTm03a1lERlp2dmVxUDdFTC1vR3VHMnBBNTFlek8zZDNrNDNsY2QyREM3dW9XMTNSYzNKWE5tZw?oc=5",
      "published_kst": "09-06 18:29",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "현대차그룹 제조 밸류체인 강화"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 1,
     "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 3,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    }
   },
   {
@@ -1341,27 +1317,27 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 62090,
-   "entry": 60715,
-   "tp1": 64830,
-   "tp2": 68945,
-   "stop": 58595,
-   "tp1_pct": 6.78,
-   "tp2_pct": 13.56,
+   "last_close": 62000,
+   "entry": 60625,
+   "tp1": 64740,
+   "tp2": 68855,
+   "stop": 58510,
+   "tp1_pct": 6.79,
+   "tp2_pct": 13.58,
    "stop_pct": -3.49,
-   "rr": 1.94,
-   "cancel_below": 58595,
+   "rr": 1.95,
+   "cancel_below": 58510,
    "breakout_ref": 63745,
-   "entry_vs_last_pct": -2.21,
-   "ext_pct": 6.4,
+   "entry_vs_last_pct": -2.22,
+   "ext_pct": 6.25,
    "atr_pct": 4.42,
    "ma20": 58355,
-   "ma60": 59505,
+   "ma60": 59500,
    "swing_low": 52635,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 100.9,
+   "turnover_eok": 101.0,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/434730/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=434730",
@@ -1378,12 +1354,12 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 2,
     "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 2,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1394,7 +1370,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "경쟁사 주가 급락"
+      "폭락"
      ]
     },
     {
@@ -1405,7 +1381,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "엔비디아 성장 기대감"
+      "성장"
      ]
     },
     {
@@ -1413,11 +1389,9 @@
      "source": "데이터투자",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zQW81dnhNSlZFWUROMnZlTjZwQU5fQTVXRWl0ejRmNXNrMGQwQllrUUcyQ2F6eWdrQUN0cWF2N2MtNVc4ZjVBakE3aVRraDhLTWdMUXlyT25memxnTUI1ZnBxQTZfNlRBSzFwVDI4LWVjYXc?oc=5",
      "published_kst": "09-08 11:52",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "AI 반도체 투자 확대"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     }
    ],
    "source": "fdr",
@@ -1426,27 +1400,27 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 41970,
-   "entry": 40960,
-   "tp1": 43980,
-   "tp2": 47000,
-   "stop": 39535,
-   "tp1_pct": 7.37,
-   "tp2_pct": 14.75,
-   "stop_pct": -3.48,
+   "last_close": 41845,
+   "entry": 40835,
+   "tp1": 43855,
+   "tp2": 46875,
+   "stop": 39410,
+   "tp1_pct": 7.4,
+   "tp2_pct": 14.79,
+   "stop_pct": -3.49,
    "rr": 2.12,
-   "cancel_below": 39535,
+   "cancel_below": 39410,
    "breakout_ref": 42530,
    "entry_vs_last_pct": -2.41,
-   "ext_pct": 7.78,
-   "atr_pct": 4.8,
-   "ma20": 38940,
-   "ma60": 43725,
+   "ext_pct": 7.47,
+   "atr_pct": 4.81,
+   "ma20": 38935,
+   "ma60": 43720,
    "swing_low": 33500,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1800.9,
+   "turnover_eok": 1801.3,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/395160/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=395160",
@@ -1463,12 +1437,12 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 2,
-    "neutral": 1,
+    "positive": 0,
+    "negative": 1,
+    "neutral": 4,
     "tilt": "neutral",
     "tilt_label": "중립",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1476,11 +1450,9 @@
      "source": "theguru.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oWWVydVVzd3cxYnVLay1mdTc5RnR6eTNQWnhEVWNKeXZRdUhzRWdFc09odXFmU0owX19sbVdmOHFSLVpJeUdfejF1N0x5VWRwdlJTOW9VODZqRjJ0dGxMWUNQMA?oc=5",
      "published_kst": "09-08 12:41",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "AI 기업 상장 기대감"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "EU AI 규제 현실화... 빅테크, AI 데이터부터 모델·감사까지 전면 재정비",
@@ -1490,7 +1462,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "AI 규제 강화 부담"
+      "규제"
      ]
     },
     {
@@ -1500,9 +1472,7 @@
      "published_kst": "09-08 13:21",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "거래 시간 확대 단순 정보"
-     ]
+     "keywords": []
     }
    ],
    "source": "fdr",
@@ -1511,27 +1481,27 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 143350,
-   "entry": 140185,
-   "tp1": 149675,
-   "tp2": 159165,
-   "stop": 135285,
-   "tp1_pct": 6.77,
-   "tp2_pct": 13.54,
+   "last_close": 143015,
+   "entry": 139850,
+   "tp1": 149340,
+   "tp2": 158830,
+   "stop": 134960,
+   "tp1_pct": 6.79,
+   "tp2_pct": 13.57,
    "stop_pct": -3.5,
    "rr": 1.94,
-   "cancel_below": 135285,
+   "cancel_below": 134960,
    "breakout_ref": 145300,
    "entry_vs_last_pct": -2.21,
-   "ext_pct": 6.45,
-   "atr_pct": 4.41,
-   "ma20": 134665,
-   "ma60": 148840,
+   "ext_pct": 6.21,
+   "atr_pct": 4.42,
+   "ma20": 134650,
+   "ma60": 148835,
    "swing_low": 117100,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 539.9,
+   "turnover_eok": 540.2,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
@@ -1548,12 +1518,12 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 4,
-    "positive": 3,
-    "negative": 0,
+    "positive": 2,
+    "negative": 1,
     "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1561,10 +1531,10 @@
      "source": "연합인포맥스",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
      "published_kst": "09-07 08:17",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "금리인상 우려 속 방어주 매력 부각"
+      "우려"
      ]
     },
     {
@@ -1572,10 +1542,10 @@
      "source": "nspna.com",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9DUkp3UTBqanpjM0lQTTVyaVp6eURUY05JV1V0QzVYU2tTX0RsTU1WZlpTSWZqQzlKcnJtbUxEd2ZtdjVFUU13enJwS2pHMkVzYnl1dEJHeWFpODBLRkhUa1VKUQ?oc=5",
      "published_kst": "09-07 17:01",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "개별 증권사 주가 등락 혼재"
+      "상승"
      ]
     },
     {
@@ -1586,7 +1556,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "원·달러 하락에 따른 은행주 수혜 기대"
+      "반등",
+      "수혜"
      ]
     }
    ],
@@ -1596,7 +1567,7 @@
    "setup_howto": "20일선까지 내려오면 매수. 진입가에 지정가 예약을 걸고 기다립니다. 안 내려오면 안 사면 됩니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "저항선",
-   "last_close": 16725,
+   "last_close": 16720,
    "entry": 16305,
    "tp1": 17140,
    "tp2": 17825,
@@ -1607,8 +1578,8 @@
    "rr": 1.72,
    "cancel_below": 15820,
    "breakout_ref": 17140,
-   "entry_vs_last_pct": -2.51,
-   "ext_pct": 3.84,
+   "entry_vs_last_pct": -2.48,
+   "ext_pct": 3.81,
    "atr_pct": 2.83,
    "ma20": 16105,
    "ma60": 15725,
@@ -1636,11 +1607,11 @@
    "issue_summary": {
     "count": 5,
     "positive": 1,
-    "negative": 4,
-    "neutral": 0,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "negative": 0,
+    "neutral": 4,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1648,22 +1619,18 @@
      "source": "MBC 뉴스",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95YWF3djNlRzBnWnZPMFoyYllvZDJJV2FZMTIyREdrblJZTGJJUmJOMk5pZ3QtZEZsSGQ5c2Y2QTlWVmJuZ2ZtYTMzVl83cWRoSFZtU1NibkNrQXRrdXU2dXh0WGtiRmVjRTVDRkdmZHM4TTFTSFNF0gF3QVVfeXFMT0FxZmwzRmw2LU9KeHdFa1ZwZUZBYXVvX19XZUZnbVh6Mi1paTFzSVN1VlN2UVJmRTJKbVZtb3IyMHpCR2RwVG1lbFJXVU1pNTBGVjVzV0RxQ2ZwY1h4ZnI0dWRpbEhFalRXaVdmU2MtVjUxdWo5b28?oc=5",
      "published_kst": "09-08 09:26",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "김승원 법무후보 '신약 청탁 의혹' 피고발사건, 영등포경찰서 배당",
      "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUtIBYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUg?oc=5",
      "published_kst": "09-08 09:14",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "[바이오맥짚기] '반지형 혈압계' 스카이랩스 연속 上…탈모 테마 삼익제약도 급등",
@@ -1673,7 +1640,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "신규 기술 상장 및 급등"
+      "급등"
      ]
     }
    ],
@@ -1703,7 +1670,7 @@
    "kr_above_ma20": false,
    "kr_ma_stacked": false,
    "kr_ma20_rising": false,
-   "turnover_eok": 44.7,
+   "turnover_eok": 44.8,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/244580/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=244580",
@@ -1724,11 +1691,11 @@
    "issue_summary": {
     "count": 5,
     "positive": 1,
-    "negative": 4,
-    "neutral": 0,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "negative": 0,
+    "neutral": 4,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1736,22 +1703,18 @@
      "source": "MBC 뉴스",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95YWF3djNlRzBnWnZPMFoyYllvZDJJV2FZMTIyREdrblJZTGJJUmJOMk5pZ3QtZEZsSGQ5c2Y2QTlWVmJuZ2ZtYTMzVl83cWRoSFZtU1NibkNrQXRrdXU2dXh0WGtiRmVjRTVDRkdmZHM4TTFTSFNF0gF3QVVfeXFMT0FxZmwzRmw2LU9KeHdFa1ZwZUZBYXVvX19XZUZnbVh6Mi1paTFzSVN1VlN2UVJmRTJKbVZtb3IyMHpCR2RwVG1lbFJXVU1pNTBGVjVzV0RxQ2ZwY1h4ZnI0dWRpbEhFalRXaVdmU2MtVjUxdWo5b28?oc=5",
      "published_kst": "09-08 09:26",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "김승원 법무후보 '신약 청탁 의혹' 피고발사건, 영등포경찰서 배당",
      "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUtIBYEFVX3lxTE5zaTNuLWVNbm9vdW91eDJpZnVNYUtra1ZEcjVseGp3VnM2MDN6YkE0S2ZMdG5tVkxWeU9FV3pCRlhpNUtIZ3NuV2dlN3Z1Q1VXYnNMUGpnTTNTbWEydGZqUg?oc=5",
      "published_kst": "09-08 09:14",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "신약 관련 의혹 제기"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "[바이오맥짚기] '반지형 혈압계' 스카이랩스 연속 上…탈모 테마 삼익제약도 급등",
@@ -1761,7 +1724,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "신규 기술 상장 및 급등"
+      "급등"
      ]
     }
    ],
@@ -1811,12 +1774,12 @@
    "signal_label": "강한 상승",
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 1,
     "negative": 0,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 4,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1824,22 +1787,18 @@
      "source": "서울파이낸스",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qUkgzREpZV0NoR2pWSTBfUVBvT1RHM1VXWlRmNWJxS3ZxMmtPQjFDdWFkZVN4SXBHT1JLZkI3eXU4dFNWVkpuNVB6MktLbWM3M08yb1U1Q1RLX0p1Y2FRSUJOcGNDbjBpSkE?oc=5",
      "published_kst": "09-08 11:22",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "배당 ETF 주목"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "신한證 \"9월 '미국 배당 ETF' 최선호…에너지·헬스케어 주목\"",
      "source": "뉴스1",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE53YkVubEdKdl9kYndKd21vbGxlTG9iU0YyZ0FnLXI5bXlrQkR2eXNudUVSNmZ6dDBTNjlqTG43bHd1UFduTnp5alVlMldNVHBlYks5bVp5SDdMSG9PS2Nz0gFkQVVfeXFMUEJFMlJkR2toZkhYYWVNaVR4RWNBeE1SU2JaQ1N1NjFYTFEtSDljVjBUUDE2WVFHcjNFQ212RHdwYTdmQzN5OVQ4Yl82V0d6TkYwdmI3bGlySmlKQmtUa0kwRXdWTg?oc=5",
      "published_kst": "09-08 11:47",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "배당 ETF 주목"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "스파이어 헬스케어, 10.3억 파운드 인수 소식에 주가 3% 급등",
@@ -1849,7 +1808,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "인수 소식 주가 급등"
+      "급등"
      ]
     }
    ],
@@ -1859,7 +1818,7 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 36655,
+   "last_close": 36645,
    "entry": 36490,
    "tp1": 38325,
    "tp2": 40160,
@@ -1870,8 +1829,8 @@
    "rr": 1.5,
    "cancel_below": 35270,
    "breakout_ref": 40005,
-   "entry_vs_last_pct": -0.45,
-   "ext_pct": -6.04,
+   "entry_vs_last_pct": -0.42,
+   "ext_pct": -6.06,
    "atr_pct": 3.34,
    "ma20": 39010,
    "ma60": 37930,
@@ -1886,7 +1845,7 @@
     "toss": "https://tossinvest.com/stocks/A143860"
    },
    "reasons": [
-    "국내 종목이 20일선 아래 (종가 36,655 < MA20 39,010)"
+    "국내 종목이 20일선 아래 (종가 36,645 < MA20 39,010)"
    ]
   },
   {
@@ -1899,12 +1858,12 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 4,
-    "positive": 3,
-    "negative": 0,
+    "positive": 2,
+    "negative": 1,
     "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -1912,10 +1871,10 @@
      "source": "연합인포맥스",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
      "published_kst": "09-07 08:17",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "금리인상 우려 속 방어주 매력 부각"
+      "우려"
      ]
     },
     {
@@ -1923,10 +1882,10 @@
      "source": "nspna.com",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9DUkp3UTBqanpjM0lQTTVyaVp6eURUY05JV1V0QzVYU2tTX0RsTU1WZlpTSWZqQzlKcnJtbUxEd2ZtdjVFUU13enJwS2pHMkVzYnl1dEJHeWFpODBLRkhUa1VKUQ?oc=5",
      "published_kst": "09-07 17:01",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "개별 증권사 주가 등락 혼재"
+      "상승"
      ]
     },
     {
@@ -1937,7 +1896,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "원·달러 하락에 따른 은행주 수혜 기대"
+      "반등",
+      "수혜"
      ]
     }
    ],
@@ -1947,7 +1907,7 @@
    "setup_howto": "20일선까지 내려오면 매수. 진입가에 지정가 예약을 걸고 기다립니다. 안 내려오면 안 사면 됩니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "저항선",
-   "last_close": 18570,
+   "last_close": 18565,
    "entry": 18490,
    "tp1": 19145,
    "tp2": 19545,
@@ -1958,8 +1918,8 @@
    "rr": 1.19,
    "cancel_below": 17940,
    "breakout_ref": 19145,
-   "entry_vs_last_pct": -0.43,
-   "ext_pct": 0.42,
+   "entry_vs_last_pct": -0.4,
+   "ext_pct": 0.39,
    "atr_pct": 3.15,
    "ma20": 18490,
    "ma60": 20090,
@@ -1967,7 +1927,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": false,
-   "turnover_eok": 123.9,
+   "turnover_eok": 124.0,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/102970/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=102970",
@@ -2002,20 +1962,20 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 3615,
-   "entry": 3550,
-   "tp1": 3740,
+   "last_close": 3610,
+   "entry": 3545,
+   "tp1": 3735,
    "tp2": 3930,
-   "stop": 3430,
-   "tp1_pct": 5.35,
-   "tp2_pct": 10.7,
-   "stop_pct": -3.38,
+   "stop": 3425,
+   "tp1_pct": 5.36,
+   "tp2_pct": 10.86,
+   "stop_pct": -3.39,
    "rr": 1.58,
-   "cancel_below": 3430,
+   "cancel_below": 3425,
    "breakout_ref": 3815,
    "entry_vs_last_pct": -1.8,
-   "ext_pct": -2.59,
-   "atr_pct": 3.54,
+   "ext_pct": -2.72,
+   "atr_pct": 3.55,
    "ma20": 3710,
    "ma60": 3805,
    "swing_low": 3425,
@@ -2029,7 +1989,7 @@
     "toss": "https://tossinvest.com/stocks/A365000"
    },
    "reasons": [
-    "국내 종목이 20일선 아래 (종가 3,615 < MA20 3,710)"
+    "국내 종목이 20일선 아래 (종가 3,610 < MA20 3,710)"
    ]
   },
   {
@@ -2047,7 +2007,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -2058,7 +2018,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "차세대 전력반도체 성장 기대"
+      "상승",
+      "성장",
+      "기대감"
      ]
     },
     {
@@ -2069,7 +2031,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 강세 코스피 상승"
+      "강세",
+      "돌파"
      ]
     },
     {
@@ -2080,7 +2043,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 수출 증가 호재"
+      "흑자",
+      "돌파",
+      "급증"
      ]
     }
    ],
@@ -2090,27 +2055,27 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 38495,
-   "entry": 37605,
-   "tp1": 40265,
-   "tp2": 42925,
-   "stop": 36295,
-   "tp1_pct": 7.07,
-   "tp2_pct": 14.15,
+   "last_close": 38365,
+   "entry": 37475,
+   "tp1": 40135,
+   "tp2": 42795,
+   "stop": 36170,
+   "tp1_pct": 7.1,
+   "tp2_pct": 14.2,
    "stop_pct": -3.48,
-   "rr": 2.03,
-   "cancel_below": 36295,
+   "rr": 2.04,
+   "cancel_below": 36170,
    "breakout_ref": 39030,
-   "entry_vs_last_pct": -2.31,
-   "ext_pct": 9.64,
-   "atr_pct": 4.6,
-   "ma20": 35110,
-   "ma60": 39265,
+   "entry_vs_last_pct": -2.32,
+   "ext_pct": 9.29,
+   "atr_pct": 4.62,
+   "ma20": 35105,
+   "ma60": 39260,
    "swing_low": 30150,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 3886.0,
+   "turnover_eok": 3887.4,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/396500/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=396500",
@@ -2135,7 +2100,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -2146,7 +2111,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "차세대 전력반도체 성장 기대"
+      "상승",
+      "성장",
+      "기대감"
      ]
     },
     {
@@ -2157,7 +2124,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 강세 코스피 상승"
+      "강세",
+      "돌파"
      ]
     },
     {
@@ -2168,7 +2136,9 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "반도체 수출 증가 호재"
+      "흑자",
+      "돌파",
+      "급증"
      ]
     }
    ],
@@ -2178,27 +2148,27 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 135820,
-   "entry": 132880,
-   "tp1": 141695,
-   "tp2": 150510,
-   "stop": 128235,
-   "tp1_pct": 6.63,
-   "tp2_pct": 13.27,
+   "last_close": 135385,
+   "entry": 132445,
+   "tp1": 141260,
+   "tp2": 150075,
+   "stop": 127815,
+   "tp1_pct": 6.66,
+   "tp2_pct": 13.31,
    "stop_pct": -3.5,
    "rr": 1.9,
-   "cancel_below": 128235,
+   "cancel_below": 127815,
    "breakout_ref": 137530,
-   "entry_vs_last_pct": -2.16,
-   "ext_pct": 9.33,
-   "atr_pct": 4.33,
-   "ma20": 124225,
-   "ma60": 136370,
+   "entry_vs_last_pct": -2.17,
+   "ext_pct": 9.0,
+   "atr_pct": 4.34,
+   "ma20": 124205,
+   "ma60": 136360,
    "swing_low": 108305,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1968.8,
+   "turnover_eok": 1969.5,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
@@ -2264,27 +2234,27 @@
    "setup_howto": "20일선까지 내려오면 매수. 진입가에 지정가 예약을 걸고 기다립니다. 안 내려오면 안 사면 됩니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "저항선",
-   "last_close": 36340,
-   "entry": 35720,
+   "last_close": 36255,
+   "entry": 35715,
    "tp1": 39055,
    "tp2": 49590,
-   "stop": 34650,
-   "tp1_pct": 9.34,
-   "tp2_pct": 38.83,
+   "stop": 34645,
+   "tp1_pct": 9.35,
+   "tp2_pct": 38.85,
    "stop_pct": -3.0,
    "rr": 3.12,
-   "cancel_below": 34650,
+   "cancel_below": 34645,
    "breakout_ref": 39055,
-   "entry_vs_last_pct": -1.71,
-   "ext_pct": 1.74,
-   "atr_pct": 4.9,
-   "ma20": 35720,
+   "entry_vs_last_pct": -1.49,
+   "ext_pct": 1.51,
+   "atr_pct": 4.91,
+   "ma20": 35715,
    "ma60": 37045,
    "swing_low": 31635,
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1025.7,
+   "turnover_eok": 1026.0,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/487240/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=487240",
@@ -2354,7 +2324,7 @@
    "setup_howto": "20일선까지 내려오면 매수. 진입가에 지정가 예약을 걸고 기다립니다. 안 내려오면 안 사면 됩니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "저항선",
-   "last_close": 14690,
+   "last_close": 14680,
    "entry": 14605,
    "tp1": 15950,
    "tp2": 18255,
@@ -2365,8 +2335,8 @@
    "rr": 3.13,
    "cancel_below": 14175,
    "breakout_ref": 15950,
-   "entry_vs_last_pct": -0.58,
-   "ext_pct": 0.55,
+   "entry_vs_last_pct": -0.52,
+   "ext_pct": 0.5,
    "atr_pct": 4.35,
    "ma20": 14610,
    "ma60": 14320,
@@ -2444,7 +2414,7 @@
    "setup_howto": "20일선까지 내려오면 매수. 진입가에 지정가 예약을 걸고 기다립니다. 안 내려오면 안 사면 됩니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "저항선",
-   "last_close": 18710,
+   "last_close": 18705,
    "entry": 18500,
    "tp1": 20210,
    "tp2": 22705,
@@ -2455,8 +2425,8 @@
    "rr": 3.11,
    "cancel_below": 17950,
    "breakout_ref": 20210,
-   "entry_vs_last_pct": -1.12,
-   "ext_pct": 1.13,
+   "entry_vs_last_pct": -1.1,
+   "ext_pct": 1.11,
    "atr_pct": 4.27,
    "ma20": 18500,
    "ma60": 18015,
@@ -2489,7 +2459,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -2500,7 +2470,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "글로벌 인프라 수혜 지속"
+      "강세",
+      "수혜"
      ]
     },
     {
@@ -2511,7 +2482,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "조선주 강세 지속"
+      "상승",
+      "강세"
      ]
     },
     {
@@ -2522,7 +2494,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "환율 하락으로 인한 악재"
+      "하락"
      ]
     }
    ],
@@ -2532,27 +2504,27 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 27960,
-   "entry": 27460,
-   "tp1": 28950,
-   "tp2": 30445,
-   "stop": 26505,
+   "last_close": 27940,
+   "entry": 27440,
+   "tp1": 28930,
+   "tp2": 30425,
+   "stop": 26485,
    "tp1_pct": 5.43,
-   "tp2_pct": 10.87,
+   "tp2_pct": 10.88,
    "stop_pct": -3.48,
    "rr": 1.56,
-   "cancel_below": 26505,
+   "cancel_below": 26485,
    "breakout_ref": 28940,
    "entry_vs_last_pct": -1.79,
-   "ext_pct": -0.76,
+   "ext_pct": -0.83,
    "atr_pct": 3.56,
    "ma20": 28175,
-   "ma60": 29860,
+   "ma60": 29855,
    "swing_low": 26100,
    "kr_above_ma20": false,
    "kr_ma_stacked": false,
    "kr_ma20_rising": false,
-   "turnover_eok": 295.8,
+   "turnover_eok": 295.9,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/466920/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=466920",
@@ -2560,7 +2532,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 27,960 < MA20 28,175)"
+    "국내 종목이 20일선 아래 (종가 27,940 < MA20 28,175)"
    ]
   },
   {
@@ -2578,7 +2550,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -2589,7 +2561,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "글로벌 인프라 수혜 지속"
+      "강세",
+      "수혜"
      ]
     },
     {
@@ -2600,7 +2573,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "조선주 강세 지속"
+      "상승",
+      "강세"
      ]
     },
     {
@@ -2611,7 +2585,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "환율 하락으로 인한 악재"
+      "하락"
      ]
     }
    ],
@@ -2621,19 +2595,19 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 22000,
-   "entry": 21620,
-   "tp1": 22755,
-   "tp2": 23895,
-   "stop": 20865,
-   "tp1_pct": 5.25,
-   "tp2_pct": 10.52,
-   "stop_pct": -3.49,
+   "last_close": 21975,
+   "entry": 21595,
+   "tp1": 22730,
+   "tp2": 23870,
+   "stop": 20840,
+   "tp1_pct": 5.26,
+   "tp2_pct": 10.53,
+   "stop_pct": -3.5,
    "rr": 1.5,
-   "cancel_below": 20865,
+   "cancel_below": 20840,
    "breakout_ref": 22880,
    "entry_vs_last_pct": -1.73,
-   "ext_pct": -1.04,
+   "ext_pct": -1.15,
    "atr_pct": 3.45,
    "ma20": 22230,
    "ma60": 23395,
@@ -2649,7 +2623,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 22,000 < MA20 22,230)"
+    "국내 종목이 20일선 아래 (종가 21,975 < MA20 22,230)"
    ]
   },
   {
@@ -2667,7 +2641,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -2678,7 +2652,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "글로벌 인프라 수혜 지속"
+      "강세",
+      "수혜"
      ]
     },
     {
@@ -2689,7 +2664,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "조선주 강세 지속"
+      "상승",
+      "강세"
      ]
     },
     {
@@ -2700,7 +2676,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "환율 하락으로 인한 악재"
+      "하락"
      ]
     }
    ],
@@ -2710,20 +2686,20 @@
    "setup_howto": "추세가 진행 중이라 20일선은 멉니다. 장중 얕은 눌림에 지정가 예약을 걸어 담습니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 7395,
-   "entry": 7210,
-   "tp1": 7760,
-   "tp2": 8310,
-   "stop": 6960,
-   "tp1_pct": 7.63,
-   "tp2_pct": 15.26,
+   "last_close": 7380,
+   "entry": 7195,
+   "tp1": 7745,
+   "tp2": 8295,
+   "stop": 6945,
+   "tp1_pct": 7.64,
+   "tp2_pct": 15.29,
    "stop_pct": -3.47,
    "rr": 2.2,
-   "cancel_below": 6960,
+   "cancel_below": 6945,
    "breakout_ref": 7480,
-   "entry_vs_last_pct": -2.5,
-   "ext_pct": 9.66,
-   "atr_pct": 4.96,
+   "entry_vs_last_pct": -2.51,
+   "ext_pct": 9.45,
+   "atr_pct": 4.97,
    "ma20": 6745,
    "ma60": 6475,
    "swing_low": 6125,
@@ -2796,27 +2772,27 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 51580,
-   "entry": 50530,
-   "tp1": 53670,
-   "tp2": 56815,
-   "stop": 48765,
-   "tp1_pct": 6.21,
-   "tp2_pct": 12.44,
+   "last_close": 51485,
+   "entry": 50435,
+   "tp1": 53575,
+   "tp2": 56720,
+   "stop": 48675,
+   "tp1_pct": 6.23,
+   "tp2_pct": 12.46,
    "stop_pct": -3.49,
    "rr": 1.78,
-   "cancel_below": 48765,
+   "cancel_below": 48675,
    "breakout_ref": 55935,
    "entry_vs_last_pct": -2.04,
-   "ext_pct": -4.7,
-   "atr_pct": 4.06,
-   "ma20": 54125,
+   "ext_pct": -4.87,
+   "atr_pct": 4.07,
+   "ma20": 54120,
    "ma60": 56185,
    "swing_low": 49360,
    "kr_above_ma20": false,
    "kr_ma_stacked": false,
    "kr_ma20_rising": false,
-   "turnover_eok": 146.9,
+   "turnover_eok": 147.0,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/449450/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=449450",
@@ -2824,7 +2800,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 51,580 < MA20 54,125)"
+    "국내 종목이 20일선 아래 (종가 51,485 < MA20 54,120)"
    ]
   },
   {
@@ -2883,22 +2859,22 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 32900,
-   "entry": 32215,
-   "tp1": 34265,
-   "tp2": 36315,
-   "stop": 31090,
-   "tp1_pct": 6.36,
+   "last_close": 32880,
+   "entry": 32195,
+   "tp1": 34245,
+   "tp2": 36295,
+   "stop": 31075,
+   "tp1_pct": 6.37,
    "tp2_pct": 12.73,
-   "stop_pct": -3.49,
-   "rr": 1.82,
-   "cancel_below": 31090,
+   "stop_pct": -3.48,
+   "rr": 1.83,
+   "cancel_below": 31075,
    "breakout_ref": 36000,
    "entry_vs_last_pct": -2.08,
-   "ext_pct": -5.53,
+   "ext_pct": -5.58,
    "atr_pct": 4.15,
    "ma20": 34825,
-   "ma60": 35870,
+   "ma60": 35865,
    "swing_low": 31500,
    "kr_above_ma20": false,
    "kr_ma_stacked": false,
@@ -2911,7 +2887,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 32,900 < MA20 34,825)"
+    "국내 종목이 20일선 아래 (종가 32,880 < MA20 34,825)"
    ]
   },
   {
@@ -2970,19 +2946,19 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 26330,
-   "entry": 25815,
-   "tp1": 27350,
-   "tp2": 28880,
-   "stop": 24920,
+   "last_close": 26320,
+   "entry": 25805,
+   "tp1": 27340,
+   "tp2": 28870,
+   "stop": 24910,
    "tp1_pct": 5.95,
-   "tp2_pct": 11.87,
+   "tp2_pct": 11.88,
    "stop_pct": -3.47,
    "rr": 1.72,
-   "cancel_below": 24920,
+   "cancel_below": 24910,
    "breakout_ref": 28175,
    "entry_vs_last_pct": -1.96,
-   "ext_pct": -4.86,
+   "ext_pct": -4.9,
    "atr_pct": 3.88,
    "ma20": 27675,
    "ma60": 28265,
@@ -2998,7 +2974,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 26,330 < MA20 27,675)"
+    "국내 종목이 20일선 아래 (종가 26,320 < MA20 27,675)"
    ]
   },
   {
@@ -3057,19 +3033,19 @@
    "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
-   "last_close": 38405,
-   "entry": 37600,
-   "tp1": 40005,
-   "tp2": 42405,
-   "stop": 36290,
+   "last_close": 38370,
+   "entry": 37565,
+   "tp1": 39970,
+   "tp2": 42370,
+   "stop": 36255,
    "tp1_pct": 6.4,
-   "tp2_pct": 12.78,
-   "stop_pct": -3.48,
+   "tp2_pct": 12.79,
+   "stop_pct": -3.49,
    "rr": 1.84,
-   "cancel_below": 36290,
+   "cancel_below": 36255,
    "breakout_ref": 40900,
    "entry_vs_last_pct": -2.1,
-   "ext_pct": -0.16,
+   "ext_pct": -0.25,
    "atr_pct": 4.17,
    "ma20": 38465,
    "ma60": 37715,
@@ -3085,7 +3061,7 @@
    },
    "reasons": [
     "미국 매핑 섹터가 하락세",
-    "국내 종목이 20일선 아래 (종가 38,405 < MA20 38,465)"
+    "국내 종목이 20일선 아래 (종가 38,370 < MA20 38,465)"
    ]
   },
   {
@@ -3098,12 +3074,12 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 1,
     "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "gemini:gemini-2.5-flash-lite"
+    "neutral": 3,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
    },
    "issues": [
     {
@@ -3113,20 +3089,16 @@
      "published_kst": "09-07 16:41",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": [
-      "타 섹터 기업 실적 언급"
-     ]
+     "keywords": []
     },
     {
      "title": "\"차도 덜 팔리는데 원화까지…\" 자동차주 투자자들 '울상' [종목+]",
      "source": "네이트",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8xd3F6SkpGbXNsMU10S3dlN1VKNzRERTA2MlZrV0d4ZG5wcGowZllBX0ptWm1QX2hLYmZpR0s4OVJKMl9ZT1dYbGFCdERhbDhqMExIQTVGTGYtTnNUcmUzT3VVMDJDdFFMdmxJWHJBTnhrZUI0TTBwMw?oc=5",
      "published_kst": "09-08 08:50",
-     "tone": "negative",
-     "tone_label": "부정",
-     "keywords": [
-      "자동차 판매 부진 및 원화 약세"
-     ]
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": []
     },
     {
      "title": "중국 완성차 수출 2026년 1000만 대 돌파 전망…기술·준법 경쟁 동시 가속",
@@ -3136,7 +3108,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "중국 완성차 수출 증가 전망"
+      "돌파"
      ]
     }
    ],
@@ -3147,17 +3119,17 @@
    "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
    "target_basis": "ATR 투영",
    "last_close": 27280,
-   "entry": 26850,
-   "tp1": 28135,
-   "tp2": 29425,
-   "stop": 25995,
-   "tp1_pct": 4.79,
-   "tp2_pct": 9.59,
+   "entry": 26845,
+   "tp1": 28140,
+   "tp2": 29430,
+   "stop": 25990,
+   "tp1_pct": 4.82,
+   "tp2_pct": 9.63,
    "stop_pct": -3.18,
-   "rr": 1.5,
-   "cancel_below": 25995,
+   "rr": 1.51,
+   "cancel_below": 25990,
    "breakout_ref": 29630,
-   "entry_vs_last_pct": -1.58,
+   "entry_vs_last_pct": -1.59,
    "ext_pct": -5.02,
    "atr_pct": 3.15,
    "ma20": 28725,
