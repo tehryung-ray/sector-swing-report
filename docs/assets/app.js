@@ -81,7 +81,7 @@
      값은 메모리에만 있다. 저장하지 않으므로 새로고침하면 사라진다. */
   let riskAmount = 0;
   const calcs = [];                       // {input, render} - 카드 간 입력 동기화용
-  const PRESETS = [100000, 200000, 300000, 500000, 1000000];
+  const PRESETS = [100000, 150000, 200000, 300000, 500000, 1000000];
   const manwon = (n) => (n % 10000 === 0 ? `${n / 10000}만` : n.toLocaleString("ko-KR"));
 
   function syncCalcs(source) {
