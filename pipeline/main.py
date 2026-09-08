@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import io
+import json
 import os
 import sys
 
@@ -13,10 +14,12 @@ import yaml
 
 from .gates import evaluate
 from .levels import compute_levels
+from .market_calendar import is_kr_session, next_kr_session
 from .links import build_links
 from . import news as news_mod
 from .momentum import LABEL, WEAK, market_regime, rank_sectors
 from .render import build_report, freshness, write_outputs
+from .util import DOCS_DATA
 from .resolve_codes import verify
 from .sources.kr import fetch_kr
 from .sources.us import fetch_us
@@ -33,9 +36,36 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+def already_done_today(today) -> bool:
+    """2차 실행(재시도)에서 1차가 이미 성공했으면 중복 생성하지 않는다."""
+    p = DOCS_DATA / "latest.json"
+    if not p.exists():
+        return False
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return False
+    return d.get("report_date") == str(today) and d.get("freshness", {}).get("status") == "ok"
+
+
 def main() -> int:
     generated_at = now_kst()
+    today = generated_at.date()
     log(f"== 섹터 스윙 리포트 생성 {generated_at:%Y-%m-%d %H:%M:%S KST} ==")
+
+    # --- 0. 조기 종료 조건 ---
+    if os.environ.get("SKIP_IF_DONE") and already_done_today(today):
+        log(f"   {today} 리포트가 이미 정상 생성되어 있습니다. 종료합니다.")
+        return 0
+
+    session = is_kr_session(today)
+    if session is False and not os.environ.get("FORCE"):
+        nxt = next_kr_session(today)
+        log(f"   {today} 는 한국 증시 휴장일입니다. 다음 개장일: {nxt or '알 수 없음'}")
+        log("   리포트를 만들지 않고 종료합니다 (강제 실행: FORCE=1)")
+        return 0
+    if session is None:
+        log("   경고: 개장일 판정 불가 - 일단 생성을 진행합니다")
 
     us_cfg, kr_cfg = _load("us_sectors.yaml"), _load("kr_universe.yaml")
 

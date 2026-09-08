@@ -1,0 +1,74 @@
+name: 매일 아침 리포트
+
+# UTC 21:50 = KST 06:50. KST 월~금 아침에 돌려야 하므로 UTC 요일은 일~목(0-4)이다.
+# 1-5 로 두면 KST 화~토가 되어 월요일 리포트가 빠지고 토요일에 헛돈다.
+on:
+  schedule:
+    - cron: '50 21 * * 0-4'   # KST 06:50 (월~금)
+    - cron: '50 22 * * 0-4'   # KST 07:50 재시도 (1차가 성공했으면 스스로 종료)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '휴장일에도 강제로 생성'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      # 가격 계산이 깨진 채로 리포트가 나가는 것보다, 아예 안 나가는 게 낫다.
+      - name: 계산 로직 테스트
+        run: python -m pytest tests/ -q
+
+      - name: 리포트 생성
+        env:
+          # 없으면 뉴스 분류가 키워드 사전으로 폴백한다. 리포트는 정상 생성된다.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # 07:50 재시도는 06:50 이 이미 성공했으면 중복 생성하지 않는다.
+          SKIP_IF_DONE: ${{ github.event.schedule == '50 22 * * 0-4' && '1' || '' }}
+          FORCE: ${{ inputs.force && '1' || '' }}
+        run: python -m pipeline.main
+
+      - name: 결과 커밋
+        run: |
+          git add docs/data cache
+          if git diff --cached --quiet; then
+            echo "변경 없음 - 커밋 생략 (휴장일이거나 재시도 스킵)"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "report: $(TZ=Asia/Seoul date +%F)"
+          git push
+
+      - name: 요약
+        if: always()
+        run: |
+          if [ -f docs/data/latest.json ]; then
+            python - <<'PY'
+          import json
+          d = json.load(open("docs/data/latest.json", encoding="utf-8"))
+          print(f"기준일 {d['report_date']} | 추천 {d['counts']['picks']} | 관망 {d['counts']['watch']}")
+          print(f"신선도 {d['freshness']['status']} | {d['headline'][:80]}")
+          PY
+          fi
