@@ -238,8 +238,7 @@ h3 { font-size: 14.5px; margin: 20px 0 8px; letter-spacing: -.01em; }
 .calc-field input::placeholder { color: var(--dim); font-weight: 400; }
 .calc-field .unit { color: var(--dim); font-size: 13.5px; flex-shrink: 0; }
 /* 프리셋은 균등 그리드로. 줄바꿈 시 한 개만 남아 떨어지는 것을 막는다. */
-.calc-pre { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-top: 8px; }
-@media (max-width: 560px) { .calc-pre { grid-template-columns: repeat(3, 1fr); } }
+.calc-pre { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
 .calc-pre button {
   font: inherit; font-size: 12px; padding: 6px 4px; border-radius: 999px;
   border: 1px solid var(--line); background: var(--card); color: var(--dim);
