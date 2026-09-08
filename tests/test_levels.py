@@ -240,3 +240,29 @@ def test_min_rr_is_15():
     lv = base_levels(rr=1.4)
     assert any("손익비" in r for r in evaluate(lv, "strong"))
     assert evaluate(base_levels(rr=1.6), "strong") == []
+
+
+def test_tp2_fallback_picks_nearest_not_farthest():
+    """2차 익절 폴백이 60일 고가를 집어 비현실적인 목표를 내면 안 된다.
+
+    크게 하락한 종목은 60일 고가가 현재가보다 한참 위에 있다.
+    실제로 TIGER 200 IT 는 60일 고가가 현재가 대비 +54%였고,
+    폴백이 max() 였을 때 2차 익절가가 진입가 대비 +59%로 산출됐다.
+    5거래일 스윙에서 도달할 수 없는 값이다.
+    """
+    df = make_df(n=140, seed=5, drift=0.001, vol=0.008)
+    # 60일 이전 구간에 큰 고점을 심어 폴백 상황을 만든다
+    df.iloc[-55:-50, df.columns.get_loc("High")] *= 1.9
+    lv = compute_levels(df)
+    assert lv is not None
+    assert lv["tp2"] > lv["tp1"], "2차는 1차보다 위여야 한다"
+    assert lv["tp2_pct"] < 30, f"2차 익절 {lv['tp2_pct']}% 는 스윙에서 도달 불가"
+
+
+@pytest.mark.parametrize("seed", ALL_SEEDS)
+def test_tp2_stays_reachable(seed):
+    """게이트를 통과하는 후보의 2차 익절은 현실적 범위여야 한다."""
+    lv = compute_levels(make_df(seed=seed))
+    if evaluate(lv, "strong"):
+        return
+    assert lv["tp2_pct"] < 40

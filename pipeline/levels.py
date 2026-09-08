@@ -113,7 +113,11 @@ def compute_levels(df: pd.DataFrame) -> dict | None:
         tp1_raw = max(hi10, entry_raw * (1 + MIN_TP1))
         tp2_raw = min(bb_up, hi60)
         if tp2_raw <= tp1_raw:
-            tp2_raw = max(bb_up, hi60, tp1_raw * 1.04)
+            # 2차는 1차보다 위여야 한다. 다만 max() 로 고르면 가장 먼 값을 집어버린다.
+            # 60일 고가는 크게 하락한 종목에서 현재가보다 한참 위에 있을 수 있다
+            # (예: TIGER 200 IT 2026-09-08, 60일 고가가 현재가 대비 +54%).
+            # 1차를 넘는 후보 중 가장 가까운 값을 쓴다.
+            tp2_raw = min(x for x in (bb_up, hi60, tp1_raw * 1.04) if x > tp1_raw)
         stop_raw = _clamp(
             min(swing_low * 0.99, entry_raw * (1 - PB_MIN_LOSS)),
             entry_raw * (1 - PB_MAX_LOSS), entry_raw * (1 - PB_MIN_LOSS),
