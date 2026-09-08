@@ -11,8 +11,8 @@ DEFAULT = dict(
     pb_min_loss=0.025, pb_max_loss=0.030,
     sh_min_loss=0.020, sh_max_loss=0.035,
     dip_atr=0.5, min_tp1=0.025,
-    tp1_atr=1.5, tp1_risk=1.3, tp2_atr=3.0, tp2_risk=2.5,
-    min_rr=1.2, min_turnover=5.0, min_upside=1.5,
+    tp1_atr=2.0, tp1_risk=1.3, tp2_atr=3.0, tp2_risk=2.5,   # tp1_atr: 워크포워드 최적화 반영
+    min_rr=1.5, min_turnover=5.0, min_upside=1.5,         # min_rr: 워크포워드 최적화 반영
     max_hold=5, us_filter=True, cost=0.001,
 )
 
