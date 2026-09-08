@@ -4,21 +4,21 @@ benchmark: SPY
 regime_ma: 200
 
 sectors:
-  - {ticker: SOXX, name: 반도체}
-  - {ticker: SMH,  name: 반도체(대형)}
-  - {ticker: XLK,  name: 기술}
-  - {ticker: IGV,  name: 소프트웨어}
-  - {ticker: XLV,  name: 헬스케어}
-  - {ticker: XBI,  name: 바이오}
-  - {ticker: XLF,  name: 금융}
-  - {ticker: XLE,  name: 에너지}
-  - {ticker: XLI,  name: 산업재}
-  - {ticker: XLB,  name: 소재}
-  - {ticker: XLY,  name: 경기소비재}
-  - {ticker: XLP,  name: 필수소비재}
-  - {ticker: XLU,  name: 유틸리티}
-  - {ticker: XLC,  name: 커뮤니케이션}
-  - {ticker: LIT,  name: 2차전지}
-  - {ticker: ITA,  name: 방산·우주}
-  - {ticker: URA,  name: 원자력}
-  - {ticker: ICLN, name: 신재생에너지}
+  - {ticker: SOXX, name: 반도체, news_kw: "반도체 OR 파운드리"}
+  - {ticker: SMH,  name: 반도체(대형), news_kw: "엔비디아 OR AI반도체"}
+  - {ticker: XLK,  name: 기술, news_kw: "빅테크 OR 나스닥"}
+  - {ticker: IGV,  name: 소프트웨어, news_kw: "소프트웨어 OR 클라우드"}
+  - {ticker: XLV,  name: 헬스케어, news_kw: "헬스케어 OR 제약주"}
+  - {ticker: XBI,  name: 바이오, news_kw: "바이오 OR 신약"}
+  - {ticker: XLF,  name: 금융, news_kw: "은행주 OR 증권주"}
+  - {ticker: XLE,  name: 에너지, news_kw: "국제유가 OR 정유주"}
+  - {ticker: XLI,  name: 산업재, news_kw: "조선주 OR 기계주"}
+  - {ticker: XLB,  name: 소재, news_kw: "화학주 OR 철강주"}
+  - {ticker: XLY,  name: 경기소비재, news_kw: "자동차주 OR 완성차"}
+  - {ticker: XLP,  name: 필수소비재, news_kw: "필수소비재 OR 식품주"}
+  - {ticker: XLU,  name: 유틸리티, news_kw: "전력설비 OR 유틸리티"}
+  - {ticker: XLC,  name: 커뮤니케이션, news_kw: "인터넷주 OR 미디어주"}
+  - {ticker: LIT,  name: 2차전지, news_kw: "2차전지 OR 배터리"}
+  - {ticker: ITA,  name: 방산·우주, news_kw: "방산주 OR 항공우주"}
+  - {ticker: URA,  name: 원자력, news_kw: "원자력 OR 우라늄"}
+  - {ticker: ICLN, name: 신재생에너지, news_kw: "신재생에너지 OR 태양광"}

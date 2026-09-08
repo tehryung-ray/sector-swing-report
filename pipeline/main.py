@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import io
+import os
 import sys
 
 import yaml
@@ -13,6 +14,7 @@ import yaml
 from .gates import evaluate
 from .levels import compute_levels
 from .links import build_links
+from . import news as news_mod
 from .momentum import LABEL, WEAK, market_regime, rank_sectors
 from .render import build_report, freshness, write_outputs
 from .resolve_codes import verify
@@ -65,6 +67,25 @@ def main() -> int:
     us_asof = us[bench].index[-1].date()
     log(f"      {len(sectors)}섹터 / 국면 {regime['label']} / 기준일 {us_asof}")
 
+    # --- 2-b. 섹터 이슈(뉴스) ---
+    # 실패해도 리포트는 만든다. 뉴스는 참고 정보이지 매매 근거가 아니다.
+    if os.environ.get("SKIP_NEWS"):
+        log("      뉴스 수집 건너뜀 (SKIP_NEWS)")
+        issues = {}
+    else:
+        log("      섹터 이슈 수집")
+        try:
+            issues = news_mod.collect(us_cfg["sectors"], limit=5, days=3)
+        except Exception as exc:
+            log(f"      경고: 뉴스 수집 실패 ({type(exc).__name__}) - 이슈 없이 진행")
+            issues = {}
+        got = sum(1 for v in issues.values() if v["summary"]["count"])
+        log(f"      {got}/{len(us_cfg['sectors'])}개 섹터에서 이슈 확보")
+    for row in sectors:
+        blk = issues.get(row["ticker"], {})
+        row["issues"] = blk.get("items", [])
+        row["issue_summary"] = blk.get("summary", news_mod.summarize([]))
+
     # --- 3. 한국 ETF ---
     log("[3/5] 한국 ETF 수집")
     codes = [e["code"] for e in etfs]
@@ -100,6 +121,8 @@ def main() -> int:
             "us_ticker": e["us"], "us_name": us_sec["name"],
             "us_r20": us_sec["r20"],
             "signal": us_sec["signal"], "signal_label": LABEL[us_sec["signal"]],
+            "issue_summary": us_sec.get("issue_summary", {}),
+            "issues": us_sec.get("issues", [])[:3],
             "source": srcs.get(code, "?"),
             **lv,
             "links": build_links(code),
