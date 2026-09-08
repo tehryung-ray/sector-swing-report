@@ -1,8 +1,133 @@
 {
  "schema_version": 1,
- "generated_at_kst": "2026-09-08T21:10:12+09:00",
+ "generated_at_kst": "2026-09-09T07:19:03+09:00",
  "live": {
   "trades": [
+   {
+    "code": "434730",
+    "name": "HANARO 원자력iSelect",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "강한 상승",
+    "us_ticker": "URA",
+    "us_name": "원자력",
+    "entry": 59350,
+    "stop": 57275,
+    "tp1": 64885,
+    "tp2": 67655,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/434730/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=434730",
+     "toss": "https://tossinvest.com/stocks/A434730"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "395160",
+    "name": "KODEX AI반도체TOP2플러스",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SMH",
+    "us_name": "반도체(대형)",
+    "entry": 39760,
+    "stop": 38370,
+    "tp1": 43815,
+    "tp2": 45840,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/395160/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=395160",
+     "toss": "https://tossinvest.com/stocks/A395160"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "396500",
+    "name": "TIGER 반도체TOP10",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SOXX",
+    "us_name": "반도체",
+    "entry": 36340,
+    "stop": 35075,
+    "tp1": 39885,
+    "tp2": 41660,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/396500/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=396500",
+     "toss": "https://tossinvest.com/stocks/A396500"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "139260",
+    "name": "TIGER 200 IT",
+    "report_date": "2026-09-09",
+    "setup_label": "깊은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "XLK",
+    "us_name": "기술",
+    "entry": 134425,
+    "stop": 130400,
+    "tp1": 145300,
+    "tp2": 214080,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
+     "toss": "https://tossinvest.com/stocks/A139260"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "091160",
+    "name": "KODEX 반도체",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SOXX",
+    "us_name": "반도체",
+    "entry": 128595,
+    "stop": 124100,
+    "tp1": 140350,
+    "tp2": 146225,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
+     "toss": "https://tossinvest.com/stocks/A091160"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
    {
     "code": "434730",
     "name": "HANARO 원자력iSelect",
@@ -105,8 +230,8 @@
    }
   ],
   "stats": {
-   "n": 4,
-   "waiting": 4,
+   "n": 9,
+   "waiting": 9,
    "tested": 0,
    "filled": 0,
    "fill_rate": null,
@@ -123,6 +248,131 @@
   },
   "open": [],
   "waiting": [
+   {
+    "code": "434730",
+    "name": "HANARO 원자력iSelect",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "강한 상승",
+    "us_ticker": "URA",
+    "us_name": "원자력",
+    "entry": 59350,
+    "stop": 57275,
+    "tp1": 64885,
+    "tp2": 67655,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/434730/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=434730",
+     "toss": "https://tossinvest.com/stocks/A434730"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "395160",
+    "name": "KODEX AI반도체TOP2플러스",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SMH",
+    "us_name": "반도체(대형)",
+    "entry": 39760,
+    "stop": 38370,
+    "tp1": 43815,
+    "tp2": 45840,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/395160/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=395160",
+     "toss": "https://tossinvest.com/stocks/A395160"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "396500",
+    "name": "TIGER 반도체TOP10",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SOXX",
+    "us_name": "반도체",
+    "entry": 36340,
+    "stop": 35075,
+    "tp1": 39885,
+    "tp2": 41660,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/396500/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=396500",
+     "toss": "https://tossinvest.com/stocks/A396500"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "139260",
+    "name": "TIGER 200 IT",
+    "report_date": "2026-09-09",
+    "setup_label": "깊은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "XLK",
+    "us_name": "기술",
+    "entry": 134425,
+    "stop": 130400,
+    "tp1": 145300,
+    "tp2": 214080,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
+     "toss": "https://tossinvest.com/stocks/A139260"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
+   {
+    "code": "091160",
+    "name": "KODEX 반도체",
+    "report_date": "2026-09-09",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "SOXX",
+    "us_name": "반도체",
+    "entry": 128595,
+    "stop": 124100,
+    "tp1": 140350,
+    "tp2": 146225,
+    "links": {
+     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
+     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
+     "toss": "https://tossinvest.com/stocks/A091160"
+    },
+    "fill": "waiting",
+    "fill_label": "대기 중 (아직 장이 열리지 않음)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "pending": true,
+    "source": "live"
+   },
    {
     "code": "434730",
     "name": "HANARO 원자력iSelect",
@@ -224,77 +474,11 @@
     "source": "live"
    }
   ],
-  "reports": 1,
+  "reports": 2,
   "since": "2026-09-08"
  },
  "backtest": {
   "trades": [
-   {
-    "code": "244580",
-    "name": "KODEX 바이오",
-    "report_date": "2025-11-28 00:00:00",
-    "setup_label": "얕은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "XBI",
-    "us_name": null,
-    "entry": 12140,
-    "stop": 11735,
-    "tp1": 12965,
-    "tp2": 13375,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 12415.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "143860",
-    "name": "TIGER 헬스케어",
-    "report_date": "2025-11-28 00:00:00",
-    "setup_label": "깊은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "XLV",
-    "us_name": null,
-    "entry": 47410,
-    "stop": 45990,
-    "tp1": 49600,
-    "tp2": 49690,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 48890.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "091180",
-    "name": "KODEX 자동차",
-    "report_date": "2025-11-28 00:00:00",
-    "setup_label": "깊은눌림형",
-    "signal_label": "상승 전환",
-    "us_ticker": "XLY",
-    "us_name": null,
-    "entry": 21460,
-    "stop": 20825,
-    "tp1": 22610,
-    "tp2": 23515,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 21941.0,
-    "pending": false,
-    "source": "backtest"
-   },
    {
     "code": "244580",
     "name": "KODEX 바이오",
@@ -10218,11 +10402,11 @@
    }
   ],
   "stats": {
-   "n": 370,
+   "n": 367,
    "waiting": 0,
-   "tested": 370,
+   "tested": 367,
    "filled": 133,
-   "fill_rate": 35.9,
+   "fill_rate": 36.2,
    "cancelled": 2,
    "open": 2,
    "closed": 131,
@@ -10234,7 +10418,7 @@
    "worst": -4.89,
    "stopped": 68
   },
-  "since": "2025-09-08",
+  "since": "2025-09-09",
   "note": "실제 추천 기록이 아니라 같은 로직으로 과거를 재현한 결과입니다."
  },
  "premise": {
@@ -10243,37 +10427,37 @@
    {
     "signal": "strong",
     "label": "강한 상승",
-    "n": 909,
-    "avg": 1.09,
+    "n": 902,
+    "avg": 1.091,
     "win_rate": 57.1,
-    "t": 4.8
+    "t": 4.77
    },
    {
     "signal": "turning",
     "label": "상승 전환",
-    "n": 619,
-    "avg": 0.976,
-    "win_rate": 56.2,
-    "t": 4.01
+    "n": 602,
+    "avg": 0.935,
+    "win_rate": 55.1,
+    "t": 3.74
    },
    {
     "signal": "neutral",
     "label": "중립",
-    "n": 701,
-    "avg": 0.966,
-    "win_rate": 54.2,
+    "n": 700,
+    "avg": 0.968,
+    "win_rate": 54.3,
     "t": 4.53
    },
    {
     "signal": "weak",
     "label": "하락세",
-    "n": 1511,
-    "avg": 0.024,
-    "win_rate": 50.9,
-    "t": 0.13
+    "n": 1496,
+    "avg": -0.002,
+    "win_rate": 50.5,
+    "t": -0.01
    }
   ],
-  "strong_minus_weak": 1.066,
+  "strong_minus_weak": 1.093,
   "holds": true
  },
  "watch": {
@@ -10281,15 +10465,15 @@
   "by_reason": [
    {
     "reason": "미국 섹터가 하락세",
-    "n": 1415,
-    "avg": 0.07,
-    "up_rate": 51.4
+    "n": 1400,
+    "avg": 0.05,
+    "up_rate": 51.1
    },
    {
     "reason": "국내 20일선 아래",
-    "n": 688,
-    "avg": 0.37,
-    "up_rate": 50.9
+    "n": 675,
+    "avg": 0.34,
+    "up_rate": 50.2
    },
    {
     "reason": "20일선 이격 과열",
@@ -10299,20 +10483,20 @@
    },
    {
     "reason": "중기 추세 미회복",
-    "n": 201,
-    "avg": -0.07,
-    "up_rate": 53.7
+    "n": 200,
+    "avg": -0.08,
+    "up_rate": 53.5
    },
    {
     "reason": "손익비 미달",
-    "n": 110,
-    "avg": 0.61,
-    "up_rate": 55.5
+    "n": 105,
+    "avg": 0.56,
+    "up_rate": 54.3
    }
   ]
  },
  "milestone": {
-  "report_days": 1,
+  "report_days": 2,
   "closed": {
    "current": 0,
    "target": 100,
