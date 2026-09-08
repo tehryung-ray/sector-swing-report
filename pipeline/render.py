@@ -43,9 +43,8 @@ def make_headline(sectors: list[dict], picks: list[dict], regime: dict) -> str:
         head += " 다만 S&P500이 200일선 아래라 약세 국면이므로 비중을 줄이세요."
     if picks:
         p = picks[0]
-        how = ("돌파 시 진입" if p.get("setup") == "breakout"
-               else "부근 눌림목 대기")
-        head += f" 연결 종목 중에서는 {p['name']} {p['entry']:,}원 {how}를 우선 검토하세요."
+        head += (f" 연결 종목 중에서는 {p['name']} {p['entry']:,}원 지정가 예약을 우선 검토하세요"
+                 f" ({p['setup_label']}).")
     else:
         head += " 오늘은 진입 조건을 만족하는 종목이 없어 전체 관망을 권합니다."
     return head

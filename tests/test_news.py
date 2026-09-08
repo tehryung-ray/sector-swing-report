@@ -56,6 +56,30 @@ def test_summarize_counts():
     assert (s["count"], s["positive"], s["negative"], s["neutral"]) == (6, 2, 1, 3)
 
 
+def test_llm_disabled_without_key(monkeypatch):
+    """키가 없으면 LLM 을 호출하지 않고 사전 분류를 유지한다."""
+    from pipeline import llm
+    from pipeline.news import apply_llm
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    assert llm.is_enabled() is False
+    assert llm.classify(["아무 제목"], "반도체") is None
+    items = [{"title": "반도체 급등", "tone": NEU, "tone_label": "중립", "keywords": []}]
+    assert apply_llm(items, "반도체") == "keyword"
+    assert items[0]["tone"] == NEU
+
+
+def test_llm_result_overrides_keyword(monkeypatch):
+    """LLM 이 응답하면 사전 분류를 덮어쓰고 분류기 이름을 남긴다."""
+    from pipeline import llm, news
+    monkeypatch.setattr(llm, "is_enabled", lambda: True)
+    monkeypatch.setattr(llm, "model_name", lambda: "gemini-test")
+    monkeypatch.setattr(llm, "classify",
+                        lambda titles, sector: [{"tone": POS, "reason": "재고 감소는 호재"}])
+    items = [{"title": "원유 재고 감소", "tone": NEU, "tone_label": "중립", "keywords": []}]
+    assert news.apply_llm(items, "에너지") == "gemini:gemini-test"
+    assert items[0]["tone"] == POS and items[0]["keywords"] == ["재고 감소는 호재"]
+
+
 def test_empty_is_neutral():
     s = summarize([])
     assert s["count"] == 0 and s["tilt"] == NEU

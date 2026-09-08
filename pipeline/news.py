@@ -9,8 +9,9 @@
 가격 신호(모멘텀/국면)는 시세로 계산한 값이고, 뉴스 태그는 참고용이다.
 화면에도 그렇게 표기한다.
 
-ANTHROPIC_API_KEY 가 환경변수에 있으면 Claude 로 분류 품질을 올릴 수 있다(선택).
-없으면 사전 방식으로 자동 폴백한다.
+GEMINI_API_KEY 가 환경변수에 있으면 Gemini 로 분류 품질을 올린다(선택).
+없거나 호출이 실패하면 사전 방식으로 자동 폴백한다. 어느 쪽을 썼는지는
+summary["classifier"] 로 데이터에 남겨 화면에서 신뢰도를 구분해 보여준다.
 """
 from __future__ import annotations
 
@@ -21,6 +22,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
+from . import llm
 from .util import KST
 
 RSS = "https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
@@ -137,11 +139,27 @@ def summarize(items: list[dict]) -> dict:
     }
 
 
+def apply_llm(items: list[dict], sector_name: str) -> str:
+    """가능하면 LLM 분류로 덮어쓴다. 실제로 쓴 분류기 이름을 반환."""
+    if not items or not llm.is_enabled():
+        return "keyword"
+    res = llm.classify([i["title"] for i in items], sector_name)
+    if res is None:
+        return "keyword"
+    for item, r in zip(items, res):
+        item["tone"] = r["tone"]
+        item["tone_label"] = TONE_LABEL[r["tone"]]
+        item["keywords"] = [r["reason"]] if r["reason"] else []
+    return f"gemini:{llm.model_name()}"
+
+
 def collect(sectors: list[dict], limit: int = 5, days: int = 3) -> dict[str, dict]:
     """섹터 설정 목록 -> {ticker: {items, summary}}"""
     out = {}
     for s in sectors:
         kw = s.get("news_kw") or s.get("name")
         items = fetch_sector_news(kw, limit=limit, days=days)
-        out[s["ticker"]] = {"keyword": kw, "items": items, "summary": summarize(items)}
+        classifier = apply_llm(items, s.get("name", kw))
+        summary = summarize(items) | {"classifier": classifier}
+        out[s["ticker"]] = {"keyword": kw, "items": items, "summary": summary}
     return out

@@ -11,8 +11,8 @@ import pandas as pd
 import pytest
 
 from pipeline.gates import MIN_RR, MIN_TURNOVER_EOK, evaluate
-from pipeline.levels import (BO_MAX_LOSS, BREAKOUT, DOWNTREND, EXTENDED,
-                             EXTENDED_MAX, PB_MAX_LOSS, PULLBACK, compute_levels)
+from pipeline.levels import (DOWNTREND, EXTENDED, EXTENDED_MAX, PB_MAX_LOSS,
+                             PULLBACK, SH_MAX_LOSS, SHALLOW, compute_levels)
 from pipeline.util import pct, round_tick, tick_size
 
 TOL = 0.3  # 호가단위 반올림 여유(%p)
@@ -70,7 +70,7 @@ def test_price_ordering(seed):
 def test_stop_never_exceeds_max_loss(seed):
     """어떤 국면에서도 1회 손실이 -3.5%를 넘지 않아야 한다."""
     lv = compute_levels(make_df(seed=seed))
-    assert lv["stop_pct"] >= -(BO_MAX_LOSS * 100) - TOL, f"손절 {lv['stop_pct']}% 과다"
+    assert lv["stop_pct"] >= -(SH_MAX_LOSS * 100) - TOL, f"손절 {lv['stop_pct']}% 과다"
 
 
 @pytest.mark.parametrize("seed", ALL_SEEDS)
@@ -106,18 +106,34 @@ def test_setup_matches_extension(seed):
     elif ext <= 4.0:
         assert setup == PULLBACK
     else:
-        assert setup == BREAKOUT
+        assert setup == SHALLOW
 
 
 @pytest.mark.parametrize("seed", ALL_SEEDS)
-def test_entry_direction_by_setup(seed):
-    """눌림목형은 현재가 아래에서 기다리고, 돌파형은 현재가 위를 뚫을 때 산다."""
+def test_entry_is_limit_orderable(seed):
+    """실행 제약: 진입가는 항상 전일 종가 이하여야 예약 지정가 매수로 걸 수 있다.
+
+    현재가보다 위에 지정가 매수를 걸면 조건 충족이 아니라 개장 즉시 시가에 체결된다.
+    그건 기획서가 금지한 갭상승 추격이다.
+    """
     lv = compute_levels(make_df(seed=seed))
-    if lv["setup"] == PULLBACK:
-        assert lv["entry"] <= lv["last_close"], "눌림목형 진입가가 현재가보다 높다"
-        assert lv["entry_vs_last_pct"] <= 0.01
-    elif lv["setup"] == BREAKOUT:
-        assert lv["entry"] >= lv["last_close"], "돌파형 진입가가 현재가보다 낮다"
+    assert lv["entry"] <= lv["last_close"], "진입가가 전일 종가보다 높다 (예약 불가)"
+    assert lv["entry_vs_last_pct"] <= 0.01
+
+
+@pytest.mark.parametrize("seed", ALL_SEEDS)
+def test_cancel_below_equals_stop(seed):
+    """갭하락 취소선은 손절가와 같아야 한다."""
+    lv = compute_levels(make_df(seed=seed))
+    assert lv["cancel_below"] == lv["stop"]
+
+
+@pytest.mark.parametrize("seed", ALL_SEEDS)
+def test_shallow_waits_less_than_pullback_is_reachable(seed):
+    """얕은눌림형 진입가는 체결 가능한 거리(전일 종가 -5% 이내)에 있어야 한다."""
+    lv = compute_levels(make_df(seed=seed))
+    if lv["setup"] == SHALLOW:
+        assert lv["entry_vs_last_pct"] >= -5.0, "얕은눌림인데 너무 멀다"
 
 
 def test_pullback_stop_within_plan_range():
@@ -131,13 +147,14 @@ def test_pullback_stop_within_plan_range():
     assert seen > 0, "눌림목형 표본이 생성되지 않았다"
 
 
-def test_breakout_targets_are_atr_based():
+def test_shallow_targets_are_atr_based():
     for s in range(40):
         lv = compute_levels(make_df(seed=s, drift=0.004))
-        if lv["setup"] == BREAKOUT:
+        if lv["setup"] == SHALLOW:
             assert lv["target_basis"] == "ATR 투영"
+            assert lv["breakout_ref"] > 0, "돌파 참고선은 정보로 제공되어야 한다"
             return
-    pytest.fail("돌파형 표본이 생성되지 않았다")
+    pytest.fail("얕은눌림형 표본이 생성되지 않았다")
 
 
 def test_downtrend_detected():
