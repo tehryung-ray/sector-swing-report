@@ -72,6 +72,114 @@
     return box;
   }
 
+
+  /* ---- 수량 계산기 ----
+     손실 감당 금액에서 수량을 역산한다. "얼마어치 살까"가 아니라
+     "틀렸을 때 얼마까지 잃어도 되나"에서 출발하므로, 손절폭이 좁은 종목은
+     많이 넓은 종목은 적게 사게 되어 종목마다 위험이 같아진다.
+
+     값은 메모리에만 있다. 저장하지 않으므로 새로고침하면 사라진다. */
+  let riskAmount = 0;
+  const calcs = [];                       // {input, render} - 카드 간 입력 동기화용
+  const PRESETS = [100000, 200000, 300000, 500000, 1000000];
+  const manwon = (n) => (n % 10000 === 0 ? `${n / 10000}만` : n.toLocaleString("ko-KR"));
+
+  function syncCalcs(source) {
+    calcs.forEach((c) => {
+      if (c.input !== source) c.input.value = riskAmount ? riskAmount.toLocaleString("ko-KR") : "";
+      c.render();
+    });
+  }
+
+  function calcBlock(p) {
+    const risk = p.entry - p.stop;        // 1주당 위험폭
+    const box = el("div", "calc");
+
+    const head = el("div", "calc-h");
+    head.appendChild(el("b", null, "수량 계산기"));
+    head.appendChild(document.createTextNode(
+      `1주당 위험 ${won(risk)} (진입 ${p.entry.toLocaleString("ko-KR")} − 손절 ${p.stop.toLocaleString("ko-KR")})`));
+    box.appendChild(head);
+
+    const field = el("div", "calc-field");
+    const input = el("input");
+    input.type = "text";
+    input.inputMode = "numeric";
+    input.placeholder = "손실 감당 금액";
+    input.setAttribute("aria-label", `${p.name} 손실 감당 금액`);
+    if (riskAmount) input.value = riskAmount.toLocaleString("ko-KR");
+    field.appendChild(input);
+    field.appendChild(el("span", "unit", "원"));
+    box.appendChild(field);
+
+    const pre = el("div", "calc-pre");
+    PRESETS.forEach((v) => {
+      const b = el("button", null, manwon(v));
+      b.type = "button";
+      b.addEventListener("click", () => {
+        riskAmount = v;
+        input.value = v.toLocaleString("ko-KR");
+        render();
+        syncCalcs(input);
+      });
+      pre.appendChild(b);
+    });
+    box.appendChild(pre);
+
+    const out = el("div", "calc-out");
+    box.appendChild(out);
+
+    function render() {
+      out.innerHTML = "";
+      if (!riskAmount) {
+        out.appendChild(el("div", "calc-note",
+          "감당할 손실 금액을 넣으면 수량이 나옵니다. 보통 전체 자금의 0.5~1%로 잡습니다. 저장되지 않습니다."));
+        return;
+      }
+      if (risk <= 0) {
+        out.appendChild(el("div", "calc-warn", "위험폭을 계산할 수 없습니다."));
+        return;
+      }
+      const qty = Math.floor(riskAmount / risk);
+      if (qty < 1) {
+        out.appendChild(el("div", "calc-warn",
+          `1주도 살 수 없습니다. 이 종목은 최소 ${won(risk)} 이상이 필요합니다.`));
+        return;
+      }
+      const cost = qty * p.entry;
+      const maxLoss = qty * risk;
+      const half = Math.floor(qty / 2);
+      const profit = half * (p.tp1 - p.entry) + (qty - half) * (p.tp2 - p.entry);
+
+      const t = el("table");
+      const row = (label, val, cls) => {
+        const tr = el("tr", cls);
+        tr.appendChild(el("td", null, label));
+        tr.appendChild(el("td", "v", val));
+        t.appendChild(tr);
+      };
+      row("수량", `${qty.toLocaleString("ko-KR")}주`, "calc-qty");
+      row("필요 자금", won(cost));
+      row("손절 시 손실", `−${won(maxLoss).replace("원", "")}원`);
+      row("목표 달성 시 수익", `+${won(profit).replace("원", "")}원`);
+      out.appendChild(t);
+      out.appendChild(el("div", "calc-note",
+        `수익은 1차에서 ${half.toLocaleString("ko-KR")}주, 2차에서 ${(qty - half).toLocaleString("ko-KR")}주를 판 경우입니다. 수수료·세금은 빠져 있습니다.`));
+    }
+
+    input.addEventListener("input", () => {
+      const digits = input.value.replace(/[^0-9]/g, "");
+      riskAmount = digits ? parseInt(digits, 10) : 0;
+      input.value = riskAmount ? riskAmount.toLocaleString("ko-KR") : "";
+      render();
+      syncCalcs(input);
+    });
+
+    calcs.push({ input, render });
+    render();
+    return box;
+  }
+
   function pickCard(p, disclaimer) {
     const c = el("div", "card");
 
@@ -99,6 +207,7 @@
       `⚠ 시가가 ${won(p.cancel_below)} 아래로 열리면 예약주문을 취소하세요. 진입가 위로 갭상승하면 체결되지 않으니 추격하지 마세요.`));
 
     c.appendChild(linkRow(p));
+    c.appendChild(calcBlock(p));
     const nb = newsBlock(p, disclaimer);
     if (nb) c.appendChild(nb);
     return c;
@@ -159,6 +268,7 @@
 
     const picks = $("#picks");
     picks.innerHTML = "";
+    calcs.length = 0;                     // 이전 리포트의 계산기 참조 제거
     if (!d.picks.length) {
       picks.appendChild(el("div", "empty",
         "오늘은 진입 조건을 만족하는 종목이 없습니다. 관망이 가장 좋은 매매입니다."));

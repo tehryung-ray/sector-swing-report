@@ -217,3 +217,40 @@ h3 { font-size: 14.5px; margin: 20px 0 8px; letter-spacing: -.01em; }
 .plist { list-style: none; padding: 0; margin: 0; }
 .plist > li { display: flex; margin-bottom: 13px; font-size: 13.5px; line-height: 1.65; }
 .plist b { color: var(--ink); }
+
+/* ===== 수량 계산기 (휘발성) ===== */
+.calc { margin-top: 12px; border-top: 1px solid var(--line2); padding-top: 11px; }
+.calc-h { font-size: 12.5px; color: var(--dim); margin-bottom: 8px; display: flex;
+          align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.calc-h b { color: var(--ink); font-size: 13px; font-weight: 600; }
+.calc-field { display: flex; align-items: center; gap: 7px;
+              border: 1px solid var(--line); border-radius: 9px;
+              padding: 0 11px; background: var(--bg); }
+.calc-field:focus-within { border-color: var(--dim); }
+.calc-field input {
+  flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink);
+  font: inherit; font-size: 16px; font-weight: 600; padding: 10px 0;
+  text-align: right; font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield; outline: none;
+}
+.calc-field input::-webkit-outer-spin-button,
+.calc-field input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.calc-field input::placeholder { color: var(--dim); font-weight: 400; }
+.calc-field .unit { color: var(--dim); font-size: 13.5px; flex-shrink: 0; }
+.calc-pre { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.calc-pre button {
+  font: inherit; font-size: 12px; padding: 5px 10px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--card); color: var(--dim);
+  cursor: pointer; font-variant-numeric: tabular-nums;
+}
+.calc-pre button:hover { color: var(--ink); border-color: var(--dim); }
+.calc-out { margin-top: 11px; }
+.calc-out table { width: 100%; border-collapse: collapse; }
+.calc-out td { padding: 6px 0; font-size: 13.5px; border-bottom: 1px solid var(--line2); }
+.calc-out tr:last-child td { border-bottom: 0; }
+.calc-out td:first-child { color: var(--dim); }
+.calc-out td.v { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.calc-qty td { padding-top: 9px; }
+.calc-qty td.v { font-size: 19px; }
+.calc-note { font-size: 11.5px; color: var(--dim); margin-top: 9px; line-height: 1.55; }
+.calc-warn { font-size: 12.5px; color: var(--warn); margin-top: 9px; line-height: 1.55; }
