@@ -44,6 +44,11 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
-          TEST_SEND: ${{ inputs.test_send && '1' || '' }}
+          # 원시값을 그대로 넘기고 파이썬이 판정한다.
+          # inputs.x 는 컨텍스트에 따라 bool/문자열/null 로 달라져
+          # `inputs.x && '1' || ''` 가 체크 여부와 무관하게 항상 빈 값이 될 수 있다.
+          DRY_RUN: ${{ inputs.dry_run }}
+          TEST_SEND: ${{ inputs.test_send }}
+          RAW_DRY: ${{ github.event.inputs.dry_run }}
+          RAW_TEST: ${{ github.event.inputs.test_send }}
         run: python -m pipeline.check_open

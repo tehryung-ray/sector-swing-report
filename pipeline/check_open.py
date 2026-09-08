@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 
 from .market_calendar import is_kr_session
@@ -19,6 +20,19 @@ from .util import DOCS_DATA, now_kst
 
 def log(m: str) -> None:
     print(m, flush=True)
+
+
+def flag(*names: str) -> bool:
+    """워크플로 입력을 안전하게 읽는다.
+
+    GitHub Actions 의 inputs 값은 컨텍스트에 따라 불리언/문자열/빈값으로 달라진다.
+    'false' 라는 문자열도 파이썬에서는 참이므로 그대로 쓰면 반대로 동작한다.
+    """
+    for n in names:
+        v = (os.environ.get(n) or "").strip().lower()
+        if v in ("1", "true", "yes", "on"):
+            return True
+    return False
 
 
 TEST_MESSAGE = "\n".join([
@@ -36,16 +50,20 @@ TEST_MESSAGE = "\n".join([
 
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
-    import os
-
     now = now_kst()
     today = now.date()
     log(f"== 개장 점검 {now:%Y-%m-%d %H:%M KST} ==")
 
+    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+    log(f"   입력  TEST_SEND={os.environ.get('TEST_SEND')!r} "
+        f"RAW_TEST={os.environ.get('RAW_TEST')!r} DRY_RUN={os.environ.get('DRY_RUN')!r}")
+    log(f"   시크릿 토큰 {'설정됨(' + str(len(tok)) + '자)' if tok else '없음'} / "
+        f"chat_id {'설정됨(' + str(len(chat)) + '자)' if chat else '없음'}")
+
     # 연결 확인용. 시세·휴장 여부와 무관하게 한 통 보내본다.
     # 장 시작 전에는 판정할 시세가 없어 실제 경로로는 전송이 일어나지 않으므로,
     # 텔레그램 설정이 맞는지 확인하려면 이 모드가 필요하다.
-    if os.environ.get("TEST_SEND"):
+    if flag("TEST_SEND", "RAW_TEST"):
         log("[테스트] 연결 확인 메시지 전송")
         ok, err = send_telegram(TEST_MESSAGE)
         log("      전송 성공" if ok else f"      전송 실패: {err}")
@@ -98,7 +116,7 @@ def main() -> int:
     for line in msg.split("\n"):
         log(f"      {line}")
 
-    if os.environ.get("DRY_RUN"):
+    if flag("DRY_RUN", "RAW_DRY"):
         log("      DRY_RUN 이라 전송하지 않았습니다.")
         return 0
 

@@ -97,3 +97,30 @@ def test_partial_invalid_is_noted_in_message():
             judge({**PICK, "name": "시세없음"}, None)]
     m = build_message(REP, rows, market_open=True)
     assert "체결 1건" in m and "시세없음" in m
+
+
+# ---------- 워크플로 입력 판정 ----------
+
+@pytest.mark.parametrize("val,want", [
+    ("true", True), ("1", True), ("TRUE", True), ("on", True), ("yes", True),
+    ("false", False), ("0", False), ("", False), ("  ", False),
+])
+def test_flag_parsing(monkeypatch, val, want):
+    """'false' 는 파이썬에서 참인 문자열이다. 그대로 쓰면 반대로 동작한다."""
+    from pipeline.check_open import flag
+    monkeypatch.setenv("X", val)
+    assert flag("X") is want
+
+
+def test_flag_missing_env_is_false(monkeypatch):
+    from pipeline.check_open import flag
+    monkeypatch.delenv("X", raising=False)
+    assert flag("X") is False
+
+
+def test_flag_checks_multiple_names(monkeypatch):
+    """inputs / github.event.inputs 어느 쪽으로 와도 받아야 한다."""
+    from pipeline.check_open import flag
+    monkeypatch.setenv("A", "")
+    monkeypatch.setenv("B", "true")
+    assert flag("A", "B") is True
