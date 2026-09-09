@@ -5,3 +5,11 @@ __pycache__/
 *.egg-info/
 .DS_Store
 cache/
+
+# 토큰 파일은 저장소 어디에 있어도 막는다 (실수로 다른 폴더에 만드는 경우 대비)
+.env
+.env.*
+!ops/.env.example
+*.env
+secrets.*
+*_token.txt

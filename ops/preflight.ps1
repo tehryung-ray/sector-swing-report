@@ -92,7 +92,35 @@ if (-not (Test-Path $envFile)) {
 }
 
 Write-Host ""
-Write-Host "=== 8. 등록된 작업 ==="
+Write-Host "=== 8. 토큰 유출 점검 ==="
+# 토큰이 저장소에 들어가면 되돌리기 어렵다(이력에 영구히 남는다). 매번 확인한다.
+$tracked = & git ls-files
+$leak = $tracked | Where-Object { $_ -match '(^|/)\.env($|\.)' -and $_ -notmatch '\.env\.example$' }
+if ($leak) { BAD ("추적 중인 토큰 파일: " + ($leak -join ", ") + "  <- 즉시 제거하고 토큰을 재발급할 것") }
+else { OK "추적 중인 .env 파일 없음" }
+
+$staged = & git diff --cached --name-only
+$leak2 = $staged | Where-Object { $_ -match '(^|/)\.env($|\.)' -and $_ -notmatch '\.env\.example$' }
+if ($leak2) { BAD ("커밋 대기 중인 토큰 파일: " + ($leak2 -join ", ")) }
+else { OK "커밋 대기 중인 토큰 파일 없음" }
+
+$envFile2 = Join-Path $repo "ops\.env"
+if (Test-Path $envFile2) {
+  & git check-ignore -q "ops/.env"
+  if ($LASTEXITCODE -eq 0) { OK "ops\.env 가 .gitignore 로 보호됨" }
+  else { BAD "ops\.env 가 무시되지 않는다 — .gitignore 를 확인할 것" }
+}
+
+# 로그에 토큰이 찍히지 않는지 확인 (스크립트는 길이만 출력하도록 되어 있다)
+$logs = Get-ChildItem (Join-Path $repo "ops\logs") -Filter *.log -ErrorAction SilentlyContinue
+if ($logs) {
+  $hit = $logs | Where-Object { (Get-Content $_.FullName -Raw -ErrorAction SilentlyContinue) -match 'bot\d{6,}:' }
+  if ($hit) { BAD ("로그에 봇 토큰이 찍혀 있다: " + ($hit.Name -join ", ")) }
+  else { OK "로그에 토큰 흔적 없음" }
+}
+
+Write-Host ""
+Write-Host "=== 9. 등록된 작업 ==="
 $tasks = Get-ScheduledTask -TaskName "SectorSwing-*" -ErrorAction SilentlyContinue
 if (-not $tasks) { WARN "SectorSwing-* 작업이 없다 — 아직 등록하지 않았다" }
 else {

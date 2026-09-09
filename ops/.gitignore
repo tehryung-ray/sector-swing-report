@@ -1,2 +1,11 @@
 logs/
+
+# 토큰 파일. .env 자체뿐 아니라 편집기가 만드는 사본까지 막는다.
+# notepad 의 "다른 이름으로 저장"이 .env.txt 를 만드는 식으로 새는 것을 방지한다.
 .env
+.env.*
+!.env.example
+*.env
+env.txt
+*.bak
+*~
