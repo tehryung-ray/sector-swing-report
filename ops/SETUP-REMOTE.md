@@ -149,8 +149,7 @@ Python·Git·패키지·시간대·저장소·push 권한·외부 접근·토큰
 ## 9. 손으로 한 번 실행
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File ops
-un-daily.ps1
+powershell -ExecutionPolicy Bypass -File ops\run-daily.ps1
 ```
 
 `=== 정상 종료 ===` 이 나와야 한다. 로그는 `ops\logs\daily-YYYY-MM-DD.log`.
