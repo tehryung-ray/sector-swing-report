@@ -145,3 +145,46 @@ def send_telegram(text: str) -> tuple[bool, str]:
         return bool(body.get("ok")), "" if body.get("ok") else str(body)[:200]
     except Exception as e:
         return False, f"{type(e).__name__}: {e}"
+
+
+# ---------- 중복 발송 방지 ----------
+# 크론을 여러 번 걸면 같은 알림이 반복 발송된다.
+# 다만 09:10 에 '취소 1건'이었다가 09:30 에 '체결'이 추가되는 것은 새 정보이므로
+# 내용이 바뀌면 다시 보낸다. 체결·취소 판정은 하루 안에서 되돌아가지 않으므로
+# (취소는 시가 기준 고정, 체결은 저가가 닿으면 유지) 내용은 단조 증가한다.
+
+STATE_FILE = "openbell.json"
+
+
+def _digest(rows: list[dict]) -> str:
+    import hashlib
+    key = "|".join(sorted(f"{r['code']}:{r['state']}" for r in rows
+                          if r["state"] in (CANCEL, FILLED)))
+    return hashlib.sha256(key.encode()).hexdigest()[:16] if key else ""
+
+
+def load_state(path) -> dict:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def should_send(state: dict, today, rows: list[dict]) -> tuple[bool, str]:
+    """(보낼지, 사유). 같은 날 같은 내용이면 보내지 않는다."""
+    dg = _digest(rows)
+    if not dg:
+        return False, "알릴 내용 없음"
+    if state.get("date") == str(today) and state.get("digest") == dg:
+        return False, "같은 내용을 이미 보냈음"
+    if state.get("date") == str(today):
+        return True, "상황이 바뀌어 다시 보냄"
+    return True, "오늘 첫 발송"
+
+
+def save_state(path, today, rows: list[dict], sent: bool) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({
+        "date": str(today), "digest": _digest(rows), "sent": sent,
+        "states": {r["code"]: r["state"] for r in rows},
+    }, ensure_ascii=False, indent=1), encoding="utf-8")

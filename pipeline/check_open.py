@@ -13,8 +13,9 @@ import os
 import sys
 
 from .market_calendar import is_kr_session
-from .openbell import (CANCEL, FILLED, WAITING, build_message, fetch_today,
-                       judge, send_telegram)
+from .openbell import (CANCEL, FILLED, STATE_FILE, WAITING, build_message,
+                       fetch_today, judge, load_state, save_state,
+                       send_telegram, should_send)
 from .util import DOCS_DATA, now_kst
 
 
@@ -112,6 +113,13 @@ def main() -> int:
         log("      손 쓸 일이 없어 보내지 않습니다.")
         return 0
 
+    # 크론을 여러 번 걸어두면 같은 알림이 반복된다. 내용이 같으면 보내지 않는다.
+    sp = DOCS_DATA / STATE_FILE
+    go, why = should_send(load_state(sp), today, rows)
+    log(f"      중복 판정: {why}")
+    if not go:
+        return 0
+
     log("      --- 보낼 내용 ---")
     for line in msg.split("\n"):
         log(f"      {line}")
@@ -122,6 +130,8 @@ def main() -> int:
 
     ok, err = send_telegram(msg)
     log("      전송 완료" if ok else f"      전송 실패: {err}")
+    if ok:
+        save_state(sp, today, rows, True)
     return 0 if ok else 1
 
 

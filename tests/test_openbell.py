@@ -124,3 +124,71 @@ def test_flag_checks_multiple_names(monkeypatch):
     monkeypatch.setenv("A", "")
     monkeypatch.setenv("B", "true")
     assert flag("A", "B") is True
+
+
+# ---------- 중복 발송 방지 ----------
+
+def _rows(*states):
+    """상태 목록으로 판정 결과 흉내내기."""
+    out = []
+    for i, st in enumerate(states):
+        if st == CANCEL:
+            out.append(judge({**PICK, "code": f"C{i}"}, bar(9600, 9800, 9500, 9650)))
+        elif st == FILLED:
+            out.append(judge({**PICK, "code": f"C{i}"}, bar(10100, 10200, 9950, 10050)))
+        else:
+            out.append(judge({**PICK, "code": f"C{i}"}, bar(10300, 10500, 10150, 10400)))
+    return out
+
+
+def test_same_content_not_resent():
+    """크론을 여러 번 걸면 같은 알림이 반복된다. 두 번째부터는 보내지 않는다."""
+    from pipeline.openbell import should_send, _digest
+    rows = _rows(CANCEL, WAITING)
+    state = {"date": "2026-09-10", "digest": _digest(rows)}
+    go, why = should_send(state, "2026-09-10", rows)
+    assert go is False and "이미" in why
+
+
+def test_changed_content_is_resent():
+    """09:10 에 취소만 있다가 09:30 에 체결이 생기면 새 정보이므로 다시 보낸다."""
+    from pipeline.openbell import should_send, _digest
+    first = _rows(CANCEL, WAITING)
+    later = _rows(CANCEL, FILLED)
+    state = {"date": "2026-09-10", "digest": _digest(first)}
+    go, why = should_send(state, "2026-09-10", later)
+    assert go is True and "바뀌" in why
+
+
+def test_new_day_resets():
+    from pipeline.openbell import should_send, _digest
+    rows = _rows(CANCEL)
+    state = {"date": "2026-09-09", "digest": _digest(rows)}
+    assert should_send(state, "2026-09-10", rows)[0] is True
+
+
+def test_nothing_actionable_never_sends():
+    from pipeline.openbell import should_send
+    go, why = should_send({}, "2026-09-10", _rows(WAITING, WAITING))
+    assert go is False and "없음" in why
+
+
+def test_digest_ignores_non_actionable():
+    """미체결이 섞여도 취소·체결 구성이 같으면 같은 내용으로 본다."""
+    from pipeline.openbell import _digest
+    assert _digest(_rows(CANCEL, WAITING)) == _digest(_rows(CANCEL, WAITING))
+    assert _digest(_rows(CANCEL)) != _digest(_rows(CANCEL, FILLED))
+
+
+def test_save_and_load_roundtrip(tmp_path):
+    from pipeline.openbell import save_state, load_state, should_send
+    p = tmp_path / "openbell.json"
+    rows = _rows(CANCEL, FILLED)
+    save_state(p, "2026-09-10", rows, True)
+    assert should_send(load_state(p), "2026-09-10", rows)[0] is False
+
+
+def test_load_missing_file_is_empty():
+    from pathlib import Path
+    from pipeline.openbell import load_state
+    assert load_state(Path("없는파일.json")) == {}
