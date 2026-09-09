@@ -79,6 +79,11 @@ Start-ScheduledTask -TaskName "SectorSwing-Daily"
 
 ## 다른 PC에 설치
 
+**처음부터 설치하는 상세 절차는 [SETUP-REMOTE.md](SETUP-REMOTE.md) 를 보라.**
+원격 PC는 RDP 세션이 끊겨도 돌아야 하므로 자격증명과 LogonType 설정이 핵심이다.
+
+간단 요약:
+
 24시간 켜진 PC가 여러 대면 **여러 대에 걸어도 된다.** 중복 방지가 이미 있어서
 먼저 도는 쪽이 이기고 나머지는 빠진다. 오히려 한 대가 꺼져도 다른 대가 덮어주므로 더 안전하다.
 
@@ -110,8 +115,11 @@ git push origin main     # 브라우저 인증이 뜨면 한 번 통과시켜 �
 시간대 확인:
 
 ```powershell
-Get-TimeZone     # Korea Standard Time 이어야 한다
+powershell -ExecutionPolicy Bypass -File ops\preflight.ps1
 ```
+
+`preflight.ps1` 이 Python·Git·패키지·시간대·저장소·push 권한·외부 접근·토큰·작업 등록을
+한 번에 점검한다. `[실패]` 가 없어야 설치가 끝난 것이다.
 
 ---
 
