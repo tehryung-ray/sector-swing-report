@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "report_date": "2026-09-10",
- "generated_at_kst": "2026-09-10T07:51:38+09:00",
+ "generated_at_kst": "2026-09-10T08:58:08+09:00",
  "us_asof": "2026-09-09",
  "kr_asof": "2026-09-09",
  "freshness": {
@@ -41,7 +41,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등"
+      "원자력 정서 급등"
      ]
     },
     {
@@ -52,8 +52,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "회복",
-      "수혜"
+      "원전 회복 수혜주"
+     ]
+    },
+    {
+     "title": "월성원전, 대구·경북 관계기관과 ‘대드론 방어체계’ 공유",
+     "source": "에너지데일리",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lcFM5dTNPSW1BYjJVbTdneXRDMDkwd25ucnQ0V08zZ2x3Q1IzclVLdk03ODJ5OVlZRk9IRFB2WFRyenN1M0U5R0xkeUJkcWpJOU1KNy1TbjFsNEFnV1RQQl80M29NbjlEZEItRnhTRDI1QQ?oc=5",
+     "published_kst": "09-10 08:28",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "방어체계 공유"
      ]
     },
     {
@@ -63,39 +73,30 @@
      "published_kst": "09-10 06:42",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "EU “북한 핵무기 생산 확대 우려…러시아 ‘비핵화 종결’ 입장 비판”",
-     "source": "VOA 한국어 홈페이지",
-     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBodmZxR3g0SE9yckNhUG14SnhnejdPNE10cktnT2NuMEV2RTFwTkVQRGNwZkdMb1dGT1ZZNEhSZGg3YTdnS1M4ZXFoM0hiaDFzOWp1Wm41WENxWHZCeFQzZlMyX3BkaDlNdEtRcjlQcDZCX0Flc3R3edIBe0FVX3lxTE5GLTBkMFF4OUE3VzVWQjRJMUFMYUNvUk1lWmNFd25xakZOeW5ob0pnZElzOXRkREFSN01IWGlqOGJBVGVYX05YYVhRQ01KVF9RYWxEN0pnYmVQV2JUd0YzVUNOUjJCeERPaVFXemJ1VGc5blpkUTFPSTl4MA?oc=5",
-     "published_kst": "09-10 01:20",
-     "tone": "negative",
-     "tone_label": "부정",
      "keywords": [
-      "우려"
+      "방어체계 공유"
      ]
     },
     {
-     "title": "센트러스 에너지, 래디언트와 고순도 저농축 우라늄 장기 공급 계약 체결",
-     "source": "데이터투자",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WVdZUTBud1RXREVLd1JfYnh2VWE3UGxibWk5THA4ZGxfUEtVT1BuYmpaWW5MM2FYcU9Sa1NFbFp5UkRRQUV6RGhzbmZPR2NaVW1KVlNQUS1jekw5bC1nSHpiVDRhTWNPRmZxbXBKYlhVXzQ?oc=5",
-     "published_kst": "09-09 21:41",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "title": "월성원자력본부, 관계기관과 원전 대드론 방어체계 공유",
+     "source": "헤럴드경제",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yWmtQSWRlcFRPUmlRTjUzWTRWZm04UVFidklBc19GQTRzLWF2S2d2SGZGejNGeWNxeXhFd25TcnAtNlBqN3RxekhnS1czcGt3TVhFNGxn?oc=5",
+     "published_kst": "09-10 08:50",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "계약"
+      "방어체계 공유"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 3,
-    "negative": 1,
-    "neutral": 1,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -112,6 +113,17 @@
    "signal_label": "상승 전환",
    "issues": [
     {
+     "title": "[전망] 삼성 파운드리, 테일러·2나노로 AI 반도체 고객 넓힐까?",
+     "source": "내외뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2RnFuX0hVRW1TaVNUNTdkZXNqRl9ENW5uUUNUWUxKYkR6YThCZFh0Qk5zLURkcnp4bzE0bVpnOHlpNFI3QW9yelU0QWpRRDF6YkJvZDNTcjV3WDY4TV9lWHVmYy1sOG9VZnQzRtIBcEFVX3lxTE9ZazQ2dnFiT1VIWEZBZ0RCdTZUMmJDN21KRGVKazQ4Q3BJV1JJbzd0VEt1V28tdklaZ1Zhem1UYWlPdGJVQnF5V0I5WEZDUjVJRVpOSDNuU2RyXzA1YkI5aTl2Vm9zMlJySDVJWGhiRW8?oc=5",
+     "published_kst": "09-09 13:43",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 반도체 고객 확대 기대"
+     ]
+    },
+    {
      "title": "SK키파운드리, 독일 엘모스와 130나노 차량용 반도체 장기 공급 계약 체결",
      "source": "동아일보",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Yd1gyY1UxRzBvRW93bUszeDM5bXFsVWZ5ZUNIZXFOWGhlNlpTbjUzbmMtbmk3d2FTVmZwZ0NJaGpxUXdwNEp2SHBtSi05UEZhenhUeVFxOG5xdUJEVnhaZUZWclBrdXRidHZkd0k3N083M0I1b1HSAWZBVV95cUxOMzlJRm1iMTdDRFVXQkFLYnR5Wm1sTHRZTGNDRzlkWHIwOGVGYVVrdE9UeHNFR1RyUHJ0aXBxcWZxZW0yWE9nekMwbkZBY1pLM0lLbXhybFNhLW00Ymc2bnB1QlZQcXc?oc=5",
@@ -119,7 +131,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "계약"
+      "차량용 반도체 장기 공급"
      ]
     },
     {
@@ -130,7 +142,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
+      "첨단 공정 기술 발전"
      ]
     },
     {
@@ -141,7 +153,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주"
+      "파운드리 수주 및 생산"
      ]
     },
     {
@@ -152,27 +164,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "계약"
+      "차량용 반도체 장기 공급"
      ]
-    },
-    {
-     "title": "[오늘의 삼전닉스] 외국인 반도체 러브콜 속 삼성·SK하닉의 온도 차",
-     "source": "이코노미스트",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE12OWVvdXJpdENDdEdKbzkxV2VhQ0UwZUxVcmhQR1pRMzctYlJfeXlKR0FVcmRGbjVqMFRYaTRoSjNwRVpnRVdhOC16TmlnNXFNSWlrbnZHSzcyWENBaklMd0JR?oc=5",
-     "published_kst": "09-09 11:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 5,
     "negative": 0,
-    "neutral": 1,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -189,59 +192,69 @@
    "signal_label": "상승 전환",
    "issues": [
     {
-     "title": "한-프, AI·반도체·양자 협력 강화…공동연구·투자 확대",
-     "source": "v.daum.net",
-     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LU09QTUNwM3FTRkRGWWxvM3M1OWxVMGJKQkMtMmhzaVd4SUNFYmMteFhpVi1yRW9ZVlViMVg4VW9qQXViUDItbm1iUzZwYmc?oc=5",
-     "published_kst": "09-09 22:02",
+     "title": "AI·반도체 대신 1481억 베팅…서학개미 몰린 이 종목[1분 브리프]",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WRVFwTlVHNTFhOGpIb3ZpdFRUTFBaUWVqNHhYSnVYSFg5OXN5M0ViMWN5VnNFbjBUaG50X3lRZU9lRGJvQ3JadHdtWVBjUzNWN010ZmFhSUQxY3Q2bUJYSA?oc=5",
+     "published_kst": "09-10 08:00",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "개인 투자자 동향"
+     ]
     },
     {
      "title": "韓, 프랑스와 AI·반도체·양자기술 투자 협력 늘린다",
      "source": "지디넷코리아",
      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tSnVnc0NEdVpnYVQwekZOcTR0TDkxVHNpWXJrd0xCb3gwekl3My1uNG9jeVdPc1hFX2dwdEo2T1ZDMTdFUkp6TER0SmtPYnd4N3pLVE9R?oc=5",
      "published_kst": "09-09 22:54",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI·반도체 협력 강화"
+     ]
     },
     {
-     "title": "엔비디아, AI 생태계 확장에 대규모 베팅-인텔·스페이스X·코어위브 투자 주목",
-     "source": "미디어파인",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05Tzk0aFF3cFYwdTc0Q3FrclVyeDVNU08xVlhyU1FYUC1ZbVVHSm9NdnZtckpudmVDX2RSVDJtaTlza2tBYUJSWGxaVXZDaVJydW9lWUNKOF84aTFyZm9EMlJEYm0xR2hvbk5XZVJn?oc=5",
-     "published_kst": "09-10 07:25",
+     "title": "젠슨 황 ‘AGI 도래’ 선언에도 엔비디아 주가는 2% 하락",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00MHpPSXV5QUs0YWJhZUZoTHB0YlFsNFB4aG1fbVd4VDlfWGFSblJEQ3dULVRiTVFLdHlkRGh0OElUQVpPVkFkWE90R2VEeXYwOWw2NXY2eS00MndWelBud2JMVXhleDJrZmVTTFp4UjUweGU0b0o2bFJObw?oc=5",
+     "published_kst": "09-10 08:34",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "개별 기업 주가 변동"
+     ]
     },
     {
      "title": "코스피 7,000선 안착…AI·반도체가 견인",
-     "source": "yonhapnewstv.co.kr",
+     "source": "연합뉴스TV",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9NV3hFQkpoWWJJMXoxLTFBRzBBeG02bnU0MmFTT2RGa0hxRHI5d01IeHlFdmwtdERBQk1GM0RQRGhIMkttcEhjTGxiTjZYX2hxNlN0REt5VFRuVVc0c3pNVGU5akJkb0E?oc=5",
      "published_kst": "09-09 16:09",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI·반도체가 시장 견인"
+     ]
     },
     {
-     "title": "펌프펀, 테슬라·엔비디아 등 토큰화 주식 페어링 지원",
-     "source": "tokenpost.kr",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ub1RMTFE5ZHlGWE5YVjRYcWoyeURjcTZ1N3UwR1hzN1M3MnNjRjJRSDJzOTNuYUVkVEJJakhZS3ZuT1JYakJxS2RDNEFrbHY2Vnh1S1VOWXLSAV5BVV95cUxPVkxmZnd2NTNoZ2JUUmNUOFhybmFOTFNOV1FOSlhSUVBNa0Q5RUYzT2U3YWZ3X1VPTFpyWC11d3RVYnVRekkzakYtSm9acTh0cUI5Qm85Qjh1ZC1URlV3?oc=5",
-     "published_kst": "09-10 05:51",
+     "title": "[속보][뉴욕증시] 유가 급등에 사흘 연속 하락…엔비디아, 0.9↓",
+     "source": "파이낸셜뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFByLUkydnpHTV9uMmJWcHVvQ2NmNzhPaDBnV2xNWFF3UGV0Vmo0UG9OZDNmeUJadXZzVTN4N2JDR0lqR3RoNjBibFNPd3lRdmpBN0ZCSnc4bHBRdw?oc=5",
+     "published_kst": "09-10 05:01",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "전반적 시장 하락 영향"
+     ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 0,
+    "positive": 2,
     "negative": 0,
-    "neutral": 5,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "neutral": 3,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -265,41 +278,40 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등"
-     ]
-    },
-    {
-     "title": "국제유가 3%대 급등…브렌트유 101달러로 약 4개월 만에 최고",
-     "source": "yna.co.kr",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Jem5YVGVFa3V6TlZLY3pDWFdpckF2UDU2Um1xRUZTWHZ4NldOWE8zUU5QVUVWRy1Va0VsalN6czl4VnhySHlWVnQ5ZG5VeEp2b3RlVEJ5U01nR0JxemRMaNIBYEFVX3lxTE9Jem5YVGVFa3V6TlZLY3pDWFdpckF2UDU2Um1xRUZTWHZ4NldOWE8zUU5QVUVWRy1Va0VsalN6czl4VnhySHlWVnQ5ZG5VeEp2b3RlVEJ5U01nR0JxemRMaA?oc=5",
-     "published_kst": "09-10 04:42",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "급등"
+      "국제유가 급등"
      ]
     },
     {
      "title": "유가 급등에 반색한 정유주…향후 변수와 투자전략은?",
-     "source": "hankyung.com",
+     "source": "한국경제",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBUFlIMnNJcmxPM2p3OUh0ZXJlamhtNWpOSFdISnN3OXhDVTlhM0dSZVhSNzNwd09NZzF2X1Zwb21XNnZwdHJlcVNpdEdfRWpzeDhta0U0VmxRdw?oc=5",
      "published_kst": "09-10 07:27",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등"
+      "유가 급등에 정유주 반색"
+     ]
+    },
+    {
+     "title": "국제유가 3%대 급등…브렌트유 101달러로 약 4개월 만에 최고",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Jem5YVGVFa3V6TlZLY3pDWFdpckF2UDU2Um1xRUZTWHZ4NldOWE8zUU5QVUVWRy1Va0VsalN6czl4VnhySHlWVnQ5ZG5VeEp2b3RlVEJ5U01nR0JxemRMaNIBYEFVX3lxTE9Jem5YVGVFa3V6TlZLY3pDWFdpckF2UDU2Um1xRUZTWHZ4NldOWE8zUU5QVUVWRy1Va0VsalN6czl4VnhySHlWVnQ5ZG5VeEp2b3RlVEJ5U01nR0JxemRMaA?oc=5",
+     "published_kst": "09-10 04:42",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "국제유가 급등"
      ]
     },
     {
      "title": "뉴욕증시, 3일째 하락…국제유가·美국채금리 상승 영향",
-     "source": "yonhapnewstv.co.kr",
+     "source": "연합뉴스TV",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PN3NKMmJ4dGg4TmxyV29aRGoxUE9yaXJJbGVnMDNtY0U4d2JZTnYxa0tXQ3ZFNU9MRkFIOGxud0w3Y1VHU2NpRVo0RW54RFpadk5NRE9jVXdrOG04NmZrdXdORGptNTQ?oc=5",
      "published_kst": "09-10 05:38",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "negative",
+     "tone_label": "부정",
      "keywords": [
-      "상승",
-      "하락"
+      "국제유가 상승 영향"
      ]
     },
     {
@@ -307,22 +319,21 @@
      "source": "스트레이트뉴스",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zamVyeWY1UHBrMEdJNk5Wc2c1Rkpud0doandQTjFGeW9zMlY2bzVoaXVudjlHQldhM2FjcmFRWEJvTFB3LVl0M0xveFUyVG5pRHZLOGoyelVtMm5QZmd5bHctQWRVVjFyTXN4S1dEeDRycWfSAXdBVV95cUxNMmYwMndqSGFPNFQ0OEpJbTJxMkY0aDM5S1k0YlNMaVRkZ3JpeFFVS25QZ0FVZEZFM1NYYk10R3M0aXJ0NlJFOURySnZiQlE0SmdCOWZRc1owbkhBWjM1VW1KQnlSbUNnYzFMMF9QYnpmWmhwUE9vNA?oc=5",
      "published_kst": "09-10 05:50",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "돌파",
-      "우려"
+      "국제유가 100달러 돌파"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 3,
-    "negative": 0,
-    "neutral": 2,
+    "positive": 4,
+    "negative": 1,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -346,7 +357,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "사업 다각화 발표"
      ]
     },
     {
@@ -357,7 +368,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "신형 태양전지 발사"
      ]
     },
     {
@@ -365,37 +376,43 @@
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VZFZXYWlLemJWeEhWM0VWdE10SUFUeVc5X3kyNmRCeS0xeGFVV3BXcVRXb3ZNUFdwMU1kTkxDSXpMRGJ5Z3hkWi1GQ0k2LW8?oc=5",
      "published_kst": "09-09 17:10",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 투자 검토"
+     ]
     },
     {
      "title": "중국 기업 20여곳 새만금 찾아 태양광·이차전지· 정보통신기술 투자 타진",
      "source": "투데이 군산",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mNnFTUjFhbmN6cFpOeGJKWHdrdDJ5akhYODV5ZHZZeV80RExELUp0eG4tS00yR2tMNVZORlFNN3pIVEM2R0FmcjNQeFgzazNUWW9tYl9uTi02VlRidWp0UnFnU01uVzU0OS16a0hDd3I?oc=5",
      "published_kst": "09-09 13:17",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 투자 타진"
+     ]
     },
     {
      "title": "中 태양광·배터리 기업 20여곳 새만금 찾는다…투자유치 협의 본격화",
      "source": "아시아투데이",
      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9hN2xibnRwdmwzNXR6UGwydjZNM0R1ZFBzV25SV0l6b2JBVW1XMGJFM1NJVEprUWhKdEZENDJueThfR0dFTnA0MnRsbHVzeXpBQ3duZC1RVkZ6b19PdFhQR291Uk9QQmxGdTQtYjJR?oc=5",
      "published_kst": "09-09 14:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 투자 협의"
+     ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 2,
+    "positive": 5,
     "negative": 0,
-    "neutral": 3,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -416,11 +433,21 @@
      "source": "문화일보",
      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtQlFWX0YtX3R0UlVQVEZfRm80dmoxb2QxbFJjNWtVOW4yZzFmZUcyRUtFQTRLa0plQXAzSWZJcnY2cXRhbzVqT2JWS0Y1NEVH?oc=5",
      "published_kst": "09-10 06:35",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "SK하이닉스 ADR 급등"
+     ]
+    },
+    {
+     "title": "글로벌 금융시장 원전 투자로 급선회…빅테크 전력 확보전 가열",
+     "source": "에너지안전신문",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fLTNya0pTUFZGWUpONzg4UDVqYXc4V2I5T0xlUFFUVm1abF93UWhFZmtHNnRYRGpEemM3d3M4TDZkZlZhbm9hLXZJdEN3SWFhVS1VM1FzTVVHNDZmQzI5QzZZcG8?oc=5",
+     "published_kst": "09-10 07:55",
      "tone": "neutral",
      "tone_label": "중립",
      "keywords": [
-      "신고가",
-      "하락"
+      "빅테크 전력 확보 경쟁"
      ]
     },
     {
@@ -430,7 +457,9 @@
      "published_kst": "09-10 05:38",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "사업 분사 및 상장 추진"
+     ]
     },
     {
      "title": "뉴욕증시, 하락세로 마감…나스닥 0.64%↓",
@@ -440,38 +469,29 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "하락"
+      "나스닥 하락 마감"
      ]
     },
     {
      "title": "[속보] 美증시 하락 마감…다우 -0.77%, S&P500 -0.48%, 나스닥 -0.64%",
-     "source": "SBS Biz",
+     "source": "biz.sbs.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1GbFU4cXFlZWhuMXpaenNHdE9VUzlpRzJnS0ZFNjBJZGNteFlnaGR3YVZQR2ZTV1hsWEJ3N1QzWjd1LTV5WkVNMUtoN2RxNm0tYUNQZWc1UnUxZ3loaVhzTERlall2MnfSAVhBVV95cUxQNlp1Y0k4cEFKWGRBNXdsVXNiNE53Mnd4MkRLRXR3UzN4RkM0dUZYdHY0WEVMeDI3ZGFEdFlQMWZtV0tIVm1VVHRmQndoSm1lcm1mQ2d3Q2h6?oc=5",
      "published_kst": "09-10 05:06",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "하락"
+      "주요 지수 하락 마감"
      ]
-    },
-    {
-     "title": "가전의 LG가 아니다 로봇 자회사 나스닥 상장?",
-     "source": "연합인포맥스",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8wSER6dU5IRGpqcGJSb3dLb0w5VHRIXzNqQVNKY3lCbEpLb0hNaFZoSXZHUlVWcVl6aXVDSVY2RXUxaW1QbFpMRlRGNXpKcWE1Z0hMOGs1MXl5Q0lhZXlQOWF5bjI2MXdyYnhad2wtZ3rSAXRBVV95cUxObUxYM2RDRUdCdHdwZDdVSU4zVndBdHV5aXFUSlg4TGQ4TzFQWkVPaGd1TmdVVUpfbjlPSjBYNXdHSkVuWXdJMzJfMlRVa2F0dWxzRzBFT2dUdENDSlBrRVRFbGdFU1JWMURqd2tBNjVMM1NfTQ?oc=5",
-     "published_kst": "09-09 09:15",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 0,
+    "positive": 1,
     "negative": 2,
-    "neutral": 3,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "keyword"
+    "neutral": 2,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -494,17 +514,19 @@
      "published_kst": "09-09 21:04",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "단순 종목 추천"
+     ]
     },
     {
      "title": "[오늘장 탑픽] AI 데이터센터發 전력난…전력설비주 장기 성장하나",
-     "source": "SBS Biz",
+     "source": "biz.sbs.co.kr",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SUVZDa0I3WWw0N1NDZVR5RUUyeVVqM2NrX1h1eFR5NzlFRDR3bWhodDRaQVN0RmU5b3MwRjJfREk0SHRhNm1oNFhweWF6ZUt3clRz0gFYQVVfeXFMT1dhNW81alBWajlvWmlid0hjM2FqbzdxVXB5Z0tTa25qRDFGRVRIWGl2aHhRRXYyWlRkazVGcHB6OVRHZWZTM2Z5RjFRN3FieUNVb2lEQThrNQ?oc=5",
      "published_kst": "09-09 07:40",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "AI 데이터센터 전력 수요 증가"
      ]
     },
     {
@@ -515,18 +537,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "강세"
+      "AI 인프라 수요 증가"
      ]
     },
     {
-     "title": "특징주, 지엔씨에너지-전력설비 테마 상승세에 7.03% ↑",
+     "title": "특징주, 일진전기-전력설비 테마 상승세에 5.15% ↑",
      "source": "매일경제 마켓",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rQ181N3FSZDlUd3pTNm9RVVdlQWhpOVRGRVlDSXpfRF9HT3JvVTFrMTBQdVJ1Q2FIQlVFaklnbXJOUG52RGw3WnZoR2dnTTZ4dmc?oc=5",
-     "published_kst": "09-09 09:36",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBrQ2pTQ0hsZnN3WEZnMjc1VVdBRFNBVXVudEt0ajBrTW1wMEpkVUs0R3BSRXVUaXJXbml4LWlsY3ZxUEY5MnVKVHY4dXRiRXB2Qmc?oc=5",
+     "published_kst": "09-09 09:35",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "전력설비 테마 상승"
      ]
     },
     {
@@ -534,21 +556,21 @@
      "source": "머니투데이",
      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqUlBUSjd0cW82alpLQW9XcWNsNEVkSDd5YndkT3dROV9xd2xtelZVYzJtQmU2ZzUzQ1JzWEdwNGtEZERHOGdoOXpwZU9jZVM1NTFpdldnb1d3OUNMMTdBVGktaVVDYzRESnl0ZUkyMNIBb0FVX3lxTFBqUlBUSjd0cW82alpLQW9XcWNsNEVkSDd5YndkT3dROV9xd2xtelZVYzJtQmU2ZzUzQ1JzWEdwNGtEZERHOGdoOXpwZU9jZVM1NTFpdldnb1d3OUNMMTdBVGktaVVDYzRESnl0ZUkyMA?oc=5",
      "published_kst": "09-09 16:35",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "회복"
+      "스포츠 뉴스"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 3,
     "negative": 0,
-    "neutral": 1,
+    "neutral": 2,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -588,14 +610,14 @@
    "signal_label": "하락세",
    "issues": [
     {
-     "title": "금리인상 우려에 '방어주 매력' 커진 은행주…\"환율 여건도 우호적\"",
-     "source": "연합인포맥스",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
-     "published_kst": "09-07 08:17",
+     "title": "유안타證 “증권주, 바닥은 왔지만 반등은 아직…5개사 목표가 줄하향”",
+     "source": "v.daum.net",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PMWlhNzdLeXZ2amdsa3JtM0xFYy0yT19RbUJUUXBFcE9weDZtdzVQUjVHTHZ2RzBPTV9wdUxQS1RsX2QxUlo1LWhaVnRtVDg?oc=5",
+     "published_kst": "09-10 08:01",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "우려"
+      "증권주 목표가 하향"
      ]
     },
     {
@@ -606,17 +628,8 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수혜"
+      "은행주, 고금리/환율 수혜"
      ]
-    },
-    {
-     "title": "상반기 ‘실적잔치’ 끝났나...증권주, 거래대금 위축에 ‘찬바람’",
-     "source": "핀포인트뉴스",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wTXpEeGR2NWx1UFFaMVB1aVBvcUtLdlZnODRtdHBDMVZ6RUZvV2lLblUzbUszekU5OGRqXzJ1S0FLZmo1Y1lIbUk1bzFaOU4xMThQZHRnZDBsYTUyWUhjZ1V3Q0xBcVhGM29TeEFjc3ItSm_SAXdBVV95cUxOMFVVWEJiMjZGQm5jVEcwTFFQUVhnOGJmUmEwZGw5cHN5U2d5MW13bWxsVS12Q0JQamZZSTJtTlFQRWhXVzN2QkFzMWNNd1ZtMDZWYUZEOG1kcklRN1RUWUZzWHFZYzhScnlaMTFlQk9jVzRxa3p2QQ?oc=5",
-     "published_kst": "09-09 22:23",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
     },
     {
      "title": "[EBN 데이터센터] 증권주 일제히 상승...리밸런싱 기대와 거래대금 회복",
@@ -626,8 +639,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승",
-      "회복"
+      "증권주, 리밸런싱/거래대금 회복"
+     ]
+    },
+    {
+     "title": "상반기 ‘실적잔치’ 끝났나...증권주, 거래대금 위축에 ‘찬바람’",
+     "source": "핀포인트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wTXpEeGR2NWx1UFFaMVB1aVBvcUtLdlZnODRtdHBDMVZ6RUZvV2lLblUzbUszekU5OGRqXzJ1S0FLZmo1Y1lIbUk1bzFaOU4xMThQZHRnZDBsYTUyWUhjZ1V3Q0xBcVhGM29TeEFjc3ItSm_SAXdBVV95cUxOMFVVWEJiMjZGQm5jVEcwTFFQUVhnOGJmUmEwZGw5cHN5U2d5MW13bWxsVS12Q0JQamZZSTJtTlFQRWhXVzN2QkFzMWNNd1ZtMDZWYUZEOG1kcklRN1RUWUZzWHFZYzhScnlaMTFlQk9jVzRxa3p2QQ?oc=5",
+     "published_kst": "09-09 22:23",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "증권주, 거래대금 위축"
      ]
     },
     {
@@ -638,18 +661,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "개선"
+      "은행주, 실적 개선/PBR 상승"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
     "positive": 3,
-    "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "keyword"
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -673,7 +696,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "강세"
+      "반도체·2차전지 강세"
      ]
     },
     {
@@ -684,27 +707,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주"
+      "글로벌 기업 수주"
      ]
     },
     {
      "title": "K-배터리 투자상담",
-     "source": "yna.co.kr",
+     "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpua9IBYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpuaw?oc=5",
      "published_kst": "09-09 13:25",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "韓배터리, 非중국 점유율 37→27%로 급락",
-     "source": "동아일보",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9QcDM0VlhJOVhlTTlUMlVGeFh4SnRXWHA0b2taMmFBMlFDbXhZczJPUmJmTFRIWldGM193bk1fZXdKamZZeVMtbXU0RS0xdGJoLTdMbmwxZUhwOVY3QXR4TTJJNURmWVJBR2t0ZVZqalVNVFk?oc=5",
-     "published_kst": "09-10 00:30",
-     "tone": "negative",
-     "tone_label": "부정",
      "keywords": [
-      "급락"
+      "투자 상담 관련"
      ]
     },
     {
@@ -715,7 +729,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주"
+      "글로벌 기업 수주"
+     ]
+    },
+    {
+     "title": "韓배터리, 非중국 점유율 37→27%로 급락",
+     "source": "동아일보",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9QcDM0VlhJOVhlTTlUMlVGeFh4SnRXWHA0b2taMmFBMlFDbXhZczJPUmJmTFRIWldGM193bk1fZXdKamZZeVMtbXU0RS0xdGJoLTdMbmwxZUhwOVY3QXR4TTJJNURmWVJBR2t0ZVZqalVNVFk?oc=5",
+     "published_kst": "09-10 00:30",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "점유율 급락"
      ]
     }
    ],
@@ -726,7 +751,7 @@
     "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -743,6 +768,17 @@
    "signal_label": "하락세",
    "issues": [
     {
+     "title": "국민성장펀드가 픽한 제약·바이오 살펴보니…'안정성' 방점",
+     "source": "비즈워치",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MX21hR0xZMmM4ZjVhNW4wZWcyZkVpMV9ZV2pIRFkzbk5qQmQ3dUd4d21nclJHNXhyQ3BqUXVqbWUwWndwbzdId0JfbWNFQ1g0c0lQZ2dibnRDVFRzckZxd2hEcnEtcTVIb05jX2sxYw?oc=5",
+     "published_kst": "09-10 07:50",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "펀드 투자 성향"
+     ]
+    },
+    {
      "title": "“K바이오 변곡점, 정면돌파해야”…초기투자·글로벌 경험 ‘균형’ 강조[K바이오 딜 써밋]",
      "source": "팜이데일리",
      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EaTBONFF5Rlg1d3VFQXNUSlFSNV8yTkdYTGhBYlVhRk80cUFhVTVobkVTaThuN25td05wZUw1T2Z2VWl0bjdnT3dGNlM1Ty1FUHRROE1ia09tWVNacElGWWRUeEhEYUROZWhDTFNB?oc=5",
@@ -750,7 +786,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
+      "K바이오 성장 강조"
      ]
     },
     {
@@ -758,9 +794,11 @@
      "source": "히트뉴스",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE13aFRzeG1vWmxTNXlvVEQ2WVFaZ0wyMTRQZmtqMlozVjJrWWY0QUVHXy0tWlBJVWFzcmJmXzVzRlJJelJjSFhUN2pKYzJ6YkFGbkV5RF9JMXIwOVduTzRTbVRHeEt6Y1lKYlEw?oc=5",
      "published_kst": "09-09 17:45",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "신약 허가에도 주가 하락"
+     ]
     },
     {
      "title": "보로노이, 폐암신약 ‘VRN11’ 캐나다 임상 자진철회…“자료 보완 후 재제출”",
@@ -770,7 +808,7 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "철회"
+      "신약 임상 자진 철회"
      ]
     },
     {
@@ -781,29 +819,18 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "적자"
-     ]
-    },
-    {
-     "title": "국내 개발 각결막 상피 장애 개선 신약 허가",
-     "source": "BRIC",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9qbEJLZjVpcmpuSzZSYVpVMTNFbTgwNXVYc1BXRkUwRHJTQkh5UlJUbHZVMXhkU2JzbGhyd25wZVpLYU4zQ3JrcTNqOWlVWWVMNFV2VkRNVE5FZjZNVTlNc05JX2NJelFrZUFERjRwMXRVaDBMa3dad2NmcVRZZw?oc=5",
-     "published_kst": "09-09 09:52",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "개선"
+      "적자 경영 부담"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 2,
+    "positive": 1,
+    "negative": 3,
     "neutral": 1,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -820,34 +847,36 @@
    "signal_label": "하락세",
    "issues": [
     {
+     "title": "로킷헬스케어,중국 하이난 러청 진출 계약..“4개월 내 AI 피부재생 수술 시작 ”",
+     "source": "약업신문",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hVVpmTW5yZnpJY185UzFKUzlicEJTSnRCZC10OENLZkdrc3RfbUlKZ1oyclJkdVFHN281eXlodVBqcjFmOGdYNWdXcTRUZFptQ2VQbExzVUNWRXlrOFhDNGNyd0ZVMXJqRHJFc2ppUU1uZ0hYMThkdF9R?oc=5",
+     "published_kst": "09-10 08:51",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 피부재생 수술 진출"
+     ]
+    },
+    {
      "title": "애비애나 헬스케어 주가, 14.01달러로 사상 최고치 경신",
      "source": "Investing.com 한국어",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51UGpoY3d1ekp4czlfZFVwUlJRTG9SaWgwRVFQRFB1WUwtamlfajktMEtybklfNk5kNGJBUmE1cjYyaU1TMFZHOHRFTnc2R2RHQUs1eWI3c2ZwSkdhRndSRnpRREVnMUVpYTVnM1lOaVI?oc=5",
      "published_kst": "09-10 05:02",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "헬스케어 주가 최고치"
+     ]
     },
     {
      "title": "웰스파고 헬스케어 컨퍼런스에서 코메딕스의 성장과 위험 논의",
      "source": "Investing.com 한국어",
      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1peXprUk9PdE5jTF9sWldaTzRzTFZJcUNpRlNJU3paVW5fcFlpVXdhcjlKcm9SZ1RFQUI4Z0MwNWk0NmtwWm56WFAxOEoxSGhscnZKaFRjMF9IcUprSmh3VnVsZ080QUUxZENsZF9VRQ?oc=5",
      "published_kst": "09-10 02:51",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "성장"
-     ]
-    },
-    {
-     "title": "Merck의 Wells Fargo 헬스케어 컨퍼런스: 성장 계획 확대",
-     "source": "Investing.com 한국어",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HVXV2V2ZzOGtRd1gtUnBaVTJiOXBLUHBTMWZ2T2pHVl83ajZ1NjFRU01uMkN1QmhhZmkwdFB5azB6aTB1dVRpMzcyVy13MmVBdXZHTl9GY05OZzdiMUNoV3RMTTNtNXdxMncyYndhTQ?oc=5",
-     "published_kst": "09-10 05:32",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "성장"
+      "성장 및 위험 논의"
      ]
     },
     {
@@ -858,18 +887,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "AI, CRM 성장 동력 확보"
      ]
     },
     {
-     "title": "캔터 헬스케어 컨퍼런스에서의 뉴로페이스: 성장, 데이터, FDA 승인 경로",
+     "title": "Merck의 Wells Fargo 헬스케어 컨퍼런스: 성장 계획 확대",
      "source": "Investing.com 한국어",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5fSkFhejRfMkZXQkJnMEpXajVmWkQ0Vjc2TThEM2xNeXZPMzhMa1JUd2hMUDdodFQzUGpwcUxQQWxlc3NmSUJQYlFGNWxiOW11akFLYzhYZXN5WW9BeHNfb0t0bmdtZ3FfMHlfWElucw?oc=5",
-     "published_kst": "09-10 02:14",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HVXV2V2ZzOGtRd1gtUnBaVTJiOXBLUHBTMWZ2T2pHVl83ajZ1NjFRU01uMkN1QmhhZmkwdFB5azB6aTB1dVRpMzcyVy13MmVBdXZHTl9GY05OZzdiMUNoV3RMTTNtNXdxMncyYndhTQ?oc=5",
+     "published_kst": "09-10 05:32",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "성장 계획 확대 기대"
      ]
     }
    ],
@@ -880,7 +909,7 @@
     "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -897,37 +926,25 @@
    "signal_label": "하락세",
    "issues": [
     {
-     "title": "중동전쟁 다시 격화하자 화학주 '급반등'…전망은 '안갯속' [분석+]",
-     "source": "hankyung.com",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQc1BXd1lDLU1BT0k5UkJhT2wtRjVpUkhPa2xzZFZBWHhPMDV1VTFfQ0l5a01uVmt3TTZJdEFzZERqQVFaSFJ6dXNmMm5EN1haVHdIeGpNT2tJdw?oc=5",
-     "published_kst": "09-10 06:30",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "반등"
-     ]
-    },
-    {
      "title": "반토막 났던 주식이 하루 만에 급등…정유·화학주 반등 시도",
-     "source": "hankyung.com",
+     "source": "한국경제",
      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01WDA2dms2THluUjVBc3dSVzRLa1ZmX01aRTBIR2ZJejE5dU5IbGFhdFc5dTRvOXZxT3JrZ2F4OGhRZjlVZzNvRkxmTDN1aXU5bUl2aTQydHU5dw?oc=5",
      "published_kst": "09-09 16:12",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등",
-      "반등"
+      "정유/화학주 반등 시도"
      ]
     }
    ],
    "issue_summary": {
-    "count": 2,
-    "positive": 2,
+    "count": 1,
+    "positive": 1,
     "negative": 0,
     "neutral": 0,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "keyword"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -948,9 +965,11 @@
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA4R3FoNzczOEV0aE04R0NsWGQzZFlTSkY2TloyeUNheWt4WUpsY0FnSGROU0FDc1JZNS1wSEhXUTFPVGVybzFfTG1KTmladkVCQ2hpRQ?oc=5",
      "published_kst": "09-07 18:00",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "식품주 배당 매력"
+     ]
     },
     {
      "title": "Reckitt, Barclays 필수 소비재 컨퍼런스: 성장 및 법적 승리",
@@ -960,7 +979,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "필수 소비재 성장/법적 승리"
      ]
     },
     {
@@ -968,22 +987,21 @@
      "source": "핀포인트뉴스",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpX2lSZzhHT2JrS1lDVXFyVUpNVVlBQVU4T3NOVl9GUHZ1SEEwWTdlbGdZZ3hrLXpaUUVQZXBRMG83X1pKSnluSmh0eXJyWjRsZVJ6dkN6Y3ZScWRfVGdnZGw0c0V4ZjJhemJJQTJqQi1uZ2pGbWx30gF3QVVfeXFMUGlfaVJnOEdPYmtLWUNVcXJVSk1VWUFBVThPc05WX0ZQdnVIQTBZN2VsZ1lneGstelpRRVBlcFEwbzdfWkpKeW5KaHR5cnJaNGxlUnp2Q3pjdlJxZF9UZ2dkbDRzRXhmMmF6YklBMmpCLW5nakZtbHc?oc=5",
      "published_kst": "09-08 14:37",
-     "tone": "neutral",
-     "tone_label": "중립",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "수혜",
-      "하락"
+      "식품주, 환율 하락 수혜"
      ]
     }
    ],
    "issue_summary": {
     "count": 3,
-    "positive": 1,
+    "positive": 3,
     "negative": 0,
-    "neutral": 2,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -1000,22 +1018,37 @@
    "signal_label": "하락세",
    "issues": [
     {
+     "title": "큐노바 김재현 총괄부사장 “양자 화학 소프트웨어, 6개국 9개 기업·기관에 판매”",
+     "source": "양자신문",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Fbk9rLWJiUzV3c1hpZ0ZHM0ZpZUJ4aEs4NUdwbmlCZFlsTTZ4bGJRajd2aXVqMGx5cWl4WXU3UXZCM18tX2w4TTdpbThVbzR1ZGZieHZTRmNBczRIQjJBbmVjbWUyV0xjVy1aUElpQQ?oc=5",
+     "published_kst": "09-10 07:30",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "양자 화학 SW 판매 확대"
+     ]
+    },
+    {
      "title": "「Nintendo Direct 2026.9.9」에서 공개된 소프트웨어 메이커 타이틀의 최신 정보를 소개! | News | 한국닌텐도주식회사",
      "source": "nintendo.com",
      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lcHhVaU1QWjM2S0FrWTNGTFVyZzY5LXMxbi1SdGxKekE3ZlZvbWdBYW1GSG1uUzFsMjByeUFrbExqNDV1d0wwT0I5YTY0eXA0Z0JUNlEySjh6aTdsc0ZWYkg2dzFTUlJwMVhrWnA3RQ?oc=5",
      "published_kst": "09-09 16:57",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "게임 소프트웨어 정보"
+     ]
     },
     {
      "title": "제이 Jill, 2분기 클라우드 소프트웨어 도입에 1010만 달러 순투자",
      "source": "데이터투자",
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TdU5EQWNDRnByR0VUQ2txUXRnR096TnVUYUtBSmNhNXJyQWQxZThZcUVuQWJfcHpfYlo4RzVsTlY5cGU2TVJQSXpLelVVN2RBSmdOd2cxR0pqc1hFMHhSbzk1WXViR2N4aHAyZGNyOS1KSk0?oc=5",
      "published_kst": "09-10 06:03",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "클라우드 SW 투자 확대"
+     ]
     },
     {
      "title": "「Nintendo Direct 2026.9.9」에서 공개된 소프트웨어의 최신 정보 소개! | News | 한국닌텐도주식회사",
@@ -1024,7 +1057,9 @@
      "published_kst": "09-09 16:57",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "게임 소프트웨어 정보"
+     ]
     },
     {
      "title": "Citi 컨퍼런스에서 Manhattan Associates: 클라우드, AI 그리고 성장",
@@ -1034,27 +1069,18 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "클라우드, AI 성장 기대"
      ]
-    },
-    {
-     "title": "Nintendo Switch 2 『젤다의 전설 시간의 오카리나』는 11월 5일(목) 발매. ｢젤다의 전설 40주년｣ 특별 디자인의 ｢Nintendo Switch 2｣와 주변기기도 10월 29일(목) 발매. | News | 한국닌텐도주식회사",
-     "source": "nintendo.com",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84cTF0VUNuQU85NkY4WDYxMUFIbVM4OUwwaDAwY2haU09zZHVOeGhuZ3dPMnZlRmJqZnJqVU4yNGstTE5LUjhOZXZKV0NzMU9ZLUZjZHh2MGtPU0xIODhYRjZpZTBrcU4xRnJENU5Uc1c?oc=5",
-     "published_kst": "09-10 06:14",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 1,
+    "positive": 3,
     "negative": 0,
-    "neutral": 4,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "neutral": 2,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -1078,7 +1104,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "조선주, 방산/해양플랜트 기대"
      ]
     },
     {
@@ -1089,7 +1115,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "역대급"
+      "조선주 역대급 호황"
      ]
     },
     {
@@ -1100,8 +1126,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승",
-      "강세"
+      "조선주 동반 강세"
      ]
     },
     {
@@ -1112,8 +1137,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주",
-      "기대감"
+      "조선주, 수주/핵잠 기대감"
      ]
     },
     {
@@ -1124,8 +1148,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "강세",
-      "수혜"
+      "조선주, 인프라 수혜 지속"
      ]
     }
    ],
@@ -1136,7 +1159,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -1159,26 +1182,19 @@
      "published_kst": "09-07 16:41",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "중국 CATL 실적 언급"
+     ]
     },
     {
      "title": "'쇳물부터 완성차까지'…현대차그룹 美 밸류체인 구축",
      "source": "MTN 머니투데이방송",
      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhU1lENnJ1SHUyY3dQOXJ6X1FaVmFZWUI1bnhIMFN1cWVfVkg2MHQ5cDNsWFNEU1p5YXBHbHlwVDlxRkhBSElRbnN5UkdRNHlna2Q5MXFmS0VIdU5kV0MydVVKUTE?oc=5",
      "published_kst": "09-07 17:46",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "유안타증권 \"완성차, 환율 급락 타격 4분기에 본격화\"",
-     "source": "yna.co.kr",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03c2lIcEl1b0NZOFFQVzh5VTkxUmg5SUhVbERVdjZuOU1ETVE3Z1FpaXNwZllGdjR6OTZsNjJkRDREUjRRc2J5MVo4akxlM3h6SlNSeGhyNmlQeTTSAWBBVV95cUxPdWZyUHVXLWo0eXdyUUJzakc1ZVJfVU1SUVE4a2JKM3VDZ2JEU0hCS00wellDX2hSTldyTy0xZzlDOTh1cnd5Z2Qzc0NsZ0tPdWx4WFhHV01lQVMtTUpxS08?oc=5",
-     "published_kst": "09-07 08:26",
-     "tone": "negative",
-     "tone_label": "부정",
+     "tone": "positive",
+     "tone_label": "긍정",
      "keywords": [
-      "급락"
+      "현대차그룹 美 밸류체인 구축"
      ]
     },
     {
@@ -1186,10 +1202,10 @@
      "source": "kr.news.cn",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5aSThiR1NMYVY5TF91Q3kwbmpDMkJkTDUtcnBndnRaSHlONjUyaEZ2eEJac3BDbkMxR0RadUlHNnotVWUwbmh3R3I0QmlTMTRGdDB3aE9BRGh4am9LdDFVSDBsZUR2X0pfb3o0aWJzNG9lZU5h?oc=5",
      "published_kst": "09-07 15:02",
-     "tone": "negative",
-     "tone_label": "부정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "부진"
+      "中 완성차 수출/R&D 강화"
      ]
     },
     {
@@ -1200,18 +1216,29 @@
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "규제"
+      "美 완성차, 중국산 규제 요구"
+     ]
+    },
+    {
+     "title": "\"차도 덜 팔리는데 원화까지…\" 자동차주 투자자들 '울상' [종목+]",
+     "source": "Nate News",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8xd3F6SkpGbXNsMU10S3dlN1VKNzRERTA2MlZrV0d4ZG5wcGowZllBX0ptWm1QX2hLYmZpR0s4OVJKMl9ZT1dYbGFCdERhbDhqMExIQTVGTGYtTnNUcmUzT3VVMDJDdFFMdmxJWHJBTnhrZUI0TTBwMw?oc=5",
+     "published_kst": "09-08 08:50",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "자동차주, 내수 부진/원화 강세"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 0,
-    "negative": 3,
+    "positive": 1,
+    "negative": 2,
     "neutral": 2,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "keyword"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   },
   {
@@ -1232,9 +1259,11 @@
      "source": "뉴스핌",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HeEpWMUhfWTZzV3FCbS10SXl4VUNlSW5hVjg1bktIaGYyYkJwREVBaldaczdndGZVbDlVeXBDVnUzWTB3ai0zQUdzM2t3M3prS1pYTjZBbHhkXzZT?oc=5",
      "published_kst": "09-08 08:32",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "목표가 상향"
+     ]
     },
     {
      "title": "美 방위비 확대 훈풍…'GE·로켓랩·크라토스' 방산주 3인방 뜬다",
@@ -1244,7 +1273,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "훈풍"
+      "방위비 확대 수혜"
      ]
     },
     {
@@ -1252,19 +1281,21 @@
      "source": "Nate News",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45cFRNcURyd2IzM29FdjhVdkZONzRCZ2ltTVY1clM5emdQei1JeF94RFFJanUxTHFfSi13UmRfNmgwSDJFYnUwMVVFeGZFTm10c1NF?oc=5",
      "published_kst": "09-09 15:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "항공·우주 수요 증가"
+     ]
     },
     {
      "title": "한국항공우주 주가 상승 중",
-     "source": "아시아뉴스통신",
+     "source": "anewsa.com",
      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE83SndXaWdvekluZURFZ3RHeVJwUVRYYnBtMGJEQ1FlWkVEVWdrbzVYQ3VQUkxIcWhLNDNWeV9tbTVhTGtXZ0hleXhMTVkyeHpkYi1STmw2a2FmYjdlVmFkaWF4ZWhUTjU3SGQzSE9nLTlNLVk0?oc=5",
      "published_kst": "09-09 09:30",
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "주가 상승"
      ]
     },
     {
@@ -1272,21 +1303,21 @@
      "source": "",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YOW5JY3Q1bmhBSDBtNWhnTHBCZXh2ZkNLV1otSXh4NGxqWkdydlRKU3gwYV9GT2NOeFZFQ2dma2lSTDFDNlZERnZYQk1oWHVfbUNDTFFtUUg2Q2Z5VGVlMkJQN1A0NXloQ3Btag?oc=5",
      "published_kst": "09-09 09:29",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "계약"
+      "내부 감사 관련"
      ]
     }
    ],
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 4,
     "negative": 0,
-    "neutral": 2,
+    "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    }
   }
  ],
@@ -1301,12 +1332,12 @@
    "signal_label": "강한 상승",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
-    "negative": 1,
-    "neutral": 1,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1317,7 +1348,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등"
+      "원자력 정서 급등"
      ]
     },
     {
@@ -1328,18 +1359,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "회복",
-      "수혜"
+      "원전 회복 수혜주"
      ]
     },
     {
-     "title": "한국수력웑자력 월성원자력본부, 관계기관과 원전 대드론 방어체계 공유",
-     "source": "CBN뉴스",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzMFg1dXBXMVR2ZmdTam41VzZDOWRzX2Mwak5yaXlXbzRuMGJSeVIxV25LNGN6T1FjemRLUG94RkZaejFfY2E1WHZwa2pCMmR4R0U4?oc=5",
-     "published_kst": "09-10 06:42",
+     "title": "월성원전, 대구·경북 관계기관과 ‘대드론 방어체계’ 공유",
+     "source": "에너지데일리",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lcFM5dTNPSW1BYjJVbTdneXRDMDkwd25ucnQ0V08zZ2x3Q1IzclVLdk03ODJ5OVlZRk9IRFB2WFRyenN1M0U5R0xkeUJkcWpJOU1KNy1TbjFsNEFnV1RQQl80M29NbjlEZEItRnhTRDI1QQ?oc=5",
+     "published_kst": "09-10 08:28",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "방어체계 공유"
+     ]
     }
    ],
    "source": "fdr",
@@ -1368,7 +1400,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1080.2,
+   "turnover_eok": 1080.3,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/487240/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=487240",
@@ -1385,12 +1417,12 @@
    "signal_label": "강한 상승",
    "issue_summary": {
     "count": 5,
-    "positive": 0,
+    "positive": 1,
     "negative": 2,
-    "neutral": 3,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "keyword"
+    "neutral": 2,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1398,11 +1430,21 @@
      "source": "문화일보",
      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtQlFWX0YtX3R0UlVQVEZfRm80dmoxb2QxbFJjNWtVOW4yZzFmZUcyRUtFQTRLa0plQXAzSWZJcnY2cXRhbzVqT2JWS0Y1NEVH?oc=5",
      "published_kst": "09-10 06:35",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "SK하이닉스 ADR 급등"
+     ]
+    },
+    {
+     "title": "글로벌 금융시장 원전 투자로 급선회…빅테크 전력 확보전 가열",
+     "source": "에너지안전신문",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fLTNya0pTUFZGWUpONzg4UDVqYXc4V2I5T0xlUFFUVm1abF93UWhFZmtHNnRYRGpEemM3d3M4TDZkZlZhbm9hLXZJdEN3SWFhVS1VM1FzTVVHNDZmQzI5QzZZcG8?oc=5",
+     "published_kst": "09-10 07:55",
      "tone": "neutral",
      "tone_label": "중립",
      "keywords": [
-      "신고가",
-      "하락"
+      "빅테크 전력 확보 경쟁"
      ]
     },
     {
@@ -1412,17 +1454,8 @@
      "published_kst": "09-10 05:38",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "뉴욕증시, 하락세로 마감…나스닥 0.64%↓",
-     "source": "블루밍비트",
-     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4tb0Fzd0Rta3pERmYzS0NEQnZxeXNzeUU4VnRFaWZHbTltS09pMnU1RFVQdGR1SHJlUkUtSm1BMUtWczBaeWpJb3o3cDVfdkhE?oc=5",
-     "published_kst": "09-10 05:09",
-     "tone": "negative",
-     "tone_label": "부정",
      "keywords": [
-      "하락"
+      "사업 분사 및 상장 추진"
      ]
     }
    ],
@@ -1469,40 +1502,46 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 0,
+    "positive": 2,
     "negative": 0,
-    "neutral": 5,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "neutral": 3,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
-     "title": "한-프, AI·반도체·양자 협력 강화…공동연구·투자 확대",
-     "source": "v.daum.net",
-     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LU09QTUNwM3FTRkRGWWxvM3M1OWxVMGJKQkMtMmhzaVd4SUNFYmMteFhpVi1yRW9ZVlViMVg4VW9qQXViUDItbm1iUzZwYmc?oc=5",
-     "published_kst": "09-09 22:02",
+     "title": "AI·반도체 대신 1481억 베팅…서학개미 몰린 이 종목[1분 브리프]",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WRVFwTlVHNTFhOGpIb3ZpdFRUTFBaUWVqNHhYSnVYSFg5OXN5M0ViMWN5VnNFbjBUaG50X3lRZU9lRGJvQ3JadHdtWVBjUzNWN010ZmFhSUQxY3Q2bUJYSA?oc=5",
+     "published_kst": "09-10 08:00",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "개인 투자자 동향"
+     ]
     },
     {
      "title": "韓, 프랑스와 AI·반도체·양자기술 투자 협력 늘린다",
      "source": "지디넷코리아",
      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tSnVnc0NEdVpnYVQwekZOcTR0TDkxVHNpWXJrd0xCb3gwekl3My1uNG9jeVdPc1hFX2dwdEo2T1ZDMTdFUkp6TER0SmtPYnd4N3pLVE9R?oc=5",
      "published_kst": "09-09 22:54",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI·반도체 협력 강화"
+     ]
     },
     {
-     "title": "엔비디아, AI 생태계 확장에 대규모 베팅-인텔·스페이스X·코어위브 투자 주목",
-     "source": "미디어파인",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05Tzk0aFF3cFYwdTc0Q3FrclVyeDVNU08xVlhyU1FYUC1ZbVVHSm9NdnZtckpudmVDX2RSVDJtaTlza2tBYUJSWGxaVXZDaVJydW9lWUNKOF84aTFyZm9EMlJEYm0xR2hvbk5XZVJn?oc=5",
-     "published_kst": "09-10 07:25",
+     "title": "젠슨 황 ‘AGI 도래’ 선언에도 엔비디아 주가는 2% 하락",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00MHpPSXV5QUs0YWJhZUZoTHB0YlFsNFB4aG1fbVd4VDlfWGFSblJEQ3dULVRiTVFLdHlkRGh0OElUQVpPVkFkWE90R2VEeXYwOWw2NXY2eS00MndWelBud2JMVXhleDJrZmVTTFp4UjUweGU0b0o2bFJObw?oc=5",
+     "published_kst": "09-10 08:34",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "개별 기업 주가 변동"
+     ]
     }
    ],
    "source": "fdr",
@@ -1531,7 +1570,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1807.9,
+   "turnover_eok": 1808.0,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/395160/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=395160",
@@ -1548,14 +1587,25 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 5,
     "negative": 0,
-    "neutral": 1,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
+    {
+     "title": "[전망] 삼성 파운드리, 테일러·2나노로 AI 반도체 고객 넓힐까?",
+     "source": "내외뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2RnFuX0hVRW1TaVNUNTdkZXNqRl9ENW5uUUNUWUxKYkR6YThCZFh0Qk5zLURkcnp4bzE0bVpnOHlpNFI3QW9yelU0QWpRRDF6YkJvZDNTcjV3WDY4TV9lWHVmYy1sOG9VZnQzRtIBcEFVX3lxTE9ZazQ2dnFiT1VIWEZBZ0RCdTZUMmJDN21KRGVKazQ4Q3BJV1JJbzd0VEt1V28tdklaZ1Zhem1UYWlPdGJVQnF5V0I5WEZDUjVJRVpOSDNuU2RyXzA1YkI5aTl2Vm9zMlJySDVJWGhiRW8?oc=5",
+     "published_kst": "09-09 13:43",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 반도체 고객 확대 기대"
+     ]
+    },
     {
      "title": "SK키파운드리, 독일 엘모스와 130나노 차량용 반도체 장기 공급 계약 체결",
      "source": "동아일보",
@@ -1564,7 +1614,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "계약"
+      "차량용 반도체 장기 공급"
      ]
     },
     {
@@ -1575,18 +1625,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
-     ]
-    },
-    {
-     "title": "삼성전자, 파운드리 잇단 수주 속 \"미국 테일러팹 가동 중\"",
-     "source": "한국일보",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PTE5JS3d5UjZVNXB5NkZOYmtlNng1dXQwX05kbUtYQ05iRG4zTFlXNXhpaTVOOW5UMlk1MmxCTjdENE83MVhyTWdPOFZxLVdMTS1VSXdHSGFtMnlDZHhJdUV6OGI1eXlid2RNdG5B0gFzQVVfeXFMTWNfeFV2YlZzMmtzWnNycjZ5a1Z4QVVXSUdQTVJHODJxMGNQa0pMZE1qcXFQU1NfQUN6QjFuMnZZcWFENS1XSTJVaEZaLVpwdVJOeEZDdHJSMDk1MGxDY3R1enBlMXh3Vi1Rd0h0aVN4R0RvQQ?oc=5",
-     "published_kst": "09-08 18:12",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "수주"
+      "첨단 공정 기술 발전"
      ]
     }
    ],
@@ -1616,7 +1655,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 3966.2,
+   "turnover_eok": 3972.6,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/396500/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=396500",
@@ -1633,12 +1672,12 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 2,
+    "positive": 5,
     "negative": 0,
-    "neutral": 3,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1649,7 +1688,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "성장"
+      "사업 다각화 발표"
      ]
     },
     {
@@ -1660,7 +1699,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "신형 태양전지 발사"
      ]
     },
     {
@@ -1668,9 +1707,11 @@
      "source": "v.daum.net",
      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VZFZXYWlLemJWeEhWM0VWdE10SUFUeVc5X3kyNmRCeS0xeGFVV3BXcVRXb3ZNUFdwMU1kTkxDSXpMRGJ5Z3hkWi1GQ0k2LW8?oc=5",
      "published_kst": "09-09 17:10",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 투자 검토"
+     ]
     }
    ],
    "source": "fdr",
@@ -1718,12 +1759,12 @@
    "signal_label": "강한 상승",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
-    "negative": 1,
-    "neutral": 1,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1734,7 +1775,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "급등"
+      "원자력 정서 급등"
      ]
     },
     {
@@ -1745,18 +1786,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "회복",
-      "수혜"
+      "원전 회복 수혜주"
      ]
     },
     {
-     "title": "한국수력웑자력 월성원자력본부, 관계기관과 원전 대드론 방어체계 공유",
-     "source": "CBN뉴스",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzMFg1dXBXMVR2ZmdTam41VzZDOWRzX2Mwak5yaXlXbzRuMGJSeVIxV25LNGN6T1FjemRLUG94RkZaejFfY2E1WHZwa2pCMmR4R0U4?oc=5",
-     "published_kst": "09-10 06:42",
+     "title": "월성원전, 대구·경북 관계기관과 ‘대드론 방어체계’ 공유",
+     "source": "에너지데일리",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lcFM5dTNPSW1BYjJVbTdneXRDMDkwd25ucnQ0V08zZ2x3Q1IzclVLdk03ODJ5OVlZRk9IRFB2WFRyenN1M0U5R0xkeUJkcWpJOU1KNy1TbjFsNEFnV1RQQl80M29NbjlEZEItRnhTRDI1QQ?oc=5",
+     "published_kst": "09-10 08:28",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "방어체계 공유"
+     ]
     }
    ],
    "source": "fdr",
@@ -1785,7 +1827,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 107.0,
+   "turnover_eok": 107.1,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/434730/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=434730",
@@ -1805,14 +1847,25 @@
    "signal_label": "상승 전환",
    "issue_summary": {
     "count": 5,
-    "positive": 4,
+    "positive": 5,
     "negative": 0,
-    "neutral": 1,
+    "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
+    {
+     "title": "[전망] 삼성 파운드리, 테일러·2나노로 AI 반도체 고객 넓힐까?",
+     "source": "내외뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2RnFuX0hVRW1TaVNUNTdkZXNqRl9ENW5uUUNUWUxKYkR6YThCZFh0Qk5zLURkcnp4bzE0bVpnOHlpNFI3QW9yelU0QWpRRDF6YkJvZDNTcjV3WDY4TV9lWHVmYy1sOG9VZnQzRtIBcEFVX3lxTE9ZazQ2dnFiT1VIWEZBZ0RCdTZUMmJDN21KRGVKazQ4Q3BJV1JJbzd0VEt1V28tdklaZ1Zhem1UYWlPdGJVQnF5V0I5WEZDUjVJRVpOSDNuU2RyXzA1YkI5aTl2Vm9zMlJySDVJWGhiRW8?oc=5",
+     "published_kst": "09-09 13:43",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 반도체 고객 확대 기대"
+     ]
+    },
     {
      "title": "SK키파운드리, 독일 엘모스와 130나노 차량용 반도체 장기 공급 계약 체결",
      "source": "동아일보",
@@ -1821,7 +1874,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "계약"
+      "차량용 반도체 장기 공급"
      ]
     },
     {
@@ -1832,18 +1885,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
-     ]
-    },
-    {
-     "title": "삼성전자, 파운드리 잇단 수주 속 \"미국 테일러팹 가동 중\"",
-     "source": "한국일보",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PTE5JS3d5UjZVNXB5NkZOYmtlNng1dXQwX05kbUtYQ05iRG4zTFlXNXhpaTVOOW5UMlk1MmxCTjdENE83MVhyTWdPOFZxLVdMTS1VSXdHSGFtMnlDZHhJdUV6OGI1eXlid2RNdG5B0gFzQVVfeXFMTWNfeFV2YlZzMmtzWnNycjZ5a1Z4QVVXSUdQTVJHODJxMGNQa0pMZE1qcXFQU1NfQUN6QjFuMnZZcWFENS1XSTJVaEZaLVpwdVJOeEZDdHJSMDk1MGxDY3R1enBlMXh3Vi1Rd0h0aVN4R0RvQQ?oc=5",
-     "published_kst": "09-08 18:12",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "수주"
+      "첨단 공정 기술 발전"
      ]
     }
    ],
@@ -1873,7 +1915,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": false,
    "kr_ma20_rising": true,
-   "turnover_eok": 1980.4,
+   "turnover_eok": 1980.5,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
@@ -1898,7 +1940,7 @@
     "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1909,7 +1951,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "강세"
+      "반도체·2차전지 강세"
      ]
     },
     {
@@ -1920,17 +1962,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주"
+      "글로벌 기업 수주"
      ]
     },
     {
      "title": "K-배터리 투자상담",
-     "source": "yna.co.kr",
+     "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpua9IBYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpuaw?oc=5",
      "published_kst": "09-09 13:25",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "투자 상담 관련"
+     ]
     }
    ],
    "source": "fdr",
@@ -1959,7 +2003,7 @@
    "kr_above_ma20": true,
    "kr_ma_stacked": true,
    "kr_ma20_rising": true,
-   "turnover_eok": 500.5,
+   "turnover_eok": 504.5,
    "links": {
     "naver_m": "https://m.stock.naver.com/domestic/stock/305720/total",
     "naver_pc": "https://finance.naver.com/item/main.naver?code=305720",
@@ -1984,7 +2028,7 @@
     "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -1995,7 +2039,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "강세"
+      "반도체·2차전지 강세"
      ]
     },
     {
@@ -2006,17 +2050,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수주"
+      "글로벌 기업 수주"
      ]
     },
     {
      "title": "K-배터리 투자상담",
-     "source": "yna.co.kr",
+     "source": "연합뉴스",
      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpua9IBYEFVX3lxTE53R25obTVpalRwWVkyOFZWWkpkNDlud1d0ZE1nRmRKX0JNVXEtQlhUUjI5RHJPUU1FLWpsaUEzcVpmN1hzZjFtalpnTkcxVTRiYnc3aHFBU3Fwb3hTdnpuaw?oc=5",
      "published_kst": "09-09 13:25",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "투자 상담 관련"
+     ]
     }
    ],
    "source": "fdr",
@@ -2065,14 +2111,25 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 2,
+    "positive": 1,
+    "negative": 3,
     "neutral": 1,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
+    {
+     "title": "국민성장펀드가 픽한 제약·바이오 살펴보니…'안정성' 방점",
+     "source": "비즈워치",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MX21hR0xZMmM4ZjVhNW4wZWcyZkVpMV9ZV2pIRFkzbk5qQmQ3dUd4d21nclJHNXhyQ3BqUXVqbWUwWndwbzdId0JfbWNFQ1g0c0lQZ2dibnRDVFRzckZxd2hEcnEtcTVIb05jX2sxYw?oc=5",
+     "published_kst": "09-10 07:50",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "펀드 투자 성향"
+     ]
+    },
     {
      "title": "“K바이오 변곡점, 정면돌파해야”…초기투자·글로벌 경험 ‘균형’ 강조[K바이오 딜 써밋]",
      "source": "팜이데일리",
@@ -2081,7 +2138,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
+      "K바이오 성장 강조"
      ]
     },
     {
@@ -2089,19 +2146,10 @@
      "source": "히트뉴스",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE13aFRzeG1vWmxTNXlvVEQ2WVFaZ0wyMTRQZmtqMlozVjJrWWY0QUVHXy0tWlBJVWFzcmJmXzVzRlJJelJjSFhUN2pKYzJ6YkFGbkV5RF9JMXIwOVduTzRTbVRHeEt6Y1lKYlEw?oc=5",
      "published_kst": "09-09 17:45",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "보로노이, 폐암신약 ‘VRN11’ 캐나다 임상 자진철회…“자료 보완 후 재제출”",
-     "source": "팜이데일리",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzeU5NdUhtYUw3ZHdzYmhOdngtOXN3MUdQeUswa1BlMG5kM3psSEZ6eWhwNi1USVM3Z29KOE9aMlFaWnVpTXdfZjVJNWZRdGg2XzVTalFmclRLczI3eG1sNUJvcGp6MFBIakdWbUl3?oc=5",
-     "published_kst": "09-09 20:46",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "철회"
+      "신약 허가에도 주가 하락"
      ]
     }
    ],
@@ -2152,14 +2200,25 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 2,
-    "negative": 2,
+    "positive": 1,
+    "negative": 3,
     "neutral": 1,
-    "tilt": "neutral",
-    "tilt_label": "중립",
-    "classifier": "keyword"
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
+    {
+     "title": "국민성장펀드가 픽한 제약·바이오 살펴보니…'안정성' 방점",
+     "source": "비즈워치",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MX21hR0xZMmM4ZjVhNW4wZWcyZkVpMV9ZV2pIRFkzbk5qQmQ3dUd4d21nclJHNXhyQ3BqUXVqbWUwWndwbzdId0JfbWNFQ1g0c0lQZ2dibnRDVFRzckZxd2hEcnEtcTVIb05jX2sxYw?oc=5",
+     "published_kst": "09-10 07:50",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "펀드 투자 성향"
+     ]
+    },
     {
      "title": "“K바이오 변곡점, 정면돌파해야”…초기투자·글로벌 경험 ‘균형’ 강조[K바이오 딜 써밋]",
      "source": "팜이데일리",
@@ -2168,7 +2227,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "돌파"
+      "K바이오 성장 강조"
      ]
     },
     {
@@ -2176,19 +2235,10 @@
      "source": "히트뉴스",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE13aFRzeG1vWmxTNXlvVEQ2WVFaZ0wyMTRQZmtqMlozVjJrWWY0QUVHXy0tWlBJVWFzcmJmXzVzRlJJelJjSFhUN2pKYzJ6YkFGbkV5RF9JMXIwOVduTzRTbVRHeEt6Y1lKYlEw?oc=5",
      "published_kst": "09-09 17:45",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
-    },
-    {
-     "title": "보로노이, 폐암신약 ‘VRN11’ 캐나다 임상 자진철회…“자료 보완 후 재제출”",
-     "source": "팜이데일리",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzeU5NdUhtYUw3ZHdzYmhOdngtOXN3MUdQeUswa1BlMG5kM3psSEZ6eWhwNi1USVM3Z29KOE9aMlFaWnVpTXdfZjVJNWZRdGg2XzVTalFmclRLczI3eG1sNUJvcGp6MFBIakdWbUl3?oc=5",
-     "published_kst": "09-09 20:46",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "철회"
+      "신약 허가에도 주가 하락"
      ]
     }
    ],
@@ -2244,38 +2294,40 @@
     "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
+    {
+     "title": "로킷헬스케어,중국 하이난 러청 진출 계약..“4개월 내 AI 피부재생 수술 시작 ”",
+     "source": "약업신문",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hVVpmTW5yZnpJY185UzFKUzlicEJTSnRCZC10OENLZkdrc3RfbUlKZ1oyclJkdVFHN281eXlodVBqcjFmOGdYNWdXcTRUZFptQ2VQbExzVUNWRXlrOFhDNGNyd0ZVMXJqRHJFc2ppUU1uZ0hYMThkdF9R?oc=5",
+     "published_kst": "09-10 08:51",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 피부재생 수술 진출"
+     ]
+    },
     {
      "title": "애비애나 헬스케어 주가, 14.01달러로 사상 최고치 경신",
      "source": "Investing.com 한국어",
      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51UGpoY3d1ekp4czlfZFVwUlJRTG9SaWgwRVFQRFB1WUwtamlfajktMEtybklfNk5kNGJBUmE1cjYyaU1TMFZHOHRFTnc2R2RHQUs1eWI3c2ZwSkdhRndSRnpRREVnMUVpYTVnM1lOaVI?oc=5",
      "published_kst": "09-10 05:02",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "헬스케어 주가 최고치"
+     ]
     },
     {
      "title": "웰스파고 헬스케어 컨퍼런스에서 코메딕스의 성장과 위험 논의",
      "source": "Investing.com 한국어",
      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1peXprUk9PdE5jTF9sWldaTzRzTFZJcUNpRlNJU3paVW5fcFlpVXdhcjlKcm9SZ1RFQUI4Z0MwNWk0NmtwWm56WFAxOEoxSGhscnZKaFRjMF9IcUprSmh3VnVsZ080QUUxZENsZF9VRQ?oc=5",
      "published_kst": "09-10 02:51",
-     "tone": "positive",
-     "tone_label": "긍정",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "성장"
-     ]
-    },
-    {
-     "title": "Merck의 Wells Fargo 헬스케어 컨퍼런스: 성장 계획 확대",
-     "source": "Investing.com 한국어",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HVXV2V2ZzOGtRd1gtUnBaVTJiOXBLUHBTMWZ2T2pHVl83ajZ1NjFRU01uMkN1QmhhZmkwdFB5azB6aTB1dVRpMzcyVy13MmVBdXZHTl9GY05OZzdiMUNoV3RMTTNtNXdxMncyYndhTQ?oc=5",
-     "published_kst": "09-10 05:32",
-     "tone": "positive",
-     "tone_label": "긍정",
-     "keywords": [
-      "성장"
+      "성장 및 위험 논의"
      ]
     }
    ],
@@ -2327,22 +2379,22 @@
    "issue_summary": {
     "count": 5,
     "positive": 3,
-    "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "keyword"
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
-     "title": "금리인상 우려에 '방어주 매력' 커진 은행주…\"환율 여건도 우호적\"",
-     "source": "연합인포맥스",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
-     "published_kst": "09-07 08:17",
+     "title": "유안타證 “증권주, 바닥은 왔지만 반등은 아직…5개사 목표가 줄하향”",
+     "source": "v.daum.net",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PMWlhNzdLeXZ2amdsa3JtM0xFYy0yT19RbUJUUXBFcE9weDZtdzVQUjVHTHZ2RzBPTV9wdUxQS1RsX2QxUlo1LWhaVnRtVDg?oc=5",
+     "published_kst": "09-10 08:01",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "우려"
+      "증권주 목표가 하향"
      ]
     },
     {
@@ -2353,17 +2405,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수혜"
+      "은행주, 고금리/환율 수혜"
      ]
     },
     {
-     "title": "상반기 ‘실적잔치’ 끝났나...증권주, 거래대금 위축에 ‘찬바람’",
-     "source": "핀포인트뉴스",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wTXpEeGR2NWx1UFFaMVB1aVBvcUtLdlZnODRtdHBDMVZ6RUZvV2lLblUzbUszekU5OGRqXzJ1S0FLZmo1Y1lIbUk1bzFaOU4xMThQZHRnZDBsYTUyWUhjZ1V3Q0xBcVhGM29TeEFjc3ItSm_SAXdBVV95cUxOMFVVWEJiMjZGQm5jVEcwTFFQUVhnOGJmUmEwZGw5cHN5U2d5MW13bWxsVS12Q0JQamZZSTJtTlFQRWhXVzN2QkFzMWNNd1ZtMDZWYUZEOG1kcklRN1RUWUZzWHFZYzhScnlaMTFlQk9jVzRxa3p2QQ?oc=5",
-     "published_kst": "09-09 22:23",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "title": "[EBN 데이터센터] 증권주 일제히 상승...리밸런싱 기대와 거래대금 회복",
+     "source": "ebn.co.kr",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tWGFUUXptcjRyTmJZdXNpa1Ffd0xkNk1lTVhwbjgxY0ZLOTJ2dU9GOXlZbHFZT3R3bkotT00tbXJDTGRwSkd3T0Vka0tqX0ZMQ1ZOeEZRSTRkS2xuOHBwRjFhMUh0YWp6?oc=5",
+     "published_kst": "09-08 11:17",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주, 리밸런싱/거래대금 회복"
+     ]
     }
    ],
    "source": "fdr",
@@ -2413,22 +2467,22 @@
    "issue_summary": {
     "count": 5,
     "positive": 3,
-    "negative": 1,
-    "neutral": 1,
-    "tilt": "positive",
-    "tilt_label": "긍정",
-    "classifier": "keyword"
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
-     "title": "금리인상 우려에 '방어주 매력' 커진 은행주…\"환율 여건도 우호적\"",
-     "source": "연합인포맥스",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjc1NJNk5PY2V2cGZSV1ZSZnRiV2JsNUo0d3M4Z1FybzlObW5WN0RLRTNNMGtDLXBnZ042cWJ2YjROUlAxRUNrMUNmOE9meEIwcm8ycEwydmRFazRxamU1QjRIejczSDhicFpodWRBNkQ?oc=5",
-     "published_kst": "09-07 08:17",
+     "title": "유안타證 “증권주, 바닥은 왔지만 반등은 아직…5개사 목표가 줄하향”",
+     "source": "v.daum.net",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1PMWlhNzdLeXZ2amdsa3JtM0xFYy0yT19RbUJUUXBFcE9weDZtdzVQUjVHTHZ2RzBPTV9wdUxQS1RsX2QxUlo1LWhaVnRtVDg?oc=5",
+     "published_kst": "09-10 08:01",
      "tone": "negative",
      "tone_label": "부정",
      "keywords": [
-      "우려"
+      "증권주 목표가 하향"
      ]
     },
     {
@@ -2439,17 +2493,19 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "수혜"
+      "은행주, 고금리/환율 수혜"
      ]
     },
     {
-     "title": "상반기 ‘실적잔치’ 끝났나...증권주, 거래대금 위축에 ‘찬바람’",
-     "source": "핀포인트뉴스",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wTXpEeGR2NWx1UFFaMVB1aVBvcUtLdlZnODRtdHBDMVZ6RUZvV2lLblUzbUszekU5OGRqXzJ1S0FLZmo1Y1lIbUk1bzFaOU4xMThQZHRnZDBsYTUyWUhjZ1V3Q0xBcVhGM29TeEFjc3ItSm_SAXdBVV95cUxOMFVVWEJiMjZGQm5jVEcwTFFQUVhnOGJmUmEwZGw5cHN5U2d5MW13bWxsVS12Q0JQamZZSTJtTlFQRWhXVzN2QkFzMWNNd1ZtMDZWYUZEOG1kcklRN1RUWUZzWHFZYzhScnlaMTFlQk9jVzRxa3p2QQ?oc=5",
-     "published_kst": "09-09 22:23",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "title": "[EBN 데이터센터] 증권주 일제히 상승...리밸런싱 기대와 거래대금 회복",
+     "source": "ebn.co.kr",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tWGFUUXptcjRyTmJZdXNpa1Ffd0xkNk1lTVhwbjgxY0ZLOTJ2dU9GOXlZbHFZT3R3bkotT00tbXJDTGRwSkd3T0Vka0tqX0ZMQ1ZOeEZRSTRkS2xuOHBwRjFhMUh0YWp6?oc=5",
+     "published_kst": "09-08 11:17",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주, 리밸런싱/거래대금 회복"
+     ]
     }
    ],
    "source": "fdr",
@@ -2504,7 +2560,7 @@
     "neutral": 0,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -2515,7 +2571,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승"
+      "조선주, 방산/해양플랜트 기대"
      ]
     },
     {
@@ -2526,7 +2582,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "역대급"
+      "조선주 역대급 호황"
      ]
     },
     {
@@ -2537,8 +2593,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "상승",
-      "강세"
+      "조선주 동반 강세"
      ]
     }
    ],
@@ -2588,12 +2643,12 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 4,
     "negative": 0,
-    "neutral": 2,
+    "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -2601,9 +2656,11 @@
      "source": "뉴스핌",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HeEpWMUhfWTZzV3FCbS10SXl4VUNlSW5hVjg1bktIaGYyYkJwREVBaldaczdndGZVbDlVeXBDVnUzWTB3ai0zQUdzM2t3M3prS1pYTjZBbHhkXzZT?oc=5",
      "published_kst": "09-08 08:32",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "목표가 상향"
+     ]
     },
     {
      "title": "美 방위비 확대 훈풍…'GE·로켓랩·크라토스' 방산주 3인방 뜬다",
@@ -2613,7 +2670,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "훈풍"
+      "방위비 확대 수혜"
      ]
     },
     {
@@ -2621,9 +2678,11 @@
      "source": "Nate News",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45cFRNcURyd2IzM29FdjhVdkZONzRCZ2ltTVY1clM5emdQei1JeF94RFFJanUxTHFfSi13UmRfNmgwSDJFYnUwMVVFeGZFTm10c1NF?oc=5",
      "published_kst": "09-09 15:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "항공·우주 수요 증가"
+     ]
     }
    ],
    "source": "fdr",
@@ -2673,12 +2732,12 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 4,
     "negative": 0,
-    "neutral": 2,
+    "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -2686,9 +2745,11 @@
      "source": "뉴스핌",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HeEpWMUhfWTZzV3FCbS10SXl4VUNlSW5hVjg1bktIaGYyYkJwREVBaldaczdndGZVbDlVeXBDVnUzWTB3ai0zQUdzM2t3M3prS1pYTjZBbHhkXzZT?oc=5",
      "published_kst": "09-08 08:32",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "목표가 상향"
+     ]
     },
     {
      "title": "美 방위비 확대 훈풍…'GE·로켓랩·크라토스' 방산주 3인방 뜬다",
@@ -2698,7 +2759,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "훈풍"
+      "방위비 확대 수혜"
      ]
     },
     {
@@ -2706,9 +2767,11 @@
      "source": "Nate News",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45cFRNcURyd2IzM29FdjhVdkZONzRCZ2ltTVY1clM5emdQei1JeF94RFFJanUxTHFfSi13UmRfNmgwSDJFYnUwMVVFeGZFTm10c1NF?oc=5",
      "published_kst": "09-09 15:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "항공·우주 수요 증가"
+     ]
     }
    ],
    "source": "fdr",
@@ -2758,12 +2821,12 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 3,
+    "positive": 4,
     "negative": 0,
-    "neutral": 2,
+    "neutral": 1,
     "tilt": "positive",
     "tilt_label": "긍정",
-    "classifier": "keyword"
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -2771,9 +2834,11 @@
      "source": "뉴스핌",
      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HeEpWMUhfWTZzV3FCbS10SXl4VUNlSW5hVjg1bktIaGYyYkJwREVBaldaczdndGZVbDlVeXBDVnUzWTB3ai0zQUdzM2t3M3prS1pYTjZBbHhkXzZT?oc=5",
      "published_kst": "09-08 08:32",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "목표가 상향"
+     ]
     },
     {
      "title": "美 방위비 확대 훈풍…'GE·로켓랩·크라토스' 방산주 3인방 뜬다",
@@ -2783,7 +2848,7 @@
      "tone": "positive",
      "tone_label": "긍정",
      "keywords": [
-      "훈풍"
+      "방위비 확대 수혜"
      ]
     },
     {
@@ -2791,9 +2856,11 @@
      "source": "Nate News",
      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45cFRNcURyd2IzM29FdjhVdkZONzRCZ2ltTVY1clM5emdQei1JeF94RFFJanUxTHFfSi13UmRfNmgwSDJFYnUwMVVFeGZFTm10c1NF?oc=5",
      "published_kst": "09-09 15:30",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "항공·우주 수요 증가"
+     ]
     }
    ],
    "source": "fdr",
@@ -2898,12 +2965,12 @@
    "signal_label": "하락세",
    "issue_summary": {
     "count": 5,
-    "positive": 0,
-    "negative": 3,
+    "positive": 1,
+    "negative": 2,
     "neutral": 2,
-    "tilt": "negative",
-    "tilt_label": "부정",
-    "classifier": "keyword"
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
    },
    "issues": [
     {
@@ -2913,26 +2980,30 @@
      "published_kst": "09-07 16:41",
      "tone": "neutral",
      "tone_label": "중립",
-     "keywords": []
+     "keywords": [
+      "중국 CATL 실적 언급"
+     ]
     },
     {
      "title": "'쇳물부터 완성차까지'…현대차그룹 美 밸류체인 구축",
      "source": "MTN 머니투데이방송",
      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBhU1lENnJ1SHUyY3dQOXJ6X1FaVmFZWUI1bnhIMFN1cWVfVkg2MHQ5cDNsWFNEU1p5YXBHbHlwVDlxRkhBSElRbnN5UkdRNHlna2Q5MXFmS0VIdU5kV0MydVVKUTE?oc=5",
      "published_kst": "09-07 17:46",
-     "tone": "neutral",
-     "tone_label": "중립",
-     "keywords": []
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "현대차그룹 美 밸류체인 구축"
+     ]
     },
     {
-     "title": "유안타증권 \"완성차, 환율 급락 타격 4분기에 본격화\"",
-     "source": "yna.co.kr",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03c2lIcEl1b0NZOFFQVzh5VTkxUmg5SUhVbERVdjZuOU1ETVE3Z1FpaXNwZllGdjR6OTZsNjJkRDREUjRRc2J5MVo4akxlM3h6SlNSeGhyNmlQeTTSAWBBVV95cUxPdWZyUHVXLWo0eXdyUUJzakc1ZVJfVU1SUVE4a2JKM3VDZ2JEU0hCS00wellDX2hSTldyTy0xZzlDOTh1cnd5Z2Qzc0NsZ0tPdWx4WFhHV01lQVMtTUpxS08?oc=5",
-     "published_kst": "09-07 08:26",
-     "tone": "negative",
-     "tone_label": "부정",
+     "title": "내수 부진 뚫고 해외로...中 완성차 기업, 수출∙R&D 투자 강화-Xinhua",
+     "source": "kr.news.cn",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5aSThiR1NMYVY5TF91Q3kwbmpDMkJkTDUtcnBndnRaSHlONjUyaEZ2eEJac3BDbkMxR0RadUlHNnotVWUwbmh3R3I0QmlTMTRGdDB3aE9BRGh4am9LdDFVSDBsZUR2X0pfb3o0aWJzNG9lZU5h?oc=5",
+     "published_kst": "09-07 15:02",
+     "tone": "neutral",
+     "tone_label": "중립",
      "keywords": [
-      "급락"
+      "中 완성차 수출/R&D 강화"
      ]
     }
    ],
