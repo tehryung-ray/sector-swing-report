@@ -39,18 +39,17 @@ git --version
 
 ## 3. 저장소 복제
 
-**영문 경로에 두는 것을 권한다.** 한글 경로는 일부 도구에서 인코딩 문제를 일으킨다.
+설치 경로는 **`C:\apps\sector_invest`** 다. 영문 경로라 인코딩 문제가 없다.
 
 ```powershell
-New-Item -ItemType Directory -Force -Path C:\sector-swing | Out-Null
-cd C:\sector-swing
-git clone https://github.com/tehryung-ray/sector-swing-report.git .
+git clone https://github.com/tehryung-ray/sector-swing-report.git C:\apps\sector_invest
+cd C:\apps\sector_invest
 ```
 
 ## 4. 패키지 설치
 
 ```powershell
-cd C:\sector-swing
+cd C:\apps\sector_invest
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
@@ -72,7 +71,7 @@ RDP 로 한 번 접속해 브라우저 인증을 통과시킨다. 자격증명�
 **DPAPI 로 암호화**되어 저장되고, 같은 사용자로 실행되는 예약 작업에서도 쓸 수 있다.
 
 ```powershell
-cd C:\sector-swing
+cd C:\apps\sector_invest
 git push origin main        # 브라우저가 열리면 로그인
 ```
 
@@ -130,7 +129,8 @@ Python·Git·패키지·시간대·저장소·push 권한·외부 접근·토큰
 ## 9. 손으로 한 번 실행
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File ops\run-daily.ps1
+powershell -ExecutionPolicy Bypass -File ops
+un-daily.ps1
 ```
 
 `=== 정상 종료 ===` 이 나와야 한다. 로그는 `ops\logs\daily-YYYY-MM-DD.log`.
@@ -141,7 +141,7 @@ powershell -ExecutionPolicy Bypass -File ops\run-daily.ps1
 계정이어야 한다.
 
 ```powershell
-$repo = "C:\sector-swing"
+$repo = "C:\apps\sector_invest"
 $ps   = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
 $user = "$env:USERDOMAIN\$env:USERNAME"
 
@@ -250,3 +250,60 @@ GitHub Actions 와 이 PC 가 동시에 돌아도 문제가 없다. 여러 PC �
 | `python` 을 못 찾음 | 작업이 PATH 없는 세션에서 실행 | 10 번 `-Execute` 를 `python.exe` 절대경로로 바꾸거나 PATH 를 시스템 변수에 추가 |
 | 알림이 안 옴 | `ops\.env` 누락 또는 할 일이 없던 날 | 로그의 `시크릿 토큰` 줄 확인 |
 | 리포트가 안 갱신됨 | 이미 다른 쪽이 만들었음 | 정상. 로그에 "변경 없음" 이 찍힌다 |
+| `cd` 가 안 됨 | 경로 오타 | `C:\apps\sector_invest` (언더바, 하이픈 아님) |
+
+---
+
+## 부록. 한 번에 붙여넣기
+
+Python 과 Git 을 설치한 뒤(1·2 단계), **일반 PowerShell** 에서 아래를 통째로 실행하면
+3~5·8 단계가 끝난다.
+
+```powershell
+git clone https://github.com/tehryung-ray/sector-swing-report.git C:\apps\sector_invest
+cd C:\apps\sector_invest
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+git config user.email "tehryungkim@gmail.com"
+git config user.name  "tehryungkim"
+Copy-Item ops\.env.example ops\.env
+notepad ops\.env          # 토큰 채우고 저장
+git push origin main      # 브라우저 인증 한 번 통과 (6-A)
+powershell -ExecutionPolicy Bypass -File ops\preflight.ps1
+```
+
+`preflight.ps1` 에 `[실패]` 가 없으면, **관리자 PowerShell** 에서 작업을 등록한다.
+
+```powershell
+$repo = "C:\apps\sector_invest"
+$ps   = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
+$user = "$env:USERDOMAIN\$env:USERNAME"
+
+$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable `
+    -DontStopIfGoingOnBatteries -AllowStartIfOnBatteries -MultipleInstances IgnoreNew `
+    -RestartCount 2 -RestartInterval (New-TimeSpan -Minutes 5) `
+    -ExecutionTimeLimit (New-TimeSpan -Minutes 20)
+$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Password -RunLevel Limited
+$days = @("Monday","Tuesday","Wednesday","Thursday","Friday")
+
+Register-ScheduledTask -TaskName "SectorSwing-Daily" -Force -Settings $settings -Principal $principal `
+  -Action  (New-ScheduledTaskAction -Execute $ps -WorkingDirectory $repo `
+            -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-daily.ps1`"") `
+  -Trigger (New-ScheduledTaskTrigger -Weekly -DaysOfWeek $days -At 06:50)
+
+Register-ScheduledTask -TaskName "SectorSwing-OpenBell" -Force -Settings $settings -Principal $principal `
+  -Action  (New-ScheduledTaskAction -Execute $ps -WorkingDirectory $repo `
+            -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-openbell.ps1`"") `
+  -Trigger (New-ScheduledTaskTrigger -Weekly -DaysOfWeek $days -At 09:10)
+
+powercfg /change standby-timeout-ac 0
+powercfg /change hibernate-timeout-ac 0
+
+Start-ScheduledTask -TaskName "SectorSwing-Daily"
+Start-Sleep -Seconds 90
+Get-ScheduledTask -TaskName "SectorSwing-*" | Get-ScheduledTaskInfo |
+  Format-Table TaskName,LastRunTime,LastTaskResult,NextRunTime -AutoSize
+```
+
+`LastTaskResult` 가 **0** 이면 성공이다. 마지막으로 **RDP 를 끊고(로그오프) 재접속해**
+같은 명령으로 다시 확인한다. 거기서도 0 이면 설정이 끝났다.
