@@ -171,8 +171,10 @@ $settings = New-ScheduledTaskSettingsSet `
     -RestartCount 2 -RestartInterval (New-TimeSpan -Minutes 5) `
     -ExecutionTimeLimit (New-TimeSpan -Minutes 20)
 
-# 로그아웃 상태에서도 실행. 등록할 때 비밀번호를 한 번 묻는다.
-$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Password -RunLevel Limited
+# 로그아웃 상태에서도 실행하려면 비밀번호를 명시적으로 넘겨야 한다.
+# -Principal 만 주면 Register-ScheduledTask 가 빈 암호로 시도해 0x8007052f 로 실패한다.
+$cred = Get-Credential -UserName $user -Message "예약 작업을 실행할 계정의 비밀번호"
+$pw   = $cred.GetNetworkCredential().Password
 
 # 리포트 — 평일 06:50
 Register-ScheduledTask -TaskName "SectorSwing-Daily" -Force `
@@ -180,7 +182,7 @@ Register-ScheduledTask -TaskName "SectorSwing-Daily" -Force `
               -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-daily.ps1`"") `
   -Trigger   (New-ScheduledTaskTrigger -Weekly `
               -DaysOfWeek Monday,Tuesday,Wednesday,Thursday,Friday -At 06:50) `
-  -Settings  $settings -Principal $principal
+  -Settings  $settings -User $user -Password $pw
 
 # 개장 점검 — 평일 09:10
 Register-ScheduledTask -TaskName "SectorSwing-OpenBell" -Force `
@@ -188,13 +190,18 @@ Register-ScheduledTask -TaskName "SectorSwing-OpenBell" -Force `
               -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-openbell.ps1`"") `
   -Trigger   (New-ScheduledTaskTrigger -Weekly `
               -DaysOfWeek Monday,Tuesday,Wednesday,Thursday,Friday -At 09:10) `
-  -Settings  $settings -Principal $principal
+  -Settings  $settings -User $user -Password $pw
 ```
 
-`-LogonType Password` 가 **로그아웃 상태에서도 실행**되게 하는 부분이다.
-등록할 때 계정 비밀번호를 묻는데, Windows 가 이를 암호화 보관한다.
+`-User` + `-Password` 가 **로그아웃 상태에서도 실행**되게 하는 부분이다.
+`Get-Credential` 창에 Windows 로그인 비밀번호를 넣으면 Windows 가 암호화해 보관한다.
 
-> 비밀번호를 넣기 싫으면 `-LogonType S4U` 로 바꿀 수 있다. 비밀번호 없이 로그아웃
+> `-Principal` 만 넘기면 안 된다. `Register-ScheduledTask` 가 비밀번호를 묻지 않고
+> **빈 암호로 시도해** `0x8007052f (계정 제한)` 으로 실패한다.
+> `-User`/`-Password` 를 쓰면 LogonType 은 자동으로 Password 가 되므로 `-Principal` 은 뺀다.
+
+> 비밀번호를 넣기 싫으면 `-Principal (New-ScheduledTaskPrincipal -UserId $user -LogonType S4U)` 로
+> 바꿀 수 있다(이때는 `-User`/`-Password` 를 빼고 `-Principal` 을 쓴다). 비밀번호 없이 로그아웃
 > 상태에서도 돌지만, **네트워크 자격증명에 접근하지 못해 push 가 실패할 수 있다.**
 > 이 경우 6-B(PAT 파일 방식)를 쓰면 해결된다.
 
@@ -264,7 +271,8 @@ GitHub Actions 와 이 PC 가 동시에 돌아도 문제가 없다. 여러 PC �
 | 증상 | 원인 | 해결 |
 |---|---|---|
 | `LastTaskResult` 가 0 이 아니고 로그에 push 실패 | 비대화형 세션에서 자격증명 접근 실패 | 6-B(PAT 파일 방식)로 전환 |
-| 로그온했을 때만 성공 | `LogonType` 이 `Interactive` | 10 번의 `-LogonType Password` 로 재등록 |
+| 로그온했을 때만 성공 | `LogonType` 이 `Interactive` | 10 번의 `-User`/`-Password` 로 재등록 |
+| 등록이 `0x8007052f` 로 실패 | 비밀번호를 넘기지 않아 빈 암호로 시도 | `-Principal` 대신 `-User`/`-Password` 사용 |
 | 한글 주석 구문 오류 | `.ps1` 의 UTF-8 BOM 이 사라짐 | 편집기에서 `UTF-8 with BOM` 으로 저장 |
 | `python` 을 못 찾음 | 작업이 PATH 없는 세션에서 실행 | 10 번 `-Execute` 를 `python.exe` 절대경로로 바꾸거나 PATH 를 시스템 변수에 추가 |
 | 알림이 안 옴 | `ops\.env` 누락 또는 할 일이 없던 날 | 로그의 `시크릿 토큰` 줄 확인 |
@@ -302,15 +310,16 @@ $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable `
     -DontStopIfGoingOnBatteries -AllowStartIfOnBatteries -MultipleInstances IgnoreNew `
     -RestartCount 2 -RestartInterval (New-TimeSpan -Minutes 5) `
     -ExecutionTimeLimit (New-TimeSpan -Minutes 20)
-$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Password -RunLevel Limited
+$cred = Get-Credential -UserName $user -Message "예약 작업을 실행할 계정의 비밀번호"
+$pw   = $cred.GetNetworkCredential().Password
 $days = @("Monday","Tuesday","Wednesday","Thursday","Friday")
 
-Register-ScheduledTask -TaskName "SectorSwing-Daily" -Force -Settings $settings -Principal $principal `
+Register-ScheduledTask -TaskName "SectorSwing-Daily" -Force -Settings $settings -User $user -Password $pw `
   -Action  (New-ScheduledTaskAction -Execute $ps -WorkingDirectory $repo `
             -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-daily.ps1`"") `
   -Trigger (New-ScheduledTaskTrigger -Weekly -DaysOfWeek $days -At 06:50)
 
-Register-ScheduledTask -TaskName "SectorSwing-OpenBell" -Force -Settings $settings -Principal $principal `
+Register-ScheduledTask -TaskName "SectorSwing-OpenBell" -Force -Settings $settings -User $user -Password $pw `
   -Action  (New-ScheduledTaskAction -Execute $ps -WorkingDirectory $repo `
             -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\ops\run-openbell.ps1`"") `
   -Trigger (New-ScheduledTaskTrigger -Weekly -DaysOfWeek $days -At 09:10)
