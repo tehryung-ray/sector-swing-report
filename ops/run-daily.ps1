@@ -7,6 +7,12 @@
 #  2) ErrorActionPreference = "Stop" 을 쓰면 git 이 stderr 에 쓰는 진행 메시지가
 #     종료 오류로 잡힌다. 그래서 쓰지 않고 종료 코드를 직접 확인한다.
 
+# 파이썬은 UTF-8 로 출력하는데 PowerShell 5.1 은 기본적으로 시스템 ANSI 코드페이지로
+# 읽는다. 그대로 두면 한글 로그가 전부 깨져 원격 PC 에서 진단이 불가능해진다.
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+$env:PYTHONIOENCODING = "utf-8"
+
 $repo = Split-Path -Parent $PSScriptRoot
 Set-Location $repo
 
@@ -51,6 +57,9 @@ if ((Run "git" @("pull","--rebase","--autostash","origin","main")) -ne 0) {
   Say "!! git pull 실패"; exit 1
 }
 
+# GitHub Actions 가 이미 오늘 리포트를 만들었으면 다시 만들지 않는다.
+# 없거나 신선도가 나쁘면 새로 만든다.
+$env:SKIP_IF_DONE = "1"
 Say "파이프라인 실행"
 if ((Run "python" @("-m","pipeline.main")) -ne 0) {
   Say "!! pipeline.main 실패"; exit 1
