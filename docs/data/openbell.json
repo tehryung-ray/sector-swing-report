@@ -1,12 +1,12 @@
 {
  "date": "2026-10-07",
- "digest": "8d131649ad76568a",
+ "digest": "f1f0988a074a22b8",
  "sent": true,
  "states": {
   "396500": "filled",
   "395160": "filled",
   "139260": "filled",
   "305720": "waiting",
-  "385510": "waiting"
+  "385510": "filled"
  }
 }
