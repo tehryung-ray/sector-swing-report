@@ -1,0 +1,2964 @@
+{
+ "schema_version": 1,
+ "report_date": "2026-10-27",
+ "generated_at_kst": "2026-10-27T09:53:27+09:00",
+ "us_asof": "2026-10-26",
+ "kr_asof": "2026-10-27",
+ "freshness": {
+  "status": "ok",
+  "message": "",
+  "kr_lag_days": 0,
+  "cached_codes": [],
+  "failed_codes": []
+ },
+ "market_regime": {
+  "spy_close": NaN,
+  "spy_ma200": null,
+  "risk_on": false,
+  "label": "위험회피",
+  "note": "S&P500이 200일선 아래입니다. 약세 국면이므로 비중을 줄이고 손절을 더 엄격히 지키세요."
+ },
+ "headline": "미국 시장에서 반도체(SOXX) 섹터가 20일 +nan%로 가장 강했습니다. 다만 S&P500이 200일선 아래라 약세 국면이므로 비중을 줄이세요. 오늘은 진입 조건을 만족하는 종목이 없어 전체 관망을 권합니다.",
+ "us_sectors": [
+  {
+   "ticker": "SOXX",
+   "name": "반도체",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 1,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "분기 영업익 100조 신기원 … 미래사업 투자·파운드리 경쟁력 강화 '시험대'",
+     "source": "뉴데일리",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00Z09FM2oteUJ1T3I3SXpLRzRhOEJIMm5QVTNGeW9WRk9FSWg2VDNUTF9JMUFqcF9GZ1FLc3ZlYUhSYjg2V1owSlh0ZGNXOHJwbUpKWS1IUnJNeThZNXpLc2k0RTlkQzRUajFzY0xyU0xIdVpGVVgxS2RxVdIBgAFBVV95cUxNTFB4eXotZkVtQ0JSQld0VmJ0QmhNVjFlaTdtQnFJMFBWRzlPVTZMVUN6a2l4ZHFpOFRBU0pOM3VrUFpZNGFtN25FYWV2YjhUNzduYktKdDFQV1FpczYzX0VzbmtPRlJXMWVWcmJQcmZHTWc0RGFpd21kVE1ZckNyNA?oc=5",
+     "published_kst": "10-26 09:58",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "미래사업 투자, 파운드리 강화"
+     ]
+    },
+    {
+     "title": "\"빅테크 수주 확대\"…이번주 삼성전자 파운드리, '흑자전환' 청사진 주목",
+     "source": "뉴시스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwaklYeFFrdVZ6RDV1cE01eloybENoeU5yT3VMQ25HeWFWRjN2M2pGOXpNQXoxYk03NFRhYUdCZjNGZWZiaHR0VTQ2bW5wLUhPY1NqWTF2MlJMamVvLUpNN9IBeEFVX3lxTFBtQWpQWVRIOTVNaVJkd0M5RWpMSzR3al9tWTBNNFhCbjJzT254aE9vUnJnaDhfRkVvQ1BoT3JNbDBfdnJjTnVHbThmbWZ3OTFDRVF6ai1iTkhjNEtmenI4UUNZaWpFMGhuT1poVDlXRnBlOUFPUU1GRw?oc=5",
+     "published_kst": "10-27 05:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "삼성전자 파운드리 흑자전환 기대"
+     ]
+    },
+    {
+     "title": "[속보] 3분기 성장률 1%…반도체 호황에 전망치 상회",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4T3ROcWhEZlVBY05nempTOVZNLTdsSkM2LS1PVlFKdUtzNVNlX3h2RW1QSGFXRkNxM2ZndmlfbElGaGFzb0dKdms0X3dMMlhYRk5kczBaSlRsY2pmY2JPMjNpUnJYMFk?oc=5",
+     "published_kst": "10-27 08:05",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "반도체 호황으로 성장률 상회"
+     ]
+    },
+    {
+     "title": "“반도체株 회복 불씨, 앤트로픽이 붙였다 [오늘 나온 보고서]",
+     "source": "매일경제 마켓",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FRHdSR2wtdVI0eFBRempPRkp4SDNwV0hTTEhrYXdWdEVNT2NHd3lfOE1SNU9Rd21nR2VHUU1icnl2Mjg5Rm55czJJUGhjNmM1NHc?oc=5",
+     "published_kst": "10-27 09:06",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽이 반도체주 회복 불씨"
+     ]
+    },
+    {
+     "title": "올해 3분기 GDP 1% 성장…반도체 수출 호조 영향",
+     "source": "경향신문",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14c2FBU1pQWUs2R3dPODJUVUxmNU14b2hYc1lQWWNZeWgtSmNvbHNuNjBWVll5QkdiYmNLTmM4NmMyV2lENk1SdXpzd0I5Mld2UWphNHNqamFSZ9IBX0FVX3lxTE5tUTJJNERxdzFnR29CTXBMZW5VMDhweVJqQmVKZnVNMFc2RVpRWlhfWFQwU0FuR2pWNzVmNUZBRE1KSnBqVnJNV25TcmV4cUxMd0s2V0hCWE9wV0dVb1RN?oc=5",
+     "published_kst": "10-27 08:17",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "반도체 수출 호조 영향"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "SMH",
+   "name": "반도체(대형)",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 2,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "[밤 사이 해외뉴스] 엔비디아·마이크론이 다 먹었다? 미 증시 폭등 뒤에 숨겨진 AI 거품 경고",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qM2V5TFh3RjJhczFFSWQ4R2FnbDVZRzNTejZwbFZhWWc1R1RURWxkS0ltby1xbTd5UXp1b0JvQjJJVHNVdE1ERlp3WVFuQmQ1TVc3dDhWU0xDUQ?oc=5",
+     "published_kst": "10-27 08:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "AI 거품 경고"
+     ]
+    },
+    {
+     "title": "엔비디아 주가, 오늘 상승하는 이유는?",
+     "source": "Investing.com 한국어",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxUjZ4OTZ3NUVSZElTUDFVZWtpMlZjcHYxSUc2eWNWSEt1cEpnUXQzSE1RMTh6Zk8ycFBXbTVURUxmY1BZNU92WFlDQ2xwa0VvSHpTaEJtemVuYzhFS0NWRGM1OG5rWk9UM2NjMTVtQkNOckJhb184?oc=5",
+     "published_kst": "10-27 00:07",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "엔비디아 주가 상승 이유"
+     ]
+    },
+    {
+     "title": "'앤트로픽 IPO'에 美 AI반도체 훈풍…삼전닉스 프리마켓서 2~3%↑",
+     "source": "뉴스1",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IaVNfSDlUZmRJRHdraGdzVFlVUElWVUFQZFdwM1VhUllZclBYVS1vT2I2VG5WUHBDWktMdFktSGN1aGU5T1NxNWhFdVhUY0xaczdqRFllYjdkenc?oc=5",
+     "published_kst": "10-27 08:21",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    },
+    {
+     "title": "AI불안 완화..미국증시 반도체주 '껑충', 엔비디아·인텔·ARM '활짝'",
+     "source": "초이스경제",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLaVktUDA1TVZGbkp0OTVLd0ZhZ0JYZG9PczRVNHFtVHdLem4xVjJjeG9SVWk0Wmc3TkhNbjlZaUJQVzlOLTQwRTlxZTFLd09mZzZHdlFGcWV2Nk1rZUNjeGdmakRBb0ltQXB5eF9LMNIBc0FVX3lxTE9pN1ZaNzV5MldJZndSMTdkX2NkWTJuSlI1TTJ6UTdETzFmMkMyb1VXTXIwMDZBbHhmSDUyZnJtS0R3bVY2UWhJM3NibFVWVUEyNkdodkRCbkhRWXNROUsyN19hUk1BeWMtVE44aW1ycXVlZ1E?oc=5",
+     "published_kst": "10-27 05:31",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 불안 완화, 반도체주 상승"
+     ]
+    },
+    {
+     "title": "[도쿄증시-마감] 닛케이, AI·반도체株 약세에 3거래일 연속 62,000선",
+     "source": "연합인포맥스",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0yQWJKNXh4MWI5M1dpMnFsdVlRcG43STY2UlNtTklUVC1CV1BUNHZtNFhBeFczVHhfaXFqS3Bfb1VsR2N4NWdwdDdJTzhVcTktcUNMUk1lejk5Yk5BTmtmckpXWXBMdDZWU3dNUU43d0U?oc=5",
+     "published_kst": "10-26 17:47",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "AI·반도체주 약세"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLK",
+   "name": "기술",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 3,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "앤트로픽, 나스닥 상장 착수...\"역대 최대 규모\"",
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0UE96OG5QU24tbmlGYjJWR3A3OTY0MWpXRjJNMWZmUk41aUNkUDQ1MW1NWG5LSVZqTkRQaDh5M0doaXJUS1dYRmF2eWtKRnU4S2JhUEZQSmNVSVUxZnc?oc=5",
+     "published_kst": "10-27 09:36",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 역대 최대 IPO 착수"
+     ]
+    },
+    {
+     "title": "앤트로픽 IPO 기대감에 들썩…나스닥 0.8%↑",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wTlFfU28tVjB1Tmwzc2g1QWI5c2M3amUyTmRXTEdFaDVycGZOV28tX1YyOXNYNzItcFNCcS1wMU55VmxEeUNyeThlcGZORFZwQzRFNnZqbWdsMlh1VUhHbTlJbW9PSHc?oc=5",
+     "published_kst": "10-27 08:29",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    },
+    {
+     "title": "앤트로픽 IPO 기대감에 뉴욕증시 들썩…나스닥 0.8%↑",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44WlhWdWVPYl9NbDc4OFprQmE5QzBxejZxdFhMRWFMMlZnektFQ1dCS2c1ODBUTWNycXRzOTEzUGVnV21ycjQwYUtYRWQzS3RQQXNkdjdmVzBkc0HSAWBBVV95cUxQT0NWNmNwUUtPYmw4cUNDWTUyb0NDbzdVbTNsT2o5TWd3bXVJRC1uNTJGT19uVFdDQzVuZ0FScUpIdnlVRnhzU3JHU3RTMGxwVVdkTkg5ZXNmMnBWOFU3SkU?oc=5",
+     "published_kst": "10-27 05:22",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    },
+    {
+     "title": "'2조 달러 꿈' 이루나‥앤트로픽, 나스닥 상장 착수",
+     "source": "MBC 뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4MVliODk3cGNRZzBBYWVNWW1NVFB0QlpYNlFoZ1Jld09tSUE1Q05Kd2RoY0theEQ4VjI4R2lHY3hfdW9GWjhYRTNSXzRQa0dGTWdNc3EtZlRMejZzMGRIbThfRmdmblpNcTBHNVVldFhLR3JFUzU4cnNn0gF6QVVfeXFMTXFSTkMxMV9nUnE4T1ExbDNwT3hHdG8xdlpXMDB6VUpCWE5kNXBydUd4RUVHcVBvejZuU3ZCOUoycHpGV3F0eWtXSXQwcmpGbUhfVWc2Smk4Z1Q5eG9RUkhOdGNqd1VIYnZrUjloUXJuYWhHT21ISlhLeUE?oc=5",
+     "published_kst": "10-27 06:29",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 나스닥 상장 착수"
+     ]
+    },
+    {
+     "title": "앤트로픽, 나스닥 상장 공식화…AI 위험성도 언급",
+     "source": "KBS 뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE15NmJ5MDVUeXRJdXRsRUJuMWwtZy1FUUVXV3JtOEdXR1lmSjNGckNZb1FJTjMxT2RTQUJacWxaTXZYclpXeFlNZkR3WjdGWXM5cGdxVEI1SVdRSXc?oc=5",
+     "published_kst": "10-27 07:18",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "IPO 공식화, 위험성 언급"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 4,
+    "negative": 0,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "IGV",
+   "name": "소프트웨어",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 4,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "두나무앤파트너스, 미국 우주 데이터센터 기업 스타클라우드에 투자",
+     "source": "AI타임스",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53bUIzUFF6MkxKRm1UX0N2MUNlUHM4R0tfaW8wM2tiaElEMEkxRDRuMUxCRHU1NElhdVMwd291UXdKZHZFN0VUcmxKbHpEMXh1aXJHRTlXcURyRVNJVGJvcGZCS1RwdzE1d1E?oc=5",
+     "published_kst": "10-26 16:31",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "우주 데이터센터 투자"
+     ]
+    },
+    {
+     "title": "삼성SDS, 주가 4거래일 연속 상승...AI·클라우드 성장에 주목",
+     "source": "증권일보",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nWWtzOEFrbHJ3R0FBVU14UDVMSm1BZUZhclZsTFRUdUFkRGZjZ19OdDc1ejVIWDlpWWJ0X1ptaVJBVHBITWNMMUlFUXBoVnFyUzhUclp0RExKSEg4U1R2MQ?oc=5",
+     "published_kst": "10-27 08:35",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI·클라우드 성장 주목"
+     ]
+    },
+    {
+     "title": "NHN, 클라우드 채무보증 5000억 육박…'신용 리스크' 커진다",
+     "source": "디일렉",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE41MThPT1ZaR2xlbTVmdjJRVWQxTEtrN1NEVWI1dlJmdVgwcmVqSUxpYWFfMkNEWC1GQ1RFcjRWS3hsWWpSd2pMSVRlQ2JsdHpJNTRfLUdzVEFiODJFWmprTmthS1hSZw?oc=5",
+     "published_kst": "10-26 17:26",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "클라우드 채무보증 리스크"
+     ]
+    },
+    {
+     "title": "실적 발표 앞둔 인프라 소프트웨어 최선호주: BofA 증권",
+     "source": "Investing.com 한국어",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oSmxZbWs3UGZlbE9HbXZhRnU4R1dOT0xqeWQ3Q24yLXo2ZklyNjVmWUphRVgtTlRPVGt4VnVyNV93aFUwdGxlT3dUUE5BMWEtSUF2aTMyM0RlUFBCcnNHT3hRYnNuMXdSREktMFg2OXc?oc=5",
+     "published_kst": "10-27 03:26",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "인프라 소프트웨어 최선호주"
+     ]
+    },
+    {
+     "title": "네오클라우드 위기론, 시험대는 GPU 아닌 ‘숫자’에서 나온다",
+     "source": "더에이아이",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE50Uk5SWEtlclctbTN3REE2elVWU1NnTkdwSGNzVE5MUEpieTFWUHZwbjVjeU8tZlhUbnhveDlJdmRXdTFQUV9KeDdETDRXTUc4SlJSREdZdnZYd2VhRnAtN3JGV0dwY3BXd0dn?oc=5",
+     "published_kst": "10-26 17:47",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "GPU 아닌 숫자 문제"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 2,
+    "negative": 2,
+    "neutral": 1,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLV",
+   "name": "헬스케어",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 5,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "한투운용 \"일라이릴리ETF, 헬스케어패시브 중 6개월 수익률 1위\"",
+     "source": "매일경제 마켓",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FeG1Ma25BamhEN3JUa0F4N0w1TjFfd1J2UVZWV1JvekJ4VldsbHB0NlhOUEtNMlFHSlktZ0dLWGNsWXNMQkxJaGMzTXpCem9Kb2c?oc=5",
+     "published_kst": "10-27 08:53",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    },
+    {
+     "title": "한투운용 ACE 일라이릴리밸류체인, 헬스케어 패시브 6개월 수익률 1위",
+     "source": "서울경제TV",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TT2F1NkhCYkpfWXh2dW5aQUpjX1p3cm5zTWdrSmNCVHpyUjdINXlnRmNyYXExaTVkajR1SXJFaHJpVzVIYk5Mb3FfZlpNbDVSOGo1QW0wOG1YLXlxVVNUR1JYYlI?oc=5",
+     "published_kst": "10-27 09:15",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    },
+    {
+     "title": "'ACE 일라이릴리밸류체인', 헬스케어 패시브 ETF 중 6개월 수익률 1위",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TNmRoVmpneHV4eVJ3alBwaXlYS2M1aEtfUnZwdDNlY3lzcFdrWTRmb1NaaGNaYXV2eWo4bUtCSDNNYnk5NUZ2NkJ2enA1aXpTdHQzQ2F4c3ZKTlg4V3phQlVn?oc=5",
+     "published_kst": "10-27 09:12",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    },
+    {
+     "title": "로킷헬스케어 주가 하락…美FDA 경고장 여파",
+     "source": "데일리메디",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBLQlJVNWdqSkp4bWFNZlY2QlFSUkszRTNFN2w5eFQ5eUEzNVVyZ1hZU0JjczRXTG9DQVZkTW4wd2ZjYVFaT0JsSVEzd2ppS2REc0tQUXVsT0xheEFIeGxVSUJxbllvSU54?oc=5",
+     "published_kst": "10-27 05:42",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "美 FDA 경고장 여파"
+     ]
+    },
+    {
+     "title": "로보틱스·헬스케어만 방긋…삼전닉스 실적 앞두고 \"변동성장세 지속\" - 머니투데이",
+     "source": "머니투데이",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtZENWQnZWc1hhRVp5SVBzZG1NNl9sSGdhd1RhdTI5d0s2ZURJQ3dYNFEyc0Z2STVzWDVCVnVfZFpnV0xJNkU2Y2hfWkFaY1c1ZG54ZEtab0dwcmpNNjhCM3BjTVFKUld50gFuQVVfeXFMUHM3QnBhQ0h4T0w5NU1yck56VnlHcW93bHpzc0swQS1xM3NkQVQyOE9QY1M2VnNlOFlZWGNjMWJiWmJhQm56bmR3UkJETmZMY3V0c0d4TE5oOTNlWXZkTkpvMy0xMDVkckpiWmtFTVE?oc=5",
+     "published_kst": "10-26 17:20",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "로보틱스·헬스케어만 방긋"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XBI",
+   "name": "바이오",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 6,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "中 바이오, 기술수출 200조원 돌파 눈앞",
+     "source": "조선일보",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcXBhOWdqZ0l1M1p0TE5uUkhFNkZvTEVqa0lnc2s2eFVSTEFDdm9RaWRUWmU1Y3ZVTGNkdm1ZbEdsV1BSWklzV21ENU9DZEtRdzVsQ3NMT2VNYkFTdmlHUXVkbHJEMV8yU3hDUHdmQ2dTb2RtRFEwWUdDLXZGNHR4QUoxaw?oc=5",
+     "published_kst": "10-27 06:06",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "중국 바이오 기술수출 확대"
+     ]
+    },
+    {
+     "title": "특구재단·알테오젠 '의기투합'···바이오 기업 성장 돕는다",
+     "source": "헬로디디",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4dVZyRGw2YjR5aDNRODl6WS16SnBXOERjbWhlNldTSFp4dmthN3ZNQlREQ2JUSFBJb3NwMzFreFU1ak9PVnhhQjR6cDJZUFNERjZvWmhHTlFyMEM3Z1NtMlNUV3VRYTdNcEE?oc=5",
+     "published_kst": "10-26 17:40",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "바이오 기업 성장 지원"
+     ]
+    },
+    {
+     "title": "프롬바이오, 동물실험서 성장판 두께 23.7%↑...2600억 어린이 건기식 시장 '정조준'(유료회...",
+     "source": "팜이데일리",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE90ejhLRy1NcWcyU2E2bmdjc0w3c3NwS05teG9Wc29wNGxvNU1kOG5FLWc1QVFMaVc4bkxZSGd0X0M5X2N5bEQzenVzV1Q1X3JXOWVRb2hlSG9LSTJUZm5URjBzWnEyS09HamtJMkN3?oc=5",
+     "published_kst": "10-27 08:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "어린이 건기식 시장 공략"
+     ]
+    },
+    {
+     "title": "기술이전 없어도 상장 가능?…바이오 기평 ‘합격 공식’ 바뀔까",
+     "source": "팜이데일리",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ScDdkQTBLMlZFZkNCa0ZDYVNaSVNST25TRll5MnhQSzloZUQtMlJqb2RfRWlPMlRsZkNoYklld2dDcXQ0aHprY0dkakR2LXFKblBfVkZpZGxZWmo2aktXTjdZajNrVnYzUXdEci1B?oc=5",
+     "published_kst": "10-27 08:00",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "바이오 기평 합격 공식 변화"
+     ]
+    },
+    {
+     "title": "[주식] ESMO서 신약 경쟁력 알렸지만…주가는 '외면'",
+     "source": "히트뉴스",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5BZmQyTm4tNTNEeEUyOEFobWZ0Y2FkSFA1Uk9QbzYwWlNfaTJMTVRvRTBtc0Z1Ujk0ZHYwTWJaTGgta1hSQmR5V3R6OFNZZkZLa1pjMm95b1EwQ0ZSbXA2VG9WM0hBZ25RdzRV?oc=5",
+     "published_kst": "10-26 18:03",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "신약 경쟁력 알렸으나 주가 외면"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLF",
+   "name": "금융",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 7,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "금리 오르는데 고꾸라진 은행주…언제쯤 반등할까 [종목+]",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVEFKM2ViVU9LNmpsZEVfek5PNEd1elZSRm9wbWk0aGhnWWVQWXVaYkQyQmdWZWpLWmFRdkpPNHFJakRrUmtWYlNKZVEyM0F2cWpidFlGT0dtQQ?oc=5",
+     "published_kst": "10-27 08:41",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "금리 상승에도 은행주 하락"
+     ]
+    },
+    {
+     "title": "“증권주 바닥권 근접…반등 기대”",
+     "source": "뉴스투데이",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTEZKXzBhRVYzaGVWbkRycDhHQlZfUFhydXpCSFNYV1NHMXZOUTV3elNzLUk1R2R4V3BDX2NkMzQzV21qUDlBVWFzRGtBYnp3QUFVVi1GNFlsamdDcXc?oc=5",
+     "published_kst": "10-27 08:55",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주 바닥권 근접, 반등 기대"
+     ]
+    },
+    {
+     "title": "거래대금 64% 급감했는데 '바닥권'…증권주 반등 근거 충분할까",
+     "source": "파이낸셜뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GQ0d2OWpDU3d6eVFEXzdSRWIyQnZ3Ykpmc1BDdTJLY2VzU0dtYW84cFJEdzdHWnJ2dWxtcS16bGctbGRHekxqbjlHcm1lVTUtOWJGZFNjdTRsUQ?oc=5",
+     "published_kst": "10-27 08:25",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "거래대금 급감, 증권주 반등 불확실"
+     ]
+    },
+    {
+     "title": "'반토막' 난 증권주, 저평가 심화···주주환원 확대가 반등 이끌까",
+     "source": "서울파이낸스",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNWXZVN0d5ZlVER1gtclR0dkpMWl9XTnh1dzMwYnZocHVta1o2eWxyZmYxSFVYNWQzSTFETjRTbndya0taazFvY3FpdkFNWUhDWldMSG11aEMtN0RxaWE2cDd2eVVzQW5xU2c?oc=5",
+     "published_kst": "10-26 16:35",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주 저평가 심화, 주주환원 기대"
+     ]
+    },
+    {
+     "title": "증시 거래대금 5개월 새 64% 급감…“증권주 반등 기대”",
+     "source": "이데일리",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPa3lCcWwyYlZVVWo2bUFFODI0Q2lyQ2ZsbzJ0WDJtYnRaTThtWW13Q2VWVVVGN2g5cmNySzRFNlR1MG5pdFFpVWQ4dmN3dHoxSVlCSHlRaUk5dlFWaGNpS3pIU29FSV9BQlJFLU5FcFYwZ3ZHdXZEZXlxM1VGTlZoNw?oc=5",
+     "published_kst": "10-27 07:38",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주 반등 기대"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLE",
+   "name": "에너지",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 8,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "이란·사우디 회동에 국제유가 하락…WTI 1.5%↓",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHcW5WTWRINlpJZVdtd3Q3Z2ZfajJ2SzAyZjBmRHFSZWI2emhYUk5adGVZeHVVZHpLbDkyVFlMdzFhT0tMMjhiWkIxUVlWd2hLXy1UTTMzSDhUcTQ3czY2elRNdGh2VjQ?oc=5",
+     "published_kst": "10-27 05:46",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "국제유가 하락"
+     ]
+    },
+    {
+     "title": "국제 유가, 이란·사우디아라비아 회동에 하락",
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE03ajJxZFZaaVNwREdZU0tvT2MyNWhXcjJLWUFWMGx0eVFBQ3hTd3BxLVVfQnNrd0M0NmpzS0p2dGQ0WWNjNG1Xc2pkdmloR0EwNWFQcHJJbVAwb1JaSHc?oc=5",
+     "published_kst": "10-27 08:07",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "국제유가 하락"
+     ]
+    },
+    {
+     "title": "이란과 외교 협상 재개 기대에 국제유가 이틀째 하락…WTI 101달러대로",
+     "source": "www.ebn.co.kr",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PTzRwWW0zVmdqbjRRanFmNVZyTkZscjBsSUVPQ001MDNoWTV6WjZvbmxBRWVyaVZqNS1mSFZrSVlUNTFKcm03bEhpdWV0Z0JPdnpOLWlxM2JFSkcyZHk1elRldXQ5Sjl3?oc=5",
+     "published_kst": "10-27 08:35",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "국제유가 하락"
+     ]
+    },
+    {
+     "title": "[국제유가] 중동 긴장 완화 기대에 하락…공급 차질 우려 고점 유지",
+     "source": "신아일보",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZbkhKck5jMlNKeUF3REtUYkhBZlBQRnVHaTctWjZpUHVDTjFhdGNTeThHY21pR292WXRqNzBQei1TRDBpNjVPdlpNazJUb1ltTmJoS1p4UmZ4YkdieXp6clpQamUtSjJFV3VaVVdsdWU?oc=5",
+     "published_kst": "10-27 08:19",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "국제유가 하락"
+     ]
+    },
+    {
+     "title": "국제유가, 이란 재공격 우려 속 114달러대로 하락",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS2RKZm9nbVVzeXNIR0s3b054aDAyYWI4WlZPbUgzTWpZbS1Qbjc2SVl1a0NrLW5heGxLTnVQcUNGd2pyT2daM25NRzgzalljSmQ2YWFFSGIxcmhTTl96M0dhU2JYRGNkWTI1TTR1MlR2Q0NQeWY1TV96V0JDMnVZWkVfNExuR2Mw?oc=5",
+     "published_kst": "10-27 01:00",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "국제유가 하락"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 0,
+    "negative": 5,
+    "neutral": 0,
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLI",
+   "name": "산업재",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 9,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "반도체·조선주 부진 직격탄…주요 10대 그룹 시총 1100조 원 감소",
+     "source": "nbn 시사경제",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HblVMdHZKNXRRS3JvMV82LTdqVnZfZE1zamhlWVIxRm1EanQyMVhYNG9vWmxzWmNkM3dLUzZ2dktfTjB2R3d4WG9lQWNhMlN2RkNHak5LaTUwdG9OQTJJbE0xSERmNmRfOWc?oc=5",
+     "published_kst": "10-26 09:46",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "반도체·조선주 부진, 시총 감소"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 1,
+    "positive": 0,
+    "negative": 1,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLB",
+   "name": "소재",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 10,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "국도화학, (주)국도인터내셔널 주식 500억원어치 취득… 지분 50%",
+     "source": "CEO경제신문",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1sVldySFBDSEpwNDl3OVZaWHl0eVBXbnNnaTN5aU1LMU0tU2lfT0xYc1d2aURMcERuQ2tzR2wydTJscWRYU0RQbGRsaTNnVHBzMTkyOU42RmxRcEtkRnJOaG1ERFZYYWRydXJNWA?oc=5",
+     "published_kst": "10-26 18:11",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "단순 지분 취득 공시"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 1,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 1,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLY",
+   "name": "경기소비재",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 11,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "아우디, 美 조지아에 첫 완성차 공장 설립…40억 달러 투자",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBTNS1WUTBaUTRpcW1PLWRJRzNfYk5ub0ktR2NPckNUQ1pXcGhRY1BSemo1RXhvOUxLYkdQQ29FN1JvZUtNS1ZJSXo0aGZYZw?oc=5",
+     "published_kst": "10-26 13:02",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "아우디 미국 공장 설립 투자"
+     ]
+    },
+    {
+     "title": "아우디 조지아 42억달러 투자, 현대차와 격돌",
+     "source": "공감신문",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzQUpfdXY1VVI3WklLV1Z5LWtCSHd4MzZobXRacDZnRFB3SmR4Qm5TRXdFRTJVOFNGZmN5anZDWVpFTEZhOHczQWJtWm5PV1h5UXR6MTEweTZUcldWVmdpc2xOSVBSVUJy?oc=5",
+     "published_kst": "10-27 09:12",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "경쟁 심화 가능성"
+     ]
+    },
+    {
+     "title": "자동차 및 자동차 부품 수입이 급증하여 약 107억 달러에 달했습니다.",
+     "source": "Vietnam.vn",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZEN6SkRRbjMwUW45M0xlSUJEdHZBZUVNREgyVmIzeW5qbEhpUHBJUk5fWkRrMm16X1RnQTVNMmJiVTExbUk1SWtJT0RoMjBCRUhFQkxBeUdlYWN1MDFVX2dTRzdySzBXbVpGUFU1MFdKQlFKd1VWWkV0NmtsaTNlN0gxa1FxaThTYjUxSzJxbC16dw?oc=5",
+     "published_kst": "10-25 13:36",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "자동차 부품 수입 급증"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 3,
+    "positive": 1,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLP",
+   "name": "필수소비재",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 12,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [],
+   "issue_summary": {
+    "count": 0,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
+   }
+  },
+  {
+   "ticker": "XLU",
+   "name": "유틸리티",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 13,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "HSBC가 선정한 주목할 유틸리티 주식 5종",
+     "source": "Investing.com 한국어",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vY2VEQjB4dlI2aHZxZlA3enJxMi1YaHNCWTdJaDVveUJRc1k2NE1KYVJ6RGhNdW1QMk1IV3k2c3VhcG8weUdGa0ZxUVVIc2ZNTVJnOEVjUkZTYk5LMkhkOWdCNzEtaEJjdTVPZXJUNVA?oc=5",
+     "published_kst": "10-27 00:04",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "단순 종목 추천"
+     ]
+    },
+    {
+     "title": "[클릭 e종목]\"곧 큰거 뜬다\"…통신사 넘어 AI 유틸리티사업자로 탈바꿈한 종목",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9UZUN3M0IzTFhxMWg0cGxmaFVqMWluMHlveVhsU1Q5eERBT0d6b29pN1AyODRLOU4yQ3o4X3VFNERaSVV4YnBBRU42NDZGTDdVQ3ZDeXR0SGJILXdKem9JeTdn?oc=5",
+     "published_kst": "10-27 07:30",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "AI 유틸리티 사업 기대"
+     ]
+    },
+    {
+     "title": "[리포트 브리핑]SK텔레콤, '유틸리티 사업자로 불러다오' 목표가 135,700원 - 유진투자증권",
+     "source": "뉴스핌",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB6RTNNNzdrcDJNYmNPODBYTjBncngtaXlRNzU3emVybTlDRUszakNPal9hRDhOYmYxRVJoQ2hFeHVlbHpJMS1FMjRjQzdmdkNJOEk4Ml81LUs4QXIt?oc=5",
+     "published_kst": "10-26 16:10",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "유틸리티 사업자 전환 기대"
+     ]
+    },
+    {
+     "title": "LS에코에너지, 베트남에 846억원 투자…희토류·AI 전력설비 사업 확대",
+     "source": "웹이코노미",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBrbTJOSWRUQUpDb2pnWVB6U3NaZ2F4cnl2U1pVV1luRl9jb0lfUXU2aF9hRG9mV2FNUXdaSlFYd3VtVTFnUlpfVmFiOVRKVC1nQllfMkxkRnZIWjhkcHRXYVZVWHM5eG1hbmNOZXdTMTBwZw?oc=5",
+     "published_kst": "10-26 16:14",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "희토류·AI 전력설비 사업 확대"
+     ]
+    },
+    {
+     "title": "[전날 애프터마켓] '중복상장 우려 해소' SK하이닉스 3%대 강세…삼바·삼성E&A 웃고 2차전지·전력설비 고전",
+     "source": "이투데이",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tMlUwY3pRWVNEQkRQYm1HQ3ZZNl9mVnBMY2xaLWozemRpSDNJMm1CVmpmYVdGeU84dHRDeFV6MFVWYTlYdmlHU2ZGQWVpR2RNVXhreQ?oc=5",
+     "published_kst": "10-27 07:24",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "전력설비 고전"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "XLC",
+   "name": "커뮤니케이션",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 14,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [],
+   "issue_summary": {
+    "count": 0,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
+   }
+  },
+  {
+   "ticker": "LIT",
+   "name": "2차전지",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 15,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "\"전기차 넘어 AI 전력망으로\"… 2035년 2차전지 시장 3,172억 달러 급성장",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR3BMb2x1bG1WOUtORVpadVVOdXg2d1NneThQXy1NbmVpZHFKME9ZSlU3aVJpV2d5SnYtVTRVZkNGMUJmSk4wRmgtZHdBaVNIQXB3eWtOTjRfbWl6NW04ZFEwWlg2NU1aYnZ4ZF9wb2RGWkxjZGRBNHNVcXBYc2FqYXhGOGN6dG1U?oc=5",
+     "published_kst": "10-27 08:09",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "2차전지 시장 급성장 전망"
+     ]
+    },
+    {
+     "title": "[중국 특징주] '용백과기', 나트륨이온 배터리 양극재 생산에 7200억 투자",
+     "source": "뉴스핌",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5acDlYaDZnaEFJR2ZiekdSRVhzdmdpX2JGa0dITFgxWndBMHdKUHVyRG9WRW0xQzlKeGRpSWxHSDJ2SG9QMlA3VlZCLS15elNtZWE1WXVFZ3VESkxM?oc=5",
+     "published_kst": "10-27 08:13",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "나트륨이온 배터리 투자 확대"
+     ]
+    },
+    {
+     "title": "美 중간선거 악재?…K배터리 반등론 나오는 이유",
+     "source": "딜사이트",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WVFoS3JkUkhkMU5GUEdVbFVra3JZR2JreUxGNWVXRVVnSG9zRzc3WWJadWotd1FjU2d1MF9ha29KTGEyeXlqdmplZ041UFE?oc=5",
+     "published_kst": "10-27 08:02",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "K배터리 반등론 제기"
+     ]
+    },
+    {
+     "title": "삼성SDI, 북미 유일 비중국계 각형 배터리 강자…AOP와 2차 계약",
+     "source": "이코노미톡뉴스",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54RExpczlpRC1VV0ZwTm9hc0pJSmF6LXJmZ2RhcXFCRnVBZ0Z0dEpodnlzX1R4WHlkTVJlVGFfV1dKQnBjekpianA3ekpaU0V4cU01ZmlYZnFza1Z4OFk0MlRVaUhENWVHd2t2dw?oc=5",
+     "published_kst": "10-26 16:24",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "삼성SDI 북미 계약 호재"
+     ]
+    },
+    {
+     "title": "\"배터리 팩·냉각판에 불붙었다\"… 2030년 전기차 알루미늄 수요 급증",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOemhEX3FVeWRBTWpTQXdvTTJwbTItS3JPcXQ5WHpCQkJqRjdvdjBmVDZzMVEwYkt2SXM5MC1ybElQM1RfQ0IyRHEtS3h2UllhdzNMZ1dvS1d2MGQ5Nk9pMldydW9oeDZkSGJ5VGJPdU1hRzY4VHpQRDZOWUtta0UwbDBCem8xc1JD?oc=5",
+     "published_kst": "10-27 08:15",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "전기차 알루미늄 수요 급증"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "ITA",
+   "name": "방산·우주",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 16,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "경남창조경제혁신센터, 항공우주 기업간 기술협력·투자교류의 장 열어",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUzlKUHk5aFg5Nkl4b2lOMGRFaWRoOE1felhmOEdZTkZxLXd2TE4xbW9nMGVBSG5NQkVqb3RfZTBLZUJKRlNaSTNoVXJhdw?oc=5",
+     "published_kst": "10-27 09:42",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "항공우주 기업 협력 장려"
+     ]
+    },
+    {
+     "title": "반토막 난 방산주, 지금 사도 될까…12번 급락 뜯어보니",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAydEhOaDBJT3lVZmFVWkV5UVdFZXp6bm8tM1ZDTHBPMXp5RDhqWUtsR2FDcDJNdVZRd3l3MWFFdTJ6TWRCbS1IRkVuZEpwZC10V0dlRFJtSTRvUQ?oc=5",
+     "published_kst": "10-26 16:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 주가 급락 우려"
+     ]
+    },
+    {
+     "title": "한국항공우주 주가 상승 중",
+     "source": "아시아뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tUTFqN2Fnak5URlA5UU54MmxpRTlVdURDcEJUU1FiSEo2S0p3cGNHUklXa3o0cXNvdFN0QkQ0ZW91OVlVWjY4bGFuVS1NT0ZSSzlEZERNUUlwZ2ZrMHB1VFhGVGZhRXdpS2FJMlRVODdoZnJx?oc=5",
+     "published_kst": "10-27 09:32",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "한국항공우주 주가 상승"
+     ]
+    },
+    {
+     "title": "수주잔고 있어도 흔들리는 방산주…내 계좌 자금 체력은?",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1IRlQ4aU1ZbkVHaWlxUF9SeEtJRXlqaDVTUzFXRGZEOThhU3RqR2JJcHJxUDg5S2NoVGtRR2wtN1JydWJaMXBnZTYwOUhLLUpTRlRPQkZFdU9ZSjV0WmJvMw?oc=5",
+     "published_kst": "10-26 10:19",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 주가 변동성 우려"
+     ]
+    },
+    {
+     "title": "'신변이상설' 김정은 방중에 급등했던 방산주 급락[핫종목]",
+     "source": "뉴스1",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LaERLVDlUQWxRaGZEbEtHLTd2QklLWjYxZ0hDS0E1d2JqSXF3RWQ2TXhjXzc4RUZhRjkzaWtuTEFtYXdyMUNoRkwzSS15UFRRM2JjaW1EZ1JTQms?oc=5",
+     "published_kst": "10-26 09:57",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 급락 소식"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 1,
+    "negative": 3,
+    "neutral": 1,
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "URA",
+   "name": "원자력",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 17,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "고리원자력본부, 부산 위기아동 지원 새 사업 추진",
+     "source": "국토일보",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02NzhacENkYmhVNGotRTJTR2V3T3ROZjU3NkZCUVNrVU5BV2RDYTFNdERna2N0UzFpT0MxTnVHVlhKX0dHVTdoZ2NDdVBZLWFWQUdZczkwRXh4Vm9tbEJkVVlJQQ?oc=5",
+     "published_kst": "10-26 17:11",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 사회공헌 활동"
+     ]
+    },
+    {
+     "title": "고리원자력본부, 위기아동 지원 사업 '부산의 힘' 후원금 전달",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldSctIBYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldScg?oc=5",
+     "published_kst": "10-26 10:30",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 후원금 전달"
+     ]
+    },
+    {
+     "title": "IAEA \"2060년 원자력발전 수요 3배로 급증…AI 확산 영향 \"",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZcG8yZzF4VUtDUXlkcjA0OHJUZTNaNHg5UjZzOGYyLThQVEQ0ektYNG9rODBYLXlpaC1lZ3JqSFJSTjlFU2RSSGJtZUFBQXNFUi1xWXowZnJTWW_SAWBBVV95cUxNM3RESHdxOFpQTHB4N1I0ZFg0cWxnUkt2TDQzcE1pTlFQanJhWWRtNjQ5ejZ3Tk5hdG52R3RERXdTT1V1VlgzdGo4LW9qTkhITk1aRl9nYklkRnI2dmRwRWw?oc=5",
+     "published_kst": "10-24 10:04",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "원자력발전 수요 급증 전망"
+     ]
+    },
+    {
+     "title": "“AI 때문에… 2060년 원자력발전 수요 3배로” IAEA 전망",
+     "source": "문화일보",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MMmNfVkVRdS0wQnRHSHpOLW5KVTZ4NVdkSjZ1VnVabWF5VDZnWDZFZHNLWWtDSHg0X1hIMlhaU2NkLW5uNE9aQmtPekpORGJI?oc=5",
+     "published_kst": "10-25 11:27",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "원자력발전 수요 급증 전망"
+     ]
+    },
+    {
+     "title": "경주서 원자력 전문 전시회…국내외 77개 기관·기업 참여",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GQUxyUWE0WjB6RGkwdlJxLVlaWktGdTUzRmJJYmN1N255cEhZa2Y1bldOdkpRaHdlYko4djIwTUdPQUJaZllZLWwxX250LVhEalBmZ1dkRmdpYnNmMFlEedIBYEFVX3lxTE9GQUxyUWE0WjB6RGkwdlJxLVlaWktGdTUzRmJJYmN1N255cEhZa2Y1bldOdkpRaHdlYko4djIwTUdPQUJaZllZLWwxX250LVhEalBmZ1dkRmdpYnNmMFlEeQ?oc=5",
+     "published_kst": "10-25 10:28",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력 전문 전시회 개최"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "ticker": "ICLN",
+   "name": "신재생에너지",
+   "close": NaN,
+   "r1": NaN,
+   "r5": NaN,
+   "r20": NaN,
+   "rs": NaN,
+   "mom": NaN,
+   "rank": 18,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issues": [
+    {
+     "title": "에스에너지, 태양광 수주 확대·일본 AIDC 시장 진출 - 머니투데이",
+     "source": "머니투데이",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAycGJ6cFJEdkp5UXNvbHgxRmgzazZ4eTlqY0h0OEtrTnVnay1sYklaZmhWSXZvcDdKNGlXLXNoeXpzNGxxQVFzUkJrR1o1aXJqcWRiVGxoRW52aGhJS0VkZWxRX2k4a1Na0gFuQVVfeXFMUFd0X3NQYlhGX0lxLWVTU0JtMTBFUWFnZVJQT0hlZkk2YzNVMHdRVDU0encycm9LdXhzaTNERVZqWjN4UHBJRXdDSmVlakpkZFRIVnJTY1lfZWRQTTdRTzliQWYyRGYxWjh6S2tiUVE?oc=5",
+     "published_kst": "10-27 09:34",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 수주 확대 기대"
+     ]
+    },
+    {
+     "title": "태양광업계 “지역별 전력가격제 유예해야…송전망 부족 책임 전가 반대”",
+     "source": "전기신문",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TQmlxUkZXYVdDcGpzVXhIVkVseGVYQW1pa0UzZVFpRFdzWTdYMExoRHA2ckYwVDdPS3RLdnVjV0tsbmNBLTJ5akhSNzRXd0hjUXNkU0ZCcUh3X245TDhqS21sbVRiM0tBUUZON9IBcEFVX3lxTE9mS0FxSDFGYi1DRlZ5RnJBMDRTdzRfT1VYYUVyOW16QzNiX08yZ3dVMzVzLTVtOXNDN3g1NTFwVFFvbDVoMldCUFNyLTNsUk41R01WRlZ2VzQyRnJrdVo1RmhXT2hhRklaOFVNS2cyUEo?oc=5",
+     "published_kst": "10-26 17:45",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "태양광업계 제도 유예 요구"
+     ]
+    },
+    {
+     "title": "[클릭 e종목]\"에스에너지, 태양광 수주 확대…日 AIDC 전력시장 진출 수혜\"",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4RnV2eUhMR1l5b05FWUhCcDY0WUFCX2VoclZmTE0wa3pvRngwajFLOU1CQUJOVFF0QmFieUxaN2hmTkVEMi01RGVBZmo1bUp0X0pvMGM2N2lRX1FRQWlxQXJn?oc=5",
+     "published_kst": "10-27 07:50",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 수주 확대 기대"
+     ]
+    },
+    {
+     "title": "에스에너지, 태양광 수주에 日 AI데이터센터 진출까지…사업 확장 기대",
+     "source": "이데일리",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGtPcWwwZENYM294VTJFbk44V05PVk5icGNDVXg1LTdtcG5JNVJWZDhJeGNyZ3NQZUgxSTEyRkRNMC1xaVVEanNoZnRobFRVNFFNOHJZWFRJdTVvb2tiQ0VsRWprSkg5SUZuZEhmcm5mdFMxZXFTU0pUT0lYTm45LQ?oc=5",
+     "published_kst": "10-27 08:30",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "사업 확장 기대감"
+     ]
+    },
+    {
+     "title": "[MK시그널] 유니테스트, HBM 테스트 장비와 페로브스카이트 태양전지, 쌍두마차 기대감에 상승률 14.58%",
+     "source": "매일경제 마켓",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RVmVwcWVLV2o0a3hmUmlGdmEtOEQxV2h2VkZqVVdsRnlXQXRYbTVIcjF6SkxhckQxUzFhOGdfUlY3WG5VUnVhaGliOFFWRmVoVnc?oc=5",
+     "published_kst": "10-27 09:17",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양전지 기대감 상승"
+     ]
+    }
+   ],
+   "issue_summary": {
+    "count": 5,
+    "positive": 4,
+    "negative": 1,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   }
+  }
+ ],
+ "picks": [],
+ "watch": [
+  {
+   "code": "396500",
+   "name": "TIGER 반도체TOP10",
+   "us_ticker": "SOXX",
+   "us_name": "반도체",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "분기 영업익 100조 신기원 … 미래사업 투자·파운드리 경쟁력 강화 '시험대'",
+     "source": "뉴데일리",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00Z09FM2oteUJ1T3I3SXpLRzRhOEJIMm5QVTNGeW9WRk9FSWg2VDNUTF9JMUFqcF9GZ1FLc3ZlYUhSYjg2V1owSlh0ZGNXOHJwbUpKWS1IUnJNeThZNXpLc2k0RTlkQzRUajFzY0xyU0xIdVpGVVgxS2RxVdIBgAFBVV95cUxNTFB4eXotZkVtQ0JSQld0VmJ0QmhNVjFlaTdtQnFJMFBWRzlPVTZMVUN6a2l4ZHFpOFRBU0pOM3VrUFpZNGFtN25FYWV2YjhUNzduYktKdDFQV1FpczYzX0VzbmtPRlJXMWVWcmJQcmZHTWc0RGFpd21kVE1ZckNyNA?oc=5",
+     "published_kst": "10-26 09:58",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "미래사업 투자, 파운드리 강화"
+     ]
+    },
+    {
+     "title": "\"빅테크 수주 확대\"…이번주 삼성전자 파운드리, '흑자전환' 청사진 주목",
+     "source": "뉴시스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwaklYeFFrdVZ6RDV1cE01eloybENoeU5yT3VMQ25HeWFWRjN2M2pGOXpNQXoxYk03NFRhYUdCZjNGZWZiaHR0VTQ2bW5wLUhPY1NqWTF2MlJMamVvLUpNN9IBeEFVX3lxTFBtQWpQWVRIOTVNaVJkd0M5RWpMSzR3al9tWTBNNFhCbjJzT254aE9vUnJnaDhfRkVvQ1BoT3JNbDBfdnJjTnVHbThmbWZ3OTFDRVF6ai1iTkhjNEtmenI4UUNZaWpFMGhuT1poVDlXRnBlOUFPUU1GRw?oc=5",
+     "published_kst": "10-27 05:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "삼성전자 파운드리 흑자전환 기대"
+     ]
+    },
+    {
+     "title": "[속보] 3분기 성장률 1%…반도체 호황에 전망치 상회",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4T3ROcWhEZlVBY05nempTOVZNLTdsSkM2LS1PVlFKdUtzNVNlX3h2RW1QSGFXRkNxM2ZndmlfbElGaGFzb0dKdms0X3dMMlhYRk5kczBaSlRsY2pmY2JPMjNpUnJYMFk?oc=5",
+     "published_kst": "10-27 08:05",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "반도체 호황으로 성장률 상회"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 30420,
+   "entry": 29415,
+   "tp1": 33425,
+   "tp2": 35430,
+   "stop": 28390,
+   "tp1_pct": 13.63,
+   "tp2_pct": 20.45,
+   "stop_pct": -3.48,
+   "rr": 3.91,
+   "cancel_below": 28390,
+   "breakout_ref": 33895,
+   "entry_vs_last_pct": -3.3,
+   "ext_pct": -9.97,
+   "atr_pct": 6.59,
+   "ma20": 33790,
+   "ma60": 34375,
+   "swing_low": 27045,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 3549.6,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/396500/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=396500",
+    "toss": "https://tossinvest.com/stocks/A396500"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 30,420 < MA20 33,790)"
+   ]
+  },
+  {
+   "code": "091160",
+   "name": "KODEX 반도체",
+   "us_ticker": "SOXX",
+   "us_name": "반도체",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "분기 영업익 100조 신기원 … 미래사업 투자·파운드리 경쟁력 강화 '시험대'",
+     "source": "뉴데일리",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00Z09FM2oteUJ1T3I3SXpLRzRhOEJIMm5QVTNGeW9WRk9FSWg2VDNUTF9JMUFqcF9GZ1FLc3ZlYUhSYjg2V1owSlh0ZGNXOHJwbUpKWS1IUnJNeThZNXpLc2k0RTlkQzRUajFzY0xyU0xIdVpGVVgxS2RxVdIBgAFBVV95cUxNTFB4eXotZkVtQ0JSQld0VmJ0QmhNVjFlaTdtQnFJMFBWRzlPVTZMVUN6a2l4ZHFpOFRBU0pOM3VrUFpZNGFtN25FYWV2YjhUNzduYktKdDFQV1FpczYzX0VzbmtPRlJXMWVWcmJQcmZHTWc0RGFpd21kVE1ZckNyNA?oc=5",
+     "published_kst": "10-26 09:58",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "미래사업 투자, 파운드리 강화"
+     ]
+    },
+    {
+     "title": "\"빅테크 수주 확대\"…이번주 삼성전자 파운드리, '흑자전환' 청사진 주목",
+     "source": "뉴시스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwaklYeFFrdVZ6RDV1cE01eloybENoeU5yT3VMQ25HeWFWRjN2M2pGOXpNQXoxYk03NFRhYUdCZjNGZWZiaHR0VTQ2bW5wLUhPY1NqWTF2MlJMamVvLUpNN9IBeEFVX3lxTFBtQWpQWVRIOTVNaVJkd0M5RWpMSzR3al9tWTBNNFhCbjJzT254aE9vUnJnaDhfRkVvQ1BoT3JNbDBfdnJjTnVHbThmbWZ3OTFDRVF6ai1iTkhjNEtmenI4UUNZaWpFMGhuT1poVDlXRnBlOUFPUU1GRw?oc=5",
+     "published_kst": "10-27 05:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "삼성전자 파운드리 흑자전환 기대"
+     ]
+    },
+    {
+     "title": "[속보] 3분기 성장률 1%…반도체 호황에 전망치 상회",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4T3ROcWhEZlVBY05nempTOVZNLTdsSkM2LS1PVlFKdUtzNVNlX3h2RW1QSGFXRkNxM2ZndmlfbElGaGFzb0dKdms0X3dMMlhYRk5kczBaSlRsY2pmY2JPMjNpUnJYMFk?oc=5",
+     "published_kst": "10-27 08:05",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "반도체 호황으로 성장률 상회"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 110450,
+   "entry": 106555,
+   "tp1": 122125,
+   "tp2": 129915,
+   "stop": 102830,
+   "tp1_pct": 14.61,
+   "tp2_pct": 21.92,
+   "stop_pct": -3.5,
+   "rr": 4.18,
+   "cancel_below": 102830,
+   "breakout_ref": 133665,
+   "entry_vs_last_pct": -3.53,
+   "ext_pct": -13.69,
+   "atr_pct": 7.05,
+   "ma20": 127970,
+   "ma60": 124575,
+   "swing_low": 101745,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": true,
+   "kr_ma20_rising": false,
+   "turnover_eok": 2741.8,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/091160/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=091160",
+    "toss": "https://tossinvest.com/stocks/A091160"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 110,450 < MA20 127,970)"
+   ]
+  },
+  {
+   "code": "395160",
+   "name": "KODEX AI반도체TOP2플러스",
+   "us_ticker": "SMH",
+   "us_name": "반도체(대형)",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "[밤 사이 해외뉴스] 엔비디아·마이크론이 다 먹었다? 미 증시 폭등 뒤에 숨겨진 AI 거품 경고",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qM2V5TFh3RjJhczFFSWQ4R2FnbDVZRzNTejZwbFZhWWc1R1RURWxkS0ltby1xbTd5UXp1b0JvQjJJVHNVdE1ERlp3WVFuQmQ1TVc3dDhWU0xDUQ?oc=5",
+     "published_kst": "10-27 08:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "AI 거품 경고"
+     ]
+    },
+    {
+     "title": "엔비디아 주가, 오늘 상승하는 이유는?",
+     "source": "Investing.com 한국어",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxUjZ4OTZ3NUVSZElTUDFVZWtpMlZjcHYxSUc2eWNWSEt1cEpnUXQzSE1RMTh6Zk8ycFBXbTVURUxmY1BZNU92WFlDQ2xwa0VvSHpTaEJtemVuYzhFS0NWRGM1OG5rWk9UM2NjMTVtQkNOckJhb184?oc=5",
+     "published_kst": "10-27 00:07",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "엔비디아 주가 상승 이유"
+     ]
+    },
+    {
+     "title": "'앤트로픽 IPO'에 美 AI반도체 훈풍…삼전닉스 프리마켓서 2~3%↑",
+     "source": "뉴스1",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IaVNfSDlUZmRJRHdraGdzVFlVUElWVUFQZFdwM1VhUllZclBYVS1vT2I2VG5WUHBDWktMdFktSGN1aGU5T1NxNWhFdVhUY0xaczdqRFllYjdkenc?oc=5",
+     "published_kst": "10-27 08:21",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 33050,
+   "entry": 31925,
+   "tp1": 36410,
+   "tp2": 38650,
+   "stop": 30815,
+   "tp1_pct": 14.05,
+   "tp2_pct": 21.06,
+   "stop_pct": -3.48,
+   "rr": 4.04,
+   "cancel_below": 30815,
+   "breakout_ref": 36455,
+   "entry_vs_last_pct": -3.4,
+   "ext_pct": -9.39,
+   "atr_pct": 6.78,
+   "ma20": 36475,
+   "ma60": 37705,
+   "swing_low": 29035,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 1450.6,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/395160/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=395160",
+    "toss": "https://tossinvest.com/stocks/A395160"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 33,050 < MA20 36,475)"
+   ]
+  },
+  {
+   "code": "487240",
+   "name": "KODEX AI전력핵심설비",
+   "us_ticker": "URA",
+   "us_name": "원자력",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "고리원자력본부, 부산 위기아동 지원 새 사업 추진",
+     "source": "국토일보",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02NzhacENkYmhVNGotRTJTR2V3T3ROZjU3NkZCUVNrVU5BV2RDYTFNdERna2N0UzFpT0MxTnVHVlhKX0dHVTdoZ2NDdVBZLWFWQUdZczkwRXh4Vm9tbEJkVVlJQQ?oc=5",
+     "published_kst": "10-26 17:11",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 사회공헌 활동"
+     ]
+    },
+    {
+     "title": "고리원자력본부, 위기아동 지원 사업 '부산의 힘' 후원금 전달",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldSctIBYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldScg?oc=5",
+     "published_kst": "10-26 10:30",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 후원금 전달"
+     ]
+    },
+    {
+     "title": "IAEA \"2060년 원자력발전 수요 3배로 급증…AI 확산 영향 \"",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZcG8yZzF4VUtDUXlkcjA0OHJUZTNaNHg5UjZzOGYyLThQVEQ0ektYNG9rODBYLXlpaC1lZ3JqSFJSTjlFU2RSSGJtZUFBQXNFUi1xWXowZnJTWW_SAWBBVV95cUxNM3RESHdxOFpQTHB4N1I0ZFg0cWxnUkt2TDQzcE1pTlFQanJhWWRtNjQ5ejZ3Tk5hdG52R3RERXdTT1V1VlgzdGo4LW9qTkhITk1aRl9nYklkRnI2dmRwRWw?oc=5",
+     "published_kst": "10-24 10:04",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "원자력발전 수요 급증 전망"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 26970,
+   "entry": 25965,
+   "tp1": 29980,
+   "tp2": 31985,
+   "stop": 25060,
+   "tp1_pct": 15.46,
+   "tp2_pct": 23.19,
+   "stop_pct": -3.49,
+   "rr": 4.44,
+   "cancel_below": 25060,
+   "breakout_ref": 31450,
+   "entry_vs_last_pct": -3.73,
+   "ext_pct": -13.92,
+   "atr_pct": 7.44,
+   "ma20": 31330,
+   "ma60": 33845,
+   "swing_low": 25205,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 899.1,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/487240/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=487240",
+    "toss": "https://tossinvest.com/stocks/A487240"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 26,970 < MA20 31,330)"
+   ]
+  },
+  {
+   "code": "305720",
+   "name": "KODEX 2차전지산업",
+   "us_ticker": "LIT",
+   "us_name": "2차전지",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "\"전기차 넘어 AI 전력망으로\"… 2035년 2차전지 시장 3,172억 달러 급성장",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR3BMb2x1bG1WOUtORVpadVVOdXg2d1NneThQXy1NbmVpZHFKME9ZSlU3aVJpV2d5SnYtVTRVZkNGMUJmSk4wRmgtZHdBaVNIQXB3eWtOTjRfbWl6NW04ZFEwWlg2NU1aYnZ4ZF9wb2RGWkxjZGRBNHNVcXBYc2FqYXhGOGN6dG1U?oc=5",
+     "published_kst": "10-27 08:09",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "2차전지 시장 급성장 전망"
+     ]
+    },
+    {
+     "title": "[중국 특징주] '용백과기', 나트륨이온 배터리 양극재 생산에 7200억 투자",
+     "source": "뉴스핌",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5acDlYaDZnaEFJR2ZiekdSRVhzdmdpX2JGa0dITFgxWndBMHdKUHVyRG9WRW0xQzlKeGRpSWxHSDJ2SG9QMlA3VlZCLS15elNtZWE1WXVFZ3VESkxM?oc=5",
+     "published_kst": "10-27 08:13",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "나트륨이온 배터리 투자 확대"
+     ]
+    },
+    {
+     "title": "美 중간선거 악재?…K배터리 반등론 나오는 이유",
+     "source": "딜사이트",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WVFoS3JkUkhkMU5GUEdVbFVra3JZR2JreUxGNWVXRVVnSG9zRzc3WWJadWotd1FjU2d1MF9ha29KTGEyeXlqdmplZ041UFE?oc=5",
+     "published_kst": "10-27 08:02",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "K배터리 반등론 제기"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 13755,
+   "entry": 13320,
+   "tp1": 15055,
+   "tp2": 15925,
+   "stop": 12855,
+   "tp1_pct": 13.03,
+   "tp2_pct": 19.56,
+   "stop_pct": -3.49,
+   "rr": 3.73,
+   "cancel_below": 12855,
+   "breakout_ref": 16080,
+   "entry_vs_last_pct": -3.16,
+   "ext_pct": -7.54,
+   "atr_pct": 6.31,
+   "ma20": 14875,
+   "ma60": 14475,
+   "swing_low": 13195,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": true,
+   "kr_ma20_rising": false,
+   "turnover_eok": 995.6,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/305720/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=305720",
+    "toss": "https://tossinvest.com/stocks/A305720"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 13,755 < MA20 14,875)"
+   ]
+  },
+  {
+   "code": "305540",
+   "name": "TIGER 2차전지테마",
+   "us_ticker": "LIT",
+   "us_name": "2차전지",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 5,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "\"전기차 넘어 AI 전력망으로\"… 2035년 2차전지 시장 3,172억 달러 급성장",
+     "source": "글로벌이코노믹",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR3BMb2x1bG1WOUtORVpadVVOdXg2d1NneThQXy1NbmVpZHFKME9ZSlU3aVJpV2d5SnYtVTRVZkNGMUJmSk4wRmgtZHdBaVNIQXB3eWtOTjRfbWl6NW04ZFEwWlg2NU1aYnZ4ZF9wb2RGWkxjZGRBNHNVcXBYc2FqYXhGOGN6dG1U?oc=5",
+     "published_kst": "10-27 08:09",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "2차전지 시장 급성장 전망"
+     ]
+    },
+    {
+     "title": "[중국 특징주] '용백과기', 나트륨이온 배터리 양극재 생산에 7200억 투자",
+     "source": "뉴스핌",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5acDlYaDZnaEFJR2ZiekdSRVhzdmdpX2JGa0dITFgxWndBMHdKUHVyRG9WRW0xQzlKeGRpSWxHSDJ2SG9QMlA3VlZCLS15elNtZWE1WXVFZ3VESkxM?oc=5",
+     "published_kst": "10-27 08:13",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "나트륨이온 배터리 투자 확대"
+     ]
+    },
+    {
+     "title": "美 중간선거 악재?…K배터리 반등론 나오는 이유",
+     "source": "딜사이트",
+     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WVFoS3JkUkhkMU5GUEdVbFVra3JZR2JreUxGNWVXRVVnSG9zRzc3WWJadWotd1FjU2d1MF9ha29KTGEyeXlqdmplZ041UFE?oc=5",
+     "published_kst": "10-27 08:02",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "K배터리 반등론 제기"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 17470,
+   "entry": 16915,
+   "tp1": 19130,
+   "tp2": 20235,
+   "stop": 16325,
+   "tp1_pct": 13.09,
+   "tp2_pct": 19.63,
+   "stop_pct": -3.49,
+   "rr": 3.75,
+   "cancel_below": 16325,
+   "breakout_ref": 20430,
+   "entry_vs_last_pct": -3.18,
+   "ext_pct": -7.68,
+   "atr_pct": 6.34,
+   "ma20": 18925,
+   "ma60": 18370,
+   "swing_low": 16770,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": true,
+   "kr_ma20_rising": false,
+   "turnover_eok": 140.7,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/305540/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=305540",
+    "toss": "https://tossinvest.com/stocks/A305540"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 17,470 < MA20 18,925)"
+   ]
+  },
+  {
+   "code": "244580",
+   "name": "KODEX 바이오",
+   "us_ticker": "XBI",
+   "us_name": "바이오",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "中 바이오, 기술수출 200조원 돌파 눈앞",
+     "source": "조선일보",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcXBhOWdqZ0l1M1p0TE5uUkhFNkZvTEVqa0lnc2s2eFVSTEFDdm9RaWRUWmU1Y3ZVTGNkdm1ZbEdsV1BSWklzV21ENU9DZEtRdzVsQ3NMT2VNYkFTdmlHUXVkbHJEMV8yU3hDUHdmQ2dTb2RtRFEwWUdDLXZGNHR4QUoxaw?oc=5",
+     "published_kst": "10-27 06:06",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "중국 바이오 기술수출 확대"
+     ]
+    },
+    {
+     "title": "특구재단·알테오젠 '의기투합'···바이오 기업 성장 돕는다",
+     "source": "헬로디디",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4dVZyRGw2YjR5aDNRODl6WS16SnBXOERjbWhlNldTSFp4dmthN3ZNQlREQ2JUSFBJb3NwMzFreFU1ak9PVnhhQjR6cDJZUFNERjZvWmhHTlFyMEM3Z1NtMlNUV3VRYTdNcEE?oc=5",
+     "published_kst": "10-26 17:40",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "바이오 기업 성장 지원"
+     ]
+    },
+    {
+     "title": "프롬바이오, 동물실험서 성장판 두께 23.7%↑...2600억 어린이 건기식 시장 '정조준'(유료회...",
+     "source": "팜이데일리",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE90ejhLRy1NcWcyU2E2bmdjc0w3c3NwS05teG9Wc29wNGxvNU1kOG5FLWc1QVFMaVc4bkxZSGd0X0M5X2N5bEQzenVzV1Q1X3JXOWVRb2hlSG9LSTJUZm5URjBzWnEyS09HamtJMkN3?oc=5",
+     "published_kst": "10-27 08:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "어린이 건기식 시장 공략"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 7570,
+   "entry": 7390,
+   "tp1": 8095,
+   "tp2": 8445,
+   "stop": 7140,
+   "tp1_pct": 9.54,
+   "tp2_pct": 14.28,
+   "stop_pct": -3.38,
+   "rr": 2.82,
+   "cancel_below": 7140,
+   "breakout_ref": 8020,
+   "entry_vs_last_pct": -2.38,
+   "ext_pct": -3.34,
+   "atr_pct": 4.65,
+   "ma20": 7830,
+   "ma60": 8135,
+   "swing_low": 7000,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 42.1,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/244580/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=244580",
+    "toss": "https://tossinvest.com/stocks/A244580"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 7,570 < MA20 7,830)"
+   ]
+  },
+  {
+   "code": "364970",
+   "name": "TIGER 바이오TOP10",
+   "us_ticker": "XBI",
+   "us_name": "바이오",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "中 바이오, 기술수출 200조원 돌파 눈앞",
+     "source": "조선일보",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcXBhOWdqZ0l1M1p0TE5uUkhFNkZvTEVqa0lnc2s2eFVSTEFDdm9RaWRUWmU1Y3ZVTGNkdm1ZbEdsV1BSWklzV21ENU9DZEtRdzVsQ3NMT2VNYkFTdmlHUXVkbHJEMV8yU3hDUHdmQ2dTb2RtRFEwWUdDLXZGNHR4QUoxaw?oc=5",
+     "published_kst": "10-27 06:06",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "중국 바이오 기술수출 확대"
+     ]
+    },
+    {
+     "title": "특구재단·알테오젠 '의기투합'···바이오 기업 성장 돕는다",
+     "source": "헬로디디",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4dVZyRGw2YjR5aDNRODl6WS16SnBXOERjbWhlNldTSFp4dmthN3ZNQlREQ2JUSFBJb3NwMzFreFU1ak9PVnhhQjR6cDJZUFNERjZvWmhHTlFyMEM3Z1NtMlNUV3VRYTdNcEE?oc=5",
+     "published_kst": "10-26 17:40",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "바이오 기업 성장 지원"
+     ]
+    },
+    {
+     "title": "프롬바이오, 동물실험서 성장판 두께 23.7%↑...2600억 어린이 건기식 시장 '정조준'(유료회...",
+     "source": "팜이데일리",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE90ejhLRy1NcWcyU2E2bmdjc0w3c3NwS05teG9Wc29wNGxvNU1kOG5FLWc1QVFMaVc4bkxZSGd0X0M5X2N5bEQzenVzV1Q1X3JXOWVRb2hlSG9LSTJUZm5URjBzWnEyS09HamtJMkN3?oc=5",
+     "published_kst": "10-27 08:00",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "어린이 건기식 시장 공략"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 6670,
+   "entry": 6585,
+   "tp1": 7070,
+   "tp2": 7315,
+   "stop": 6355,
+   "tp1_pct": 7.37,
+   "tp2_pct": 11.09,
+   "stop_pct": -3.49,
+   "rr": 2.11,
+   "cancel_below": 6355,
+   "breakout_ref": 7040,
+   "entry_vs_last_pct": -1.27,
+   "ext_pct": -0.21,
+   "atr_pct": 3.65,
+   "ma20": 6685,
+   "ma60": 7070,
+   "swing_low": 6040,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": true,
+   "turnover_eok": 61.6,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/364970/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=364970",
+    "toss": "https://tossinvest.com/stocks/A364970"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 6,670 < MA20 6,685)"
+   ]
+  },
+  {
+   "code": "143860",
+   "name": "TIGER 헬스케어",
+   "us_ticker": "XLV",
+   "us_name": "헬스케어",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "한투운용 \"일라이릴리ETF, 헬스케어패시브 중 6개월 수익률 1위\"",
+     "source": "매일경제 마켓",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FeG1Ma25BamhEN3JUa0F4N0w1TjFfd1J2UVZWV1JvekJ4VldsbHB0NlhOUEtNMlFHSlktZ0dLWGNsWXNMQkxJaGMzTXpCem9Kb2c?oc=5",
+     "published_kst": "10-27 08:53",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    },
+    {
+     "title": "한투운용 ACE 일라이릴리밸류체인, 헬스케어 패시브 6개월 수익률 1위",
+     "source": "서울경제TV",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TT2F1NkhCYkpfWXh2dW5aQUpjX1p3cm5zTWdrSmNCVHpyUjdINXlnRmNyYXExaTVkajR1SXJFaHJpVzVIYk5Mb3FfZlpNbDVSOGo1QW0wOG1YLXlxVVNUR1JYYlI?oc=5",
+     "published_kst": "10-27 09:15",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    },
+    {
+     "title": "'ACE 일라이릴리밸류체인', 헬스케어 패시브 ETF 중 6개월 수익률 1위",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TNmRoVmpneHV4eVJ3alBwaXlYS2M1aEtfUnZwdDNlY3lzcFdrWTRmb1NaaGNaYXV2eWo4bUtCSDNNYnk5NUZ2NkJ2enA1aXpTdHQzQ2F4c3ZKTlg4V3phQlVn?oc=5",
+     "published_kst": "10-27 09:12",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "일라이릴리 ETF 수익률 1위"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 33860,
+   "entry": 33335,
+   "tp1": 35855,
+   "tp2": 37115,
+   "stop": 32170,
+   "tp1_pct": 7.56,
+   "tp2_pct": 11.34,
+   "stop_pct": -3.49,
+   "rr": 2.16,
+   "cancel_below": 32170,
+   "breakout_ref": 35925,
+   "entry_vs_last_pct": -1.55,
+   "ext_pct": -1.71,
+   "atr_pct": 3.72,
+   "ma20": 34450,
+   "ma60": 36480,
+   "swing_low": 31360,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 5.0,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/143860/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=143860",
+    "toss": "https://tossinvest.com/stocks/A143860"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 33,860 < MA20 34,450)"
+   ]
+  },
+  {
+   "code": "091170",
+   "name": "KODEX 은행",
+   "us_ticker": "XLF",
+   "us_name": "금융",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "금리 오르는데 고꾸라진 은행주…언제쯤 반등할까 [종목+]",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVEFKM2ViVU9LNmpsZEVfek5PNEd1elZSRm9wbWk0aGhnWWVQWXVaYkQyQmdWZWpLWmFRdkpPNHFJakRrUmtWYlNKZVEyM0F2cWpidFlGT0dtQQ?oc=5",
+     "published_kst": "10-27 08:41",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "금리 상승에도 은행주 하락"
+     ]
+    },
+    {
+     "title": "“증권주 바닥권 근접…반등 기대”",
+     "source": "뉴스투데이",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTEZKXzBhRVYzaGVWbkRycDhHQlZfUFhydXpCSFNYV1NHMXZOUTV3elNzLUk1R2R4V3BDX2NkMzQzV21qUDlBVWFzRGtBYnp3QUFVVi1GNFlsamdDcXc?oc=5",
+     "published_kst": "10-27 08:55",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주 바닥권 근접, 반등 기대"
+     ]
+    },
+    {
+     "title": "거래대금 64% 급감했는데 '바닥권'…증권주 반등 근거 충분할까",
+     "source": "파이낸셜뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GQ0d2OWpDU3d6eVFEXzdSRWIyQnZ3Ykpmc1BDdTJLY2VzU0dtYW84cFJEdzdHWnJ2dWxtcS16bGctbGRHekxqbjlHcm1lVTUtOWJGZFNjdTRsUQ?oc=5",
+     "published_kst": "10-27 08:25",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "거래대금 급감, 증권주 반등 불확실"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 13570,
+   "entry": 13540,
+   "tp1": 14415,
+   "tp2": 14850,
+   "stop": 13105,
+   "tp1_pct": 6.46,
+   "tp2_pct": 9.68,
+   "stop_pct": -3.21,
+   "rr": 2.01,
+   "cancel_below": 13105,
+   "breakout_ref": 15255,
+   "entry_vs_last_pct": -0.22,
+   "ext_pct": -10.37,
+   "atr_pct": 3.23,
+   "ma20": 15140,
+   "ma60": 15805,
+   "swing_low": 13540,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 91.4,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/091170/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=091170",
+    "toss": "https://tossinvest.com/stocks/A091170"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 13,570 < MA20 15,140)"
+   ]
+  },
+  {
+   "code": "102970",
+   "name": "KODEX 증권",
+   "us_ticker": "XLF",
+   "us_name": "금융",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 3,
+    "negative": 2,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "금리 오르는데 고꾸라진 은행주…언제쯤 반등할까 [종목+]",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rVEFKM2ViVU9LNmpsZEVfek5PNEd1elZSRm9wbWk0aGhnWWVQWXVaYkQyQmdWZWpLWmFRdkpPNHFJakRrUmtWYlNKZVEyM0F2cWpidFlGT0dtQQ?oc=5",
+     "published_kst": "10-27 08:41",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "금리 상승에도 은행주 하락"
+     ]
+    },
+    {
+     "title": "“증권주 바닥권 근접…반등 기대”",
+     "source": "뉴스투데이",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTEZKXzBhRVYzaGVWbkRycDhHQlZfUFhydXpCSFNYV1NHMXZOUTV3elNzLUk1R2R4V3BDX2NkMzQzV21qUDlBVWFzRGtBYnp3QUFVVi1GNFlsamdDcXc?oc=5",
+     "published_kst": "10-27 08:55",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "증권주 바닥권 근접, 반등 기대"
+     ]
+    },
+    {
+     "title": "거래대금 64% 급감했는데 '바닥권'…증권주 반등 근거 충분할까",
+     "source": "파이낸셜뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GQ0d2OWpDU3d6eVFEXzdSRWIyQnZ3Ykpmc1BDdTJLY2VzU0dtYW84cFJEdzdHWnJ2dWxtcS16bGctbGRHekxqbjlHcm1lVTUtOWJGZFNjdTRsUQ?oc=5",
+     "published_kst": "10-27 08:25",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "거래대금 급감, 증권주 반등 불확실"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 14695,
+   "entry": 14375,
+   "tp1": 15650,
+   "tp2": 16290,
+   "stop": 13875,
+   "tp1_pct": 8.87,
+   "tp2_pct": 13.32,
+   "stop_pct": -3.48,
+   "rr": 2.55,
+   "cancel_below": 13875,
+   "breakout_ref": 15975,
+   "entry_vs_last_pct": -2.18,
+   "ext_pct": -8.07,
+   "atr_pct": 4.35,
+   "ma20": 15985,
+   "ma60": 17535,
+   "swing_low": 14120,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 77.3,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/102970/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=102970",
+    "toss": "https://tossinvest.com/stocks/A102970"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 14,695 < MA20 15,985)"
+   ]
+  },
+  {
+   "code": "117700",
+   "name": "KODEX 건설",
+   "us_ticker": "XLI",
+   "us_name": "산업재",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 1,
+    "positive": 0,
+    "negative": 1,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "반도체·조선주 부진 직격탄…주요 10대 그룹 시총 1100조 원 감소",
+     "source": "nbn 시사경제",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HblVMdHZKNXRRS3JvMV82LTdqVnZfZE1zamhlWVIxRm1EanQyMVhYNG9vWmxzWmNkM3dLUzZ2dktfTjB2R3d4WG9lQWNhMlN2RkNHak5LaTUwdG9OQTJJbE0xSERmNmRfOWc?oc=5",
+     "published_kst": "10-26 09:46",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "반도체·조선주 부진, 시총 감소"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 6230,
+   "entry": 6090,
+   "tp1": 6645,
+   "tp2": 6925,
+   "stop": 5880,
+   "tp1_pct": 9.11,
+   "tp2_pct": 13.71,
+   "stop_pct": -3.45,
+   "rr": 2.64,
+   "cancel_below": 5880,
+   "breakout_ref": 6290,
+   "entry_vs_last_pct": -2.25,
+   "ext_pct": -0.48,
+   "atr_pct": 4.48,
+   "ma20": 6260,
+   "ma60": 6565,
+   "swing_low": 5575,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 146.8,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/117700/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=117700",
+    "toss": "https://tossinvest.com/stocks/A117700"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 6,230 < MA20 6,260)"
+   ]
+  },
+  {
+   "code": "449450",
+   "name": "PLUS K방산",
+   "us_ticker": "ITA",
+   "us_name": "방산·우주",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 1,
+    "negative": 3,
+    "neutral": 1,
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "경남창조경제혁신센터, 항공우주 기업간 기술협력·투자교류의 장 열어",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUzlKUHk5aFg5Nkl4b2lOMGRFaWRoOE1felhmOEdZTkZxLXd2TE4xbW9nMGVBSG5NQkVqb3RfZTBLZUJKRlNaSTNoVXJhdw?oc=5",
+     "published_kst": "10-27 09:42",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "항공우주 기업 협력 장려"
+     ]
+    },
+    {
+     "title": "반토막 난 방산주, 지금 사도 될까…12번 급락 뜯어보니",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAydEhOaDBJT3lVZmFVWkV5UVdFZXp6bm8tM1ZDTHBPMXp5RDhqWUtsR2FDcDJNdVZRd3l3MWFFdTJ6TWRCbS1IRkVuZEpwZC10V0dlRFJtSTRvUQ?oc=5",
+     "published_kst": "10-26 16:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 주가 급락 우려"
+     ]
+    },
+    {
+     "title": "한국항공우주 주가 상승 중",
+     "source": "아시아뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tUTFqN2Fnak5URlA5UU54MmxpRTlVdURDcEJUU1FiSEo2S0p3cGNHUklXa3o0cXNvdFN0QkQ0ZW91OVlVWjY4bGFuVS1NT0ZSSzlEZERNUUlwZ2ZrMHB1VFhGVGZhRXdpS2FJMlRVODdoZnJx?oc=5",
+     "published_kst": "10-27 09:32",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "한국항공우주 주가 상승"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 37365,
+   "entry": 36120,
+   "tp1": 41095,
+   "tp2": 43580,
+   "stop": 34860,
+   "tp1_pct": 13.77,
+   "tp2_pct": 20.65,
+   "stop_pct": -3.49,
+   "rr": 3.95,
+   "cancel_below": 34860,
+   "breakout_ref": 44635,
+   "entry_vs_last_pct": -3.33,
+   "ext_pct": -15.74,
+   "atr_pct": 6.66,
+   "ma20": 44345,
+   "ma60": 50115,
+   "swing_low": 35300,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 185.6,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/449450/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=449450",
+    "toss": "https://tossinvest.com/stocks/A449450"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 37,365 < MA20 44,345)"
+   ]
+  },
+  {
+   "code": "463250",
+   "name": "TIGER K방산&우주",
+   "us_ticker": "ITA",
+   "us_name": "방산·우주",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 1,
+    "negative": 3,
+    "neutral": 1,
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "경남창조경제혁신센터, 항공우주 기업간 기술협력·투자교류의 장 열어",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUzlKUHk5aFg5Nkl4b2lOMGRFaWRoOE1felhmOEdZTkZxLXd2TE4xbW9nMGVBSG5NQkVqb3RfZTBLZUJKRlNaSTNoVXJhdw?oc=5",
+     "published_kst": "10-27 09:42",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "항공우주 기업 협력 장려"
+     ]
+    },
+    {
+     "title": "반토막 난 방산주, 지금 사도 될까…12번 급락 뜯어보니",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAydEhOaDBJT3lVZmFVWkV5UVdFZXp6bm8tM1ZDTHBPMXp5RDhqWUtsR2FDcDJNdVZRd3l3MWFFdTJ6TWRCbS1IRkVuZEpwZC10V0dlRFJtSTRvUQ?oc=5",
+     "published_kst": "10-26 16:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 주가 급락 우려"
+     ]
+    },
+    {
+     "title": "한국항공우주 주가 상승 중",
+     "source": "아시아뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tUTFqN2Fnak5URlA5UU54MmxpRTlVdURDcEJUU1FiSEo2S0p3cGNHUklXa3o0cXNvdFN0QkQ0ZW91OVlVWjY4bGFuVS1NT0ZSSzlEZERNUUlwZ2ZrMHB1VFhGVGZhRXdpS2FJMlRVODdoZnJx?oc=5",
+     "published_kst": "10-27 09:32",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "한국항공우주 주가 상승"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 24845,
+   "entry": 23990,
+   "tp1": 27400,
+   "tp2": 29105,
+   "stop": 23155,
+   "tp1_pct": 14.21,
+   "tp2_pct": 21.32,
+   "stop_pct": -3.48,
+   "rr": 4.08,
+   "cancel_below": 23155,
+   "breakout_ref": 29750,
+   "entry_vs_last_pct": -3.44,
+   "ext_pct": -15.18,
+   "atr_pct": 6.87,
+   "ma20": 29290,
+   "ma60": 32515,
+   "swing_low": 23300,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 130.3,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/463250/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=463250",
+    "toss": "https://tossinvest.com/stocks/A463250"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 24,845 < MA20 29,290)"
+   ]
+  },
+  {
+   "code": "421320",
+   "name": "PLUS 우주항공",
+   "us_ticker": "ITA",
+   "us_name": "방산·우주",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 1,
+    "negative": 3,
+    "neutral": 1,
+    "tilt": "negative",
+    "tilt_label": "부정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "경남창조경제혁신센터, 항공우주 기업간 기술협력·투자교류의 장 열어",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUzlKUHk5aFg5Nkl4b2lOMGRFaWRoOE1felhmOEdZTkZxLXd2TE4xbW9nMGVBSG5NQkVqb3RfZTBLZUJKRlNaSTNoVXJhdw?oc=5",
+     "published_kst": "10-27 09:42",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "항공우주 기업 협력 장려"
+     ]
+    },
+    {
+     "title": "반토막 난 방산주, 지금 사도 될까…12번 급락 뜯어보니",
+     "source": "한국경제",
+     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAydEhOaDBJT3lVZmFVWkV5UVdFZXp6bm8tM1ZDTHBPMXp5RDhqWUtsR2FDcDJNdVZRd3l3MWFFdTJ6TWRCbS1IRkVuZEpwZC10V0dlRFJtSTRvUQ?oc=5",
+     "published_kst": "10-26 16:01",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "방산주 주가 급락 우려"
+     ]
+    },
+    {
+     "title": "한국항공우주 주가 상승 중",
+     "source": "아시아뉴스통신",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0tUTFqN2Fnak5URlA5UU54MmxpRTlVdURDcEJUU1FiSEo2S0p3cGNHUklXa3o0cXNvdFN0QkQ0ZW91OVlVWjY4bGFuVS1NT0ZSSzlEZERNUUlwZ2ZrMHB1VFhGVGZhRXdpS2FJMlRVODdoZnJx?oc=5",
+     "published_kst": "10-27 09:32",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "한국항공우주 주가 상승"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 22845,
+   "entry": 22080,
+   "tp1": 25125,
+   "tp2": 26645,
+   "stop": 21315,
+   "tp1_pct": 13.79,
+   "tp2_pct": 20.67,
+   "stop_pct": -3.46,
+   "rr": 3.98,
+   "cancel_below": 21315,
+   "breakout_ref": 25890,
+   "entry_vs_last_pct": -3.35,
+   "ext_pct": -11.73,
+   "atr_pct": 6.66,
+   "ma20": 25880,
+   "ma60": 26755,
+   "swing_low": 21585,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 42.0,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/421320/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=421320",
+    "toss": "https://tossinvest.com/stocks/A421320"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 22,845 < MA20 25,880)"
+   ]
+  },
+  {
+   "code": "434730",
+   "name": "HANARO 원자력iSelect",
+   "us_ticker": "URA",
+   "us_name": "원자력",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 2,
+    "negative": 0,
+    "neutral": 3,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "고리원자력본부, 부산 위기아동 지원 새 사업 추진",
+     "source": "국토일보",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02NzhacENkYmhVNGotRTJTR2V3T3ROZjU3NkZCUVNrVU5BV2RDYTFNdERna2N0UzFpT0MxTnVHVlhKX0dHVTdoZ2NDdVBZLWFWQUdZczkwRXh4Vm9tbEJkVVlJQQ?oc=5",
+     "published_kst": "10-26 17:11",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 사회공헌 활동"
+     ]
+    },
+    {
+     "title": "고리원자력본부, 위기아동 지원 사업 '부산의 힘' 후원금 전달",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldSctIBYEFVX3lxTE5UNjRPWmhVSE9FaVlLbGZHY2RpQjhqV1NpRmctWlJaV2lTOEVzdXJ3dzFaVjktWUpZRElxaWJGWDZCa29nTWgyNnpKLXdsaTZjVXE3YXRRNlFrcXc5VldScg?oc=5",
+     "published_kst": "10-26 10:30",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "원자력본부 후원금 전달"
+     ]
+    },
+    {
+     "title": "IAEA \"2060년 원자력발전 수요 3배로 급증…AI 확산 영향 \"",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZcG8yZzF4VUtDUXlkcjA0OHJUZTNaNHg5UjZzOGYyLThQVEQ0ektYNG9rODBYLXlpaC1lZ3JqSFJSTjlFU2RSSGJtZUFBQXNFUi1xWXowZnJTWW_SAWBBVV95cUxNM3RESHdxOFpQTHB4N1I0ZFg0cWxnUkt2TDQzcE1pTlFQanJhWWRtNjQ5ejZ3Tk5hdG52R3RERXdTT1V1VlgzdGo4LW9qTkhITk1aRl9nYklkRnI2dmRwRWw?oc=5",
+     "published_kst": "10-24 10:04",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "원자력발전 수요 급증 전망"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 43685,
+   "entry": 42340,
+   "tp1": 47710,
+   "tp2": 50395,
+   "stop": 40865,
+   "tp1_pct": 12.68,
+   "tp2_pct": 19.02,
+   "stop_pct": -3.48,
+   "rr": 3.64,
+   "cancel_below": 40865,
+   "breakout_ref": 49795,
+   "entry_vs_last_pct": -3.08,
+   "ext_pct": -12.81,
+   "atr_pct": 6.15,
+   "ma20": 50105,
+   "ma60": 55090,
+   "swing_low": 41580,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 91.0,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/434730/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=434730",
+    "toss": "https://tossinvest.com/stocks/A434730"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 43,685 < MA20 50,105)"
+   ]
+  },
+  {
+   "code": "385510",
+   "name": "KODEX 신재생에너지액티브",
+   "us_ticker": "ICLN",
+   "us_name": "신재생에너지",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 4,
+    "negative": 1,
+    "neutral": 0,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "에스에너지, 태양광 수주 확대·일본 AIDC 시장 진출 - 머니투데이",
+     "source": "머니투데이",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAycGJ6cFJEdkp5UXNvbHgxRmgzazZ4eTlqY0h0OEtrTnVnay1sYklaZmhWSXZvcDdKNGlXLXNoeXpzNGxxQVFzUkJrR1o1aXJqcWRiVGxoRW52aGhJS0VkZWxRX2k4a1Na0gFuQVVfeXFMUFd0X3NQYlhGX0lxLWVTU0JtMTBFUWFnZVJQT0hlZkk2YzNVMHdRVDU0encycm9LdXhzaTNERVZqWjN4UHBJRXdDSmVlakpkZFRIVnJTY1lfZWRQTTdRTzliQWYyRGYxWjh6S2tiUVE?oc=5",
+     "published_kst": "10-27 09:34",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 수주 확대 기대"
+     ]
+    },
+    {
+     "title": "태양광업계 “지역별 전력가격제 유예해야…송전망 부족 책임 전가 반대”",
+     "source": "전기신문",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TQmlxUkZXYVdDcGpzVXhIVkVseGVYQW1pa0UzZVFpRFdzWTdYMExoRHA2ckYwVDdPS3RLdnVjV0tsbmNBLTJ5akhSNzRXd0hjUXNkU0ZCcUh3X245TDhqS21sbVRiM0tBUUZON9IBcEFVX3lxTE9mS0FxSDFGYi1DRlZ5RnJBMDRTdzRfT1VYYUVyOW16QzNiX08yZ3dVMzVzLTVtOXNDN3g1NTFwVFFvbDVoMldCUFNyLTNsUk41R01WRlZ2VzQyRnJrdVo1RmhXT2hhRklaOFVNS2cyUEo?oc=5",
+     "published_kst": "10-26 17:45",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "태양광업계 제도 유예 요구"
+     ]
+    },
+    {
+     "title": "[클릭 e종목]\"에스에너지, 태양광 수주 확대…日 AIDC 전력시장 진출 수혜\"",
+     "source": "아시아경제",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4RnV2eUhMR1l5b05FWUhCcDY0WUFCX2VoclZmTE0wa3pvRngwajFLOU1CQUJOVFF0QmFieUxaN2hmTkVEMi01RGVBZmo1bUp0X0pvMGM2N2lRX1FRQWlxQXJn?oc=5",
+     "published_kst": "10-27 07:50",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "태양광 수주 확대 기대"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 33930,
+   "entry": 32850,
+   "tp1": 37165,
+   "tp2": 39320,
+   "stop": 31705,
+   "tp1_pct": 13.14,
+   "tp2_pct": 19.7,
+   "stop_pct": -3.49,
+   "rr": 3.77,
+   "cancel_below": 31705,
+   "breakout_ref": 39800,
+   "entry_vs_last_pct": -3.18,
+   "ext_pct": -10.64,
+   "atr_pct": 6.36,
+   "ma20": 37970,
+   "ma60": 37545,
+   "swing_low": 32810,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": true,
+   "kr_ma20_rising": false,
+   "turnover_eok": 34.3,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/385510/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=385510",
+    "toss": "https://tossinvest.com/stocks/A385510"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 33,930 < MA20 37,970)"
+   ]
+  },
+  {
+   "code": "139260",
+   "name": "TIGER 200 IT",
+   "us_ticker": "XLK",
+   "us_name": "기술",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 5,
+    "positive": 4,
+    "negative": 0,
+    "neutral": 1,
+    "tilt": "positive",
+    "tilt_label": "긍정",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "앤트로픽, 나스닥 상장 착수...\"역대 최대 규모\"",
+     "source": "YTN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0UE96OG5QU24tbmlGYjJWR3A3OTY0MWpXRjJNMWZmUk41aUNkUDQ1MW1NWG5LSVZqTkRQaDh5M0doaXJUS1dYRmF2eWtKRnU4S2JhUEZQSmNVSVUxZnc?oc=5",
+     "published_kst": "10-27 09:36",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 역대 최대 IPO 착수"
+     ]
+    },
+    {
+     "title": "앤트로픽 IPO 기대감에 들썩…나스닥 0.8%↑",
+     "source": "연합뉴스TV",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wTlFfU28tVjB1Tmwzc2g1QWI5c2M3amUyTmRXTEdFaDVycGZOV28tX1YyOXNYNzItcFNCcS1wMU55VmxEeUNyeThlcGZORFZwQzRFNnZqbWdsMlh1VUhHbTlJbW9PSHc?oc=5",
+     "published_kst": "10-27 08:29",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    },
+    {
+     "title": "앤트로픽 IPO 기대감에 뉴욕증시 들썩…나스닥 0.8%↑",
+     "source": "연합뉴스",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44WlhWdWVPYl9NbDc4OFprQmE5QzBxejZxdFhMRWFMMlZnektFQ1dCS2c1ODBUTWNycXRzOTEzUGVnV21ycjQwYUtYRWQzS3RQQXNkdjdmVzBkc0HSAWBBVV95cUxQT0NWNmNwUUtPYmw4cUNDWTUyb0NDbzdVbTNsT2o5TWd3bXVJRC1uNTJGT19uVFdDQzVuZ0FScUpIdnlVRnhzU3JHU3RTMGxwVVdkTkg5ZXNmMnBWOFU3SkU?oc=5",
+     "published_kst": "10-27 05:22",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "앤트로픽 IPO 기대감"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 114040,
+   "entry": 110445,
+   "tp1": 124820,
+   "tp2": 132005,
+   "stop": 106585,
+   "tp1_pct": 13.02,
+   "tp2_pct": 19.52,
+   "stop_pct": -3.49,
+   "rr": 3.72,
+   "cancel_below": 106585,
+   "breakout_ref": 125395,
+   "entry_vs_last_pct": -3.15,
+   "ext_pct": -9.06,
+   "atr_pct": 6.3,
+   "ma20": 125400,
+   "ma60": 129810,
+   "swing_low": 101530,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 547.4,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/139260/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=139260",
+    "toss": "https://tossinvest.com/stocks/A139260"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 114,040 < MA20 125,400)"
+   ]
+  },
+  {
+   "code": "365000",
+   "name": "TIGER 인터넷TOP10",
+   "us_ticker": "XLC",
+   "us_name": "커뮤니케이션",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 0,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "keyword"
+   },
+   "issues": [],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 3160,
+   "entry": 3080,
+   "tp1": 3385,
+   "tp2": 3535,
+   "stop": 2980,
+   "tp1_pct": 9.9,
+   "tp2_pct": 14.77,
+   "stop_pct": -3.25,
+   "rr": 3.05,
+   "cancel_below": 2980,
+   "breakout_ref": 3560,
+   "entry_vs_last_pct": -2.53,
+   "ext_pct": -8.84,
+   "atr_pct": 4.8,
+   "ma20": 3465,
+   "ma60": 3585,
+   "swing_low": 3075,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 4.4,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/365000/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=365000",
+    "toss": "https://tossinvest.com/stocks/A365000"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 3,160 < MA20 3,465)",
+    "거래대금 4.4억 (최소 5.0억 미달)"
+   ]
+  },
+  {
+   "code": "091180",
+   "name": "KODEX 자동차",
+   "us_ticker": "XLY",
+   "us_name": "경기소비재",
+   "us_r20": NaN,
+   "signal": "weak",
+   "signal_label": "하락세",
+   "issue_summary": {
+    "count": 3,
+    "positive": 1,
+    "negative": 1,
+    "neutral": 1,
+    "tilt": "neutral",
+    "tilt_label": "중립",
+    "classifier": "gemini:gemini-2.5-flash-lite"
+   },
+   "issues": [
+    {
+     "title": "아우디, 美 조지아에 첫 완성차 공장 설립…40억 달러 투자",
+     "source": "전자신문",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBTNS1WUTBaUTRpcW1PLWRJRzNfYk5ub0ktR2NPckNUQ1pXcGhRY1BSemo1RXhvOUxLYkdQQ29FN1JvZUtNS1ZJSXo0aGZYZw?oc=5",
+     "published_kst": "10-26 13:02",
+     "tone": "positive",
+     "tone_label": "긍정",
+     "keywords": [
+      "아우디 미국 공장 설립 투자"
+     ]
+    },
+    {
+     "title": "아우디 조지아 42억달러 투자, 현대차와 격돌",
+     "source": "공감신문",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzQUpfdXY1VVI3WklLV1Z5LWtCSHd4MzZobXRacDZnRFB3SmR4Qm5TRXdFRTJVOFNGZmN5anZDWVpFTEZhOHczQWJtWm5PV1h5UXR6MTEweTZUcldWVmdpc2xOSVBSVUJy?oc=5",
+     "published_kst": "10-27 09:12",
+     "tone": "neutral",
+     "tone_label": "중립",
+     "keywords": [
+      "경쟁 심화 가능성"
+     ]
+    },
+    {
+     "title": "자동차 및 자동차 부품 수입이 급증하여 약 107억 달러에 달했습니다.",
+     "source": "Vietnam.vn",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZEN6SkRRbjMwUW45M0xlSUJEdHZBZUVNREgyVmIzeW5qbEhpUHBJUk5fWkRrMm16X1RnQTVNMmJiVTExbUk1SWtJT0RoMjBCRUhFQkxBeUdlYWN1MDFVX2dTRzdySzBXbVpGUFU1MFdKQlFKd1VWWkV0NmtsaTNlN0gxa1FxaThTYjUxSzJxbC16dw?oc=5",
+     "published_kst": "10-25 13:36",
+     "tone": "negative",
+     "tone_label": "부정",
+     "keywords": [
+      "자동차 부품 수입 급증"
+     ]
+    }
+   ],
+   "source": "fdr",
+   "setup": "downtrend",
+   "setup_label": "하락추세",
+   "setup_howto": "20일선 아래입니다. 추세가 돌아설 때까지 봅니다.",
+   "order_note": "지정가 매수 (장 시작 전 예약주문 가능)",
+   "target_basis": "ATR 투영",
+   "last_close": 23065,
+   "entry": 22630,
+   "tp1": 24365,
+   "tp2": 25235,
+   "stop": 21840,
+   "tp1_pct": 7.67,
+   "tp2_pct": 11.51,
+   "stop_pct": -3.49,
+   "rr": 2.2,
+   "cancel_below": 21840,
+   "breakout_ref": 25115,
+   "entry_vs_last_pct": -1.89,
+   "ext_pct": -5.58,
+   "atr_pct": 3.76,
+   "ma20": 24430,
+   "ma60": 26735,
+   "swing_low": 22500,
+   "kr_above_ma20": false,
+   "kr_ma_stacked": false,
+   "kr_ma20_rising": false,
+   "turnover_eok": 25.7,
+   "links": {
+    "naver_m": "https://m.stock.naver.com/domestic/stock/091180/total",
+    "naver_pc": "https://finance.naver.com/item/main.naver?code=091180",
+    "toss": "https://tossinvest.com/stocks/A091180"
+   },
+   "reasons": [
+    "미국 매핑 섹터가 하락세",
+    "국내 종목이 20일선 아래 (종가 23,065 < MA20 24,430)"
+   ]
+  }
+ ],
+ "signal_labels": {
+  "strong": "강한 상승",
+  "turning": "상승 전환",
+  "neutral": "중립",
+  "weak": "하락세"
+ },
+ "issue_disclaimer": "섹터 이슈의 긍정/부정 표시는 헤드라인 키워드 자동 분류이며 문맥을 읽지 못합니다. 읽을거리 우선순위 참고용이고, 매매 판단 근거로 쓰지 마세요.",
+ "counts": {
+  "picks": 0,
+  "watch": 20,
+  "sectors": 18
+ }
+}
