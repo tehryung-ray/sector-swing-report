@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at_kst": "2026-11-05T10:50:12+09:00",
+ "generated_at_kst": "2026-11-06T10:50:16+09:00",
  "live": {
   "trades": [
    {
@@ -1232,165 +1232,11 @@
   },
   "open": [],
   "waiting": [],
-  "reports": 39,
+  "reports": 40,
   "since": "2026-09-08"
  },
  "backtest": {
   "trades": [
-   {
-    "code": "396500",
-    "name": "TIGER 반도체TOP10",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "얕은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "SOXX",
-    "us_name": null,
-    "entry": 26540,
-    "stop": 25620,
-    "tp1": 28770,
-    "tp2": 29890,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 28221.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "091160",
-    "name": "KODEX 반도체",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "얕은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "SOXX",
-    "us_name": null,
-    "entry": 79545,
-    "stop": 76765,
-    "tp1": 86355,
-    "tp2": 89765,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 85200.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "395160",
-    "name": "KODEX AI반도체TOP2플러스",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "얕은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "SMH",
-    "us_name": null,
-    "entry": 22610,
-    "stop": 21825,
-    "tp1": 24420,
-    "tp2": 25320,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 24045.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "244580",
-    "name": "KODEX 바이오",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "깊은눌림형",
-    "signal_label": "상승 전환",
-    "us_ticker": "XBI",
-    "us_name": null,
-    "entry": 12830,
-    "stop": 12450,
-    "tp1": 13855,
-    "tp2": 14405,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 13040.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "117700",
-    "name": "KODEX 건설",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "얕은눌림형",
-    "signal_label": "강한 상승",
-    "us_ticker": "XLI",
-    "us_name": null,
-    "entry": 5045,
-    "stop": 4875,
-    "tp1": 5445,
-    "tp2": 5640,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 5190.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "385510",
-    "name": "KODEX 신재생에너지액티브",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "깊은눌림형",
-    "signal_label": "중립",
-    "us_ticker": "ICLN",
-    "us_name": null,
-    "entry": 32100,
-    "stop": 31140,
-    "tp1": 35350,
-    "tp2": 35405,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 33115.0,
-    "pending": false,
-    "source": "backtest"
-   },
-   {
-    "code": "365000",
-    "name": "TIGER 인터넷TOP10",
-    "report_date": "2026-02-02 00:00:00",
-    "setup_label": "깊은눌림형",
-    "signal_label": "상승 전환",
-    "us_ticker": "XLC",
-    "us_name": null,
-    "entry": 4885,
-    "stop": 4740,
-    "tp1": 5270,
-    "tp2": 5480,
-    "links": {},
-    "fill": "not_filled",
-    "fill_label": "미체결 (진입가까지 안 내려옴)",
-    "status": null,
-    "ret_pct": null,
-    "days": 0,
-    "low_px": 4960.0,
-    "pending": false,
-    "source": "backtest"
-   },
    {
     "code": "487240",
     "name": "KODEX AI전력핵심설비",
@@ -1458,6 +1304,50 @@
     "source": "backtest"
    },
    {
+    "code": "244580",
+    "name": "KODEX 바이오",
+    "report_date": "2026-02-03 00:00:00",
+    "setup_label": "얕은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "XBI",
+    "us_name": null,
+    "entry": 13190,
+    "stop": 12735,
+    "tp1": 14160,
+    "tp2": 14645,
+    "links": {},
+    "fill": "not_filled",
+    "fill_label": "미체결 (진입가까지 안 내려옴)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "low_px": 13325.0,
+    "pending": false,
+    "source": "backtest"
+   },
+   {
+    "code": "117700",
+    "name": "KODEX 건설",
+    "report_date": "2026-02-03 00:00:00",
+    "setup_label": "얕은눌림형",
+    "signal_label": "강한 상승",
+    "us_ticker": "XLI",
+    "us_name": null,
+    "entry": 5330,
+    "stop": 5150,
+    "tp1": 5755,
+    "tp2": 5970,
+    "links": {},
+    "fill": "not_filled",
+    "fill_label": "미체결 (진입가까지 안 내려옴)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "low_px": 5450.0,
+    "pending": false,
+    "source": "backtest"
+   },
+   {
     "code": "434730",
     "name": "HANARO 원자력iSelect",
     "report_date": "2026-02-03 00:00:00",
@@ -1476,6 +1366,50 @@
     "ret_pct": null,
     "days": 0,
     "low_px": 60625.0,
+    "pending": false,
+    "source": "backtest"
+   },
+   {
+    "code": "385510",
+    "name": "KODEX 신재생에너지액티브",
+    "report_date": "2026-02-03 00:00:00",
+    "setup_label": "얕은눌림형",
+    "signal_label": "강한 상승",
+    "us_ticker": "ICLN",
+    "us_name": null,
+    "entry": 34045,
+    "stop": 32905,
+    "tp1": 36335,
+    "tp2": 37480,
+    "links": {},
+    "fill": "not_filled",
+    "fill_label": "미체결 (진입가까지 안 내려옴)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "low_px": 34840.0,
+    "pending": false,
+    "source": "backtest"
+   },
+   {
+    "code": "365000",
+    "name": "TIGER 인터넷TOP10",
+    "report_date": "2026-02-03 00:00:00",
+    "setup_label": "깊은눌림형",
+    "signal_label": "상승 전환",
+    "us_ticker": "XLC",
+    "us_name": null,
+    "entry": 4885,
+    "stop": 4740,
+    "tp1": 5270,
+    "tp2": 5480,
+    "links": {},
+    "fill": "not_filled",
+    "fill_label": "미체결 (진입가까지 안 내려옴)",
+    "status": null,
+    "ret_pct": null,
+    "days": 0,
+    "low_px": 4925.0,
     "pending": false,
     "source": "backtest"
    },
@@ -9157,11 +9091,11 @@
    }
   ],
   "stats": {
-   "n": 294,
+   "n": 291,
    "waiting": 0,
-   "tested": 294,
+   "tested": 291,
    "filled": 106,
-   "fill_rate": 36.1,
+   "fill_rate": 36.4,
    "cancelled": 3,
    "open": 0,
    "closed": 106,
@@ -9173,7 +9107,7 @@
    "worst": -5.12,
    "stopped": 64
   },
-  "since": "2025-11-05",
+  "since": "2025-11-06",
   "note": "실제 추천 기록이 아니라 같은 로직으로 과거를 재현한 결과입니다."
  },
  "premise": {
@@ -9182,37 +9116,37 @@
    {
     "signal": "strong",
     "label": "강한 상승",
-    "n": 695,
-    "avg": 0.239,
-    "win_rate": 52.5,
-    "t": 0.87
+    "n": 696,
+    "avg": 0.124,
+    "win_rate": 52.0,
+    "t": 0.44
    },
    {
     "signal": "turning",
     "label": "상승 전환",
-    "n": 560,
-    "avg": 0.494,
-    "win_rate": 51.6,
-    "t": 1.85
+    "n": 558,
+    "avg": 0.483,
+    "win_rate": 51.8,
+    "t": 1.8
    },
    {
     "signal": "neutral",
     "label": "중립",
-    "n": 501,
-    "avg": 0.422,
-    "win_rate": 49.9,
-    "t": 1.54
+    "n": 508,
+    "avg": 0.285,
+    "win_rate": 49.2,
+    "t": 1.03
    },
    {
     "signal": "weak",
     "label": "하락세",
-    "n": 1884,
-    "avg": -0.632,
-    "win_rate": 44.3,
-    "t": -3.97
+    "n": 1878,
+    "avg": -0.702,
+    "win_rate": 43.9,
+    "t": -4.38
    }
   ],
-  "strong_minus_weak": 0.871,
+  "strong_minus_weak": 0.826,
   "holds": true
  },
  "watch": {
@@ -9220,27 +9154,27 @@
   "by_reason": [
    {
     "reason": "미국 섹터가 하락세",
-    "n": 2378,
-    "avg": -0.8,
-    "up_rate": 42.1
+    "n": 2381,
+    "avg": -0.89,
+    "up_rate": 41.6
    },
    {
     "reason": "국내 20일선 아래",
-    "n": 729,
-    "avg": -0.25,
-    "up_rate": 44.6
+    "n": 750,
+    "avg": -0.44,
+    "up_rate": 44.1
    },
    {
     "reason": "20일선 이격 과열",
-    "n": 197,
-    "avg": 1.65,
-    "up_rate": 61.4
+    "n": 198,
+    "avg": 1.55,
+    "up_rate": 60.1
    },
    {
     "reason": "중기 추세 미회복",
-    "n": 162,
-    "avg": -0.66,
-    "up_rate": 48.8
+    "n": 163,
+    "avg": -0.63,
+    "up_rate": 49.1
    },
    {
     "reason": "손익비 미달",
@@ -9257,18 +9191,18 @@
   ]
  },
  "milestone": {
-  "report_days": 39,
+  "report_days": 40,
   "closed": {
    "current": 17,
    "target": 100,
    "pct": 17.0,
-   "eta_trading_days": 190
+   "eta_trading_days": 195
   },
   "overheat_watch": {
    "current": 1,
    "target": 100,
    "pct": 1.0,
-   "eta_trading_days": 3861
+   "eta_trading_days": 3960
   },
   "reached": false,
   "note": "표본이 모이기 전에는 백테스트 결과를 근거로 파라미터를 바꾸지 않습니다."
