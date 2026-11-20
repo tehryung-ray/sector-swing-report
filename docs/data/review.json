@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at_kst": "2026-11-19T11:50:52+09:00",
+ "generated_at_kst": "2026-11-20T11:39:44+09:00",
  "live": {
   "trades": [
    {
@@ -1232,7 +1232,7 @@
   },
   "open": [],
   "waiting": [],
-  "reports": 49,
+  "reports": 50,
   "since": "2026-09-08"
  },
  "backtest": {
@@ -8586,7 +8586,7 @@
    "worst": -5.12,
    "stopped": 64
   },
-  "since": "2025-11-19",
+  "since": "2025-11-20",
   "note": "실제 추천 기록이 아니라 같은 로직으로 과거를 재현한 결과입니다."
  },
  "premise": {
@@ -8595,10 +8595,10 @@
    {
     "signal": "strong",
     "label": "강한 상승",
-    "n": 692,
-    "avg": 0.06,
-    "win_rate": 49.9,
-    "t": 0.22
+    "n": 693,
+    "avg": 0.068,
+    "win_rate": 50.1,
+    "t": 0.25
    },
    {
     "signal": "turning",
@@ -8611,21 +8611,21 @@
    {
     "signal": "neutral",
     "label": "중립",
-    "n": 508,
-    "avg": 0.124,
-    "win_rate": 48.2,
-    "t": 0.44
+    "n": 509,
+    "avg": 0.128,
+    "win_rate": 48.3,
+    "t": 0.46
    },
    {
     "signal": "weak",
     "label": "하락세",
-    "n": 1869,
-    "avg": -0.98,
-    "win_rate": 41.7,
-    "t": -5.96
+    "n": 1887,
+    "avg": -0.952,
+    "win_rate": 41.8,
+    "t": -5.85
    }
   ],
-  "strong_minus_weak": 1.04,
+  "strong_minus_weak": 1.02,
   "holds": true
  },
  "watch": {
@@ -8633,13 +8633,13 @@
   "by_reason": [
    {
     "reason": "미국 섹터가 하락세",
-    "n": 2534,
-    "avg": -1.2,
-    "up_rate": 39.4
+    "n": 2563,
+    "avg": -1.17,
+    "up_rate": 39.6
    },
    {
     "reason": "국내 20일선 아래",
-    "n": 833,
+    "n": 842,
     "avg": -0.42,
     "up_rate": 44.9
    },
@@ -8651,9 +8651,9 @@
    },
    {
     "reason": "중기 추세 미회복",
-    "n": 182,
+    "n": 184,
     "avg": -0.72,
-    "up_rate": 46.2
+    "up_rate": 46.7
    },
    {
     "reason": "손익비 미달",
@@ -8670,18 +8670,18 @@
   ]
  },
  "milestone": {
-  "report_days": 49,
+  "report_days": 50,
   "closed": {
    "current": 17,
    "target": 100,
    "pct": 17.0,
-   "eta_trading_days": 239
+   "eta_trading_days": 244
   },
   "overheat_watch": {
    "current": 1,
    "target": 100,
    "pct": 1.0,
-   "eta_trading_days": 4851
+   "eta_trading_days": 4950
   },
   "reached": false,
   "note": "표본이 모이기 전에는 백테스트 결과를 근거로 파라미터를 바꾸지 않습니다."
